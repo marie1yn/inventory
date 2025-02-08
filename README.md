@@ -38,3 +38,5 @@ Reference Links:
 
   	https://livecharts.dev/docs/WinForms/2.0.0-rc5/CartesianChart.Axes%20properties
    	https://www.nuget.org/packages/Guna.Charts.WinForms/
+	https://www.youtube.com/watch?v=oycNb7oG7GQ&list=PL9PK4uQPgtnw9iVI9gOZPi4gDX4UNBQO6&index=2
+ 	https://www.youtube.com/watch?v=tX9E2azR1DY
