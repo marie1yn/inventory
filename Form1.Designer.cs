@@ -30,7 +30,7 @@
         {
             components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges1 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges2 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             materialTabControl1 = new MaterialSkin.Controls.MaterialTabControl();
             dashboardTab = new TabPage();
             materialCard2 = new MaterialSkin.Controls.MaterialCard();
@@ -38,6 +38,7 @@
             materialListBox1 = new MaterialSkin.Controls.MaterialListBox();
             materialCard1 = new MaterialSkin.Controls.MaterialCard();
             cartesianChart1 = new LiveChartsCore.SkiaSharpView.WinForms.CartesianChart();
+            panel1 = new Panel();
             stocksTab = new TabPage();
             suppliesTab = new TabPage();
             ordersTab = new TabPage();
@@ -48,6 +49,7 @@
             dashboardTab.SuspendLayout();
             materialCard2.SuspendLayout();
             materialCard1.SuspendLayout();
+            panel1.SuspendLayout();
             SuspendLayout();
             // 
             // materialTabControl1
@@ -66,19 +68,19 @@
             materialTabControl1.Multiline = true;
             materialTabControl1.Name = "materialTabControl1";
             materialTabControl1.SelectedIndex = 0;
-            materialTabControl1.Size = new Size(1344, 662);
+            materialTabControl1.Size = new Size(1360, 701);
             materialTabControl1.TabIndex = 2;
             // 
             // dashboardTab
             // 
             dashboardTab.AccessibleName = "";
-            dashboardTab.Controls.Add(materialCard2);
             dashboardTab.Controls.Add(materialCard1);
+            dashboardTab.Controls.Add(panel1);
             dashboardTab.ImageKey = "dashboard (1).png";
             dashboardTab.Location = new Point(4, 31);
             dashboardTab.Name = "dashboardTab";
             dashboardTab.Padding = new Padding(3);
-            dashboardTab.Size = new Size(1336, 627);
+            dashboardTab.Size = new Size(1352, 666);
             dashboardTab.TabIndex = 0;
             dashboardTab.Text = "Dashboard";
             dashboardTab.UseVisualStyleBackColor = true;
@@ -90,12 +92,12 @@
             materialCard2.Controls.Add(materialListBox1);
             materialCard2.Depth = 0;
             materialCard2.ForeColor = Color.FromArgb(222, 0, 0, 0);
-            materialCard2.Location = new Point(865, 14);
+            materialCard2.Location = new Point(820, 14);
             materialCard2.Margin = new Padding(14);
             materialCard2.MouseState = MaterialSkin.MouseState.HOVER;
             materialCard2.Name = "materialCard2";
             materialCard2.Padding = new Padding(14);
-            materialCard2.Size = new Size(454, 596);
+            materialCard2.Size = new Size(454, 635);
             materialCard2.TabIndex = 1;
             // 
             // guna2CircleButton1
@@ -109,7 +111,7 @@
             guna2CircleButton1.Image = (Image)resources.GetObject("guna2CircleButton1.Image");
             guna2CircleButton1.Location = new Point(387, 10);
             guna2CircleButton1.Name = "guna2CircleButton1";
-            guna2CircleButton1.ShadowDecoration.CustomizableEdges = customizableEdges1;
+            guna2CircleButton1.ShadowDecoration.CustomizableEdges = customizableEdges2;
             guna2CircleButton1.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
             guna2CircleButton1.Size = new Size(50, 50);
             guna2CircleButton1.TabIndex = 1;
@@ -125,7 +127,7 @@
             materialListBox1.Name = "materialListBox1";
             materialListBox1.SelectedIndex = -1;
             materialListBox1.SelectedItem = null;
-            materialListBox1.Size = new Size(420, 513);
+            materialListBox1.Size = new Size(420, 552);
             materialListBox1.TabIndex = 0;
             // 
             // materialCard1
@@ -139,7 +141,7 @@
             materialCard1.MouseState = MaterialSkin.MouseState.HOVER;
             materialCard1.Name = "materialCard1";
             materialCard1.Padding = new Padding(14);
-            materialCard1.Size = new Size(835, 388);
+            materialCard1.Size = new Size(794, 427);
             materialCard1.TabIndex = 0;
             // 
             // cartesianChart1
@@ -147,8 +149,17 @@
             cartesianChart1.Location = new Point(17, 17);
             cartesianChart1.MatchAxesScreenDataRatio = false;
             cartesianChart1.Name = "cartesianChart1";
-            cartesianChart1.Size = new Size(801, 354);
+            cartesianChart1.Size = new Size(749, 396);
             cartesianChart1.TabIndex = 0;
+            // 
+            // panel1
+            // 
+            panel1.Controls.Add(materialCard2);
+            panel1.Dock = DockStyle.Fill;
+            panel1.Location = new Point(3, 3);
+            panel1.Name = "panel1";
+            panel1.Size = new Size(1346, 660);
+            panel1.TabIndex = 2;
             // 
             // stocksTab
             // 
@@ -156,7 +167,7 @@
             stocksTab.Location = new Point(4, 31);
             stocksTab.Name = "stocksTab";
             stocksTab.Padding = new Padding(3);
-            stocksTab.Size = new Size(1336, 627);
+            stocksTab.Size = new Size(1352, 666);
             stocksTab.TabIndex = 1;
             stocksTab.Text = "Stock Management";
             stocksTab.UseVisualStyleBackColor = true;
@@ -166,7 +177,7 @@
             suppliesTab.ImageKey = "parcel.png";
             suppliesTab.Location = new Point(4, 31);
             suppliesTab.Name = "suppliesTab";
-            suppliesTab.Size = new Size(1336, 627);
+            suppliesTab.Size = new Size(1352, 666);
             suppliesTab.TabIndex = 2;
             suppliesTab.Text = "Suppliers ";
             suppliesTab.UseVisualStyleBackColor = true;
@@ -176,7 +187,7 @@
             ordersTab.ImageKey = "shopping-cart.png";
             ordersTab.Location = new Point(4, 31);
             ordersTab.Name = "ordersTab";
-            ordersTab.Size = new Size(1336, 627);
+            ordersTab.Size = new Size(1352, 666);
             ordersTab.TabIndex = 3;
             ordersTab.Text = "Orders & Restocking";
             ordersTab.UseVisualStyleBackColor = true;
@@ -186,7 +197,7 @@
             usageTab.ImageKey = "data-usage.png";
             usageTab.Location = new Point(4, 31);
             usageTab.Name = "usageTab";
-            usageTab.Size = new Size(1336, 627);
+            usageTab.Size = new Size(1352, 666);
             usageTab.TabIndex = 4;
             usageTab.Text = "Usage Reports ";
             usageTab.UseVisualStyleBackColor = true;
@@ -196,7 +207,7 @@
             logout.ImageKey = "logout (1).png";
             logout.Location = new Point(4, 31);
             logout.Name = "logout";
-            logout.Size = new Size(1336, 627);
+            logout.Size = new Size(1352, 666);
             logout.TabIndex = 5;
             logout.Text = "LOGOUT";
             logout.UseVisualStyleBackColor = true;
@@ -220,19 +231,21 @@
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             AutoSize = true;
-            ClientSize = new Size(1350, 729);
+            ClientSize = new Size(1366, 768);
             Controls.Add(materialTabControl1);
             DrawerHighlightWithAccent = false;
             DrawerShowIconsWhenHidden = true;
             DrawerTabControl = materialTabControl1;
             DrawerWidth = 300;
             Name = "Form1";
+            Sizable = false;
             StartPosition = FormStartPosition.CenterScreen;
             Text = "Inventory Management System";
             materialTabControl1.ResumeLayout(false);
             dashboardTab.ResumeLayout(false);
             materialCard2.ResumeLayout(false);
             materialCard1.ResumeLayout(false);
+            panel1.ResumeLayout(false);
             ResumeLayout(false);
         }
 
@@ -251,5 +264,6 @@
         private MaterialSkin.Controls.MaterialCard materialCard2;
         private Guna.UI2.WinForms.Guna2CircleButton guna2CircleButton1;
         private MaterialSkin.Controls.MaterialListBox materialListBox1;
+        private Panel panel1;
     }
 }

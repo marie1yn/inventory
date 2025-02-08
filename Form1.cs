@@ -5,11 +5,13 @@ using LiveChartsCore;
 using LiveChartsCore.Kernel.Sketches;
 using LiveChartsCore.SkiaSharpView;
 using LiveChartsCore.SkiaSharpView.Painting;
+using LiveChartsCore.SkiaSharpView.Painting.Effects;
 using MaterialSkin;
 using MaterialSkin.Controls;
 using SkiaSharp;
 using System;
 using System.Windows.Forms;
+using Axis = LiveChartsCore.SkiaSharpView.Axis;
 
 namespace inventory
 {
@@ -34,6 +36,37 @@ namespace inventory
                 new LineSeries<int>
                 {
                     Values = new int[] { 4, 6, 5, 3, 3, 1, 2 }
+                }
+            };
+            cartesianChart1.XAxes = new Axis[]
+            {
+                new Axis
+                {
+                    Name = "X Axis",
+                    NamePaint = new SolidColorPaint(SKColors.White),
+
+                    LabelsPaint = new SolidColorPaint(SKColors.White),
+                    TextSize = 15,
+
+                    SeparatorsPaint = new SolidColorPaint(SKColors.LightSlateGray) { StrokeThickness = 2 }
+                }
+            };
+
+            cartesianChart1.YAxes = new Axis[]
+            {
+                new Axis
+                {
+                    Name = "Y Axis",
+                    NamePaint = new SolidColorPaint(SKColors.White),
+                    LabelsRotation = 45,
+                    LabelsPaint = new SolidColorPaint(SKColors.White),
+                    TextSize = 15,
+
+                    SeparatorsPaint = new SolidColorPaint(SKColors.LightSlateGray)
+                    {
+                        StrokeThickness = 2,
+                        PathEffect = new DashEffect(new float[] { 3, 3 })
+                    }
                 }
             };
         }
