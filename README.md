@@ -1,4 +1,5 @@
 🔹 Key Features of a Small Restaurant Inventory System
+
 1️⃣ Dashboard (Main Overview)
 
 📊 Stock levels (Available, Low, Out of Stock)
