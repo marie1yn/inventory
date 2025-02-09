@@ -2,17 +2,19 @@ using System;
 using System.Runtime.InteropServices;
 using System.Windows.Forms;
 using Guna.UI2.WinForms;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement.ToolBar;
 
 namespace inventory
 {
     public partial class Form1 : Form
     {
         private bool isDragging = false;
-
+        private SidebarManager sidebarManager;
         public Form1()
         {
             InitializeComponent();
-            ApplyTheme();
+            sidebarManager = new SidebarManager(sidebarPanel);
         }
 
         private void BtnMinimize_Click(object sender, EventArgs e)
@@ -51,48 +53,25 @@ namespace inventory
             }
         }
 
-        private void ApplyTheme()
-        {
-            this.BackColor = System.Drawing.Color.FromArgb(30, 30, 30);
-            this.ForeColor = System.Drawing.Color.White;
-
-            foreach (Control ctrl in this.Controls)
-            {
-                if (ctrl is Guna2Panel panel)
-                {
-                    panel.FillColor = System.Drawing.Color.Maroon;
-                }
-                else if (ctrl is Guna2Button button)
-                {
-                    button.FillColor = System.Drawing.Color.FromArgb(64, 0, 0);
-                    button.ForeColor = System.Drawing.Color.White;
-                }
-                else if (ctrl is Label label)
-                {
-                    label.ForeColor = System.Drawing.Color.White;
-                }
-            }
-        }
-
         [DllImport("user32.dll")]
         private static extern void ReleaseCapture();
 
         [DllImport("user32.dll")]
         private static extern void SendMessage(IntPtr hWnd, int msg, int wParam, int lParam);
 
-        private void guna2Button1_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void guna2Button1_Click_1(object sender, EventArgs e)
-        {
-
-        }
-
         private void guna2Button6_Click(object sender, EventArgs e)
         {
             Close();
+        }
+
+        private void sidebarPanel_Paint(object sender, PaintEventArgs e)
+        {
+            
+        }
+
+        private void btnToggle_Click(object sender, EventArgs e)
+        {
+            sidebarManager.ToggleSidebar();
         }
     }
 }
