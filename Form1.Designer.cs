@@ -69,9 +69,13 @@ namespace inventory
             btnToggle = new Guna2Button();
             guna2Panel1 = new Guna2Panel();
             imageList1 = new ImageList(components);
+            tabControl1 = new TabControl();
+            tabPage1 = new TabPage();
+            tabPage2 = new TabPage();
             guna2Taskbar.SuspendLayout();
             sidebarPanel.SuspendLayout();
             guna2Panel1.SuspendLayout();
+            tabControl1.SuspendLayout();
             SuspendLayout();
             // 
             // guna2BorderlessForm1
@@ -329,7 +333,7 @@ namespace inventory
             btnToggle.DisabledState.FillColor = Color.FromArgb(169, 169, 169);
             btnToggle.DisabledState.ForeColor = Color.FromArgb(141, 141, 141);
             btnToggle.FillColor = Color.FromArgb(120, 20, 20);
-            btnToggle.Font = new Font("Arial", 14.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            btnToggle.Font = new Font("Arial", 20.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
             btnToggle.ForeColor = Color.White;
             btnToggle.Location = new Point(0, 0);
             btnToggle.Name = "btnToggle";
@@ -365,6 +369,37 @@ namespace inventory
             imageList1.Images.SetKeyName(6, "setting.png");
             imageList1.Images.SetKeyName(7, "shopping-cart.png");
             // 
+            // tabControl1
+            // 
+            tabControl1.Controls.Add(tabPage1);
+            tabControl1.Controls.Add(tabPage2);
+            tabControl1.Dock = DockStyle.Fill;
+            tabControl1.Location = new Point(0, 87);
+            tabControl1.Name = "tabControl1";
+            tabControl1.SelectedIndex = 0;
+            tabControl1.Size = new Size(1366, 681);
+            tabControl1.TabIndex = 3;
+            // 
+            // tabPage1
+            // 
+            tabPage1.Location = new Point(4, 24);
+            tabPage1.Name = "tabPage1";
+            tabPage1.Padding = new Padding(3);
+            tabPage1.Size = new Size(1358, 653);
+            tabPage1.TabIndex = 0;
+            tabPage1.Text = "tabPage1";
+            tabPage1.UseVisualStyleBackColor = true;
+            // 
+            // tabPage2
+            // 
+            tabPage2.Location = new Point(4, 24);
+            tabPage2.Name = "tabPage2";
+            tabPage2.Padding = new Padding(3);
+            tabPage2.Size = new Size(1358, 740);
+            tabPage2.TabIndex = 1;
+            tabPage2.Text = "tabPage2";
+            tabPage2.UseVisualStyleBackColor = true;
+            // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
@@ -373,6 +408,7 @@ namespace inventory
             BackColor = Color.White;
             ClientSize = new Size(1366, 768);
             Controls.Add(sidebarPanel);
+            Controls.Add(tabControl1);
             Controls.Add(guna2Panel1);
             Controls.Add(guna2Taskbar);
             ForeColor = Color.DimGray;
@@ -383,6 +419,7 @@ namespace inventory
             guna2Taskbar.ResumeLayout(false);
             sidebarPanel.ResumeLayout(false);
             guna2Panel1.ResumeLayout(false);
+            tabControl1.ResumeLayout(false);
             ResumeLayout(false);
         }
 
@@ -397,5 +434,8 @@ namespace inventory
         protected Guna2Button orders;
         protected Guna2Button stocks;
         private Guna2Panel guna2Panel2;
+        private TabControl tabControl1;
+        private TabPage tabPage1;
+        private TabPage tabPage2;
     }
 }

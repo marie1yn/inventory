@@ -14,7 +14,7 @@ namespace inventory
         private bool isSidebarExpanded = true;
         private const int expandedWidth = 200;
         private const int collapsedWidth = 50;
-        private int animationStep = 50; // Adjust speed (higher = faster)
+        private int animationStep = 30; // Adjust speed (higher = faster)
         private Color defaultTextColor = Color.White; // Normal text color
         private Color hoverTextColor = Color.DarkGray; // Hover text color
 
