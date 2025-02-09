@@ -6,7 +6,7 @@ namespace inventory
     public static class ThemeManager
     {
         public static Color PrimaryColor { get; set; } = Color.Maroon;
-        public static Color SecondaryColor { get; set; } = Color.DarkRed;
+        public static Color SecondaryColor { get; set; } = Color.Yellow;
         public static Color BackgroundColor { get; set; } = Color.White;
         public static Color ForegroundColor { get; set; } = Color.Black;
 

@@ -30,7 +30,7 @@ namespace inventory
             if (e.Button == MouseButtons.Left)
             {
                 isDragging = true;
-                this.Opacity = 0.7; 
+                this.Opacity = 0.7;
                 ReleaseCapture();
                 SendMessage(Handle, 0xA1, 0x2, 0);
             }
@@ -39,7 +39,7 @@ namespace inventory
         private void Guna2Taskbar_MouseUp(object sender, MouseEventArgs e)
         {
             isDragging = false;
-            this.Opacity = 1.0; 
+            this.Opacity = 1.0;
         }
 
         private void Guna2Taskbar_MouseMove(object sender, MouseEventArgs e)
@@ -53,7 +53,7 @@ namespace inventory
 
         private void ApplyTheme()
         {
-            this.BackColor = System.Drawing.Color.FromArgb(30, 30, 30); 
+            this.BackColor = System.Drawing.Color.FromArgb(30, 30, 30);
             this.ForeColor = System.Drawing.Color.White;
 
             foreach (Control ctrl in this.Controls)
@@ -79,5 +79,20 @@ namespace inventory
 
         [DllImport("user32.dll")]
         private static extern void SendMessage(IntPtr hWnd, int msg, int wParam, int lParam);
+
+        private void guna2Button1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void guna2Button1_Click_1(object sender, EventArgs e)
+        {
+
+        }
+
+        private void guna2Button6_Click(object sender, EventArgs e)
+        {
+            Close();
+        }
     }
 }
