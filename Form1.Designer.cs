@@ -71,6 +71,10 @@ namespace inventory
             imageList1 = new ImageList(components);
             tabControl1 = new TabControl();
             tabPage2 = new TabPage();
+            tabPage1 = new TabPage();
+            tabPage3 = new TabPage();
+            tabPage4 = new TabPage();
+            tabPage5 = new TabPage();
             guna2Taskbar.SuspendLayout();
             sidebarPanel.SuspendLayout();
             guna2Panel1.SuspendLayout();
@@ -385,6 +389,10 @@ namespace inventory
             // tabControl1
             // 
             tabControl1.Controls.Add(tabPage2);
+            tabControl1.Controls.Add(tabPage1);
+            tabControl1.Controls.Add(tabPage3);
+            tabControl1.Controls.Add(tabPage4);
+            tabControl1.Controls.Add(tabPage5);
             tabControl1.Dock = DockStyle.Fill;
             tabControl1.Location = new Point(229, 116);
             tabControl1.Margin = new Padding(3, 4, 3, 4);
@@ -401,8 +409,44 @@ namespace inventory
             tabPage2.Padding = new Padding(3, 4, 3, 4);
             tabPage2.Size = new Size(1324, 875);
             tabPage2.TabIndex = 1;
-            tabPage2.Text = "tabPage2";
+            tabPage2.Text = "Dashboard";
             tabPage2.UseVisualStyleBackColor = true;
+            // 
+            // tabPage1
+            // 
+            tabPage1.Location = new Point(4, 29);
+            tabPage1.Name = "tabPage1";
+            tabPage1.Size = new Size(1324, 875);
+            tabPage1.TabIndex = 2;
+            tabPage1.Text = "Stocks";
+            tabPage1.UseVisualStyleBackColor = true;
+            // 
+            // tabPage3
+            // 
+            tabPage3.Location = new Point(4, 29);
+            tabPage3.Name = "tabPage3";
+            tabPage3.Size = new Size(1324, 875);
+            tabPage3.TabIndex = 3;
+            tabPage3.Text = "Orders";
+            tabPage3.UseVisualStyleBackColor = true;
+            // 
+            // tabPage4
+            // 
+            tabPage4.Location = new Point(4, 29);
+            tabPage4.Name = "tabPage4";
+            tabPage4.Size = new Size(1324, 875);
+            tabPage4.TabIndex = 4;
+            tabPage4.Text = "Stats";
+            tabPage4.UseVisualStyleBackColor = true;
+            // 
+            // tabPage5
+            // 
+            tabPage5.Location = new Point(4, 29);
+            tabPage5.Name = "tabPage5";
+            tabPage5.Size = new Size(1324, 875);
+            tabPage5.TabIndex = 5;
+            tabPage5.Text = "Roles";
+            tabPage5.UseVisualStyleBackColor = true;
             // 
             // Form1
             // 
@@ -441,5 +485,9 @@ namespace inventory
         private Guna2Panel guna2Panel2;
         private TabControl tabControl1;
         private TabPage tabPage2;
+        private TabPage tabPage1;
+        private TabPage tabPage3;
+        private TabPage tabPage4;
+        private TabPage tabPage5;
     }
 }
