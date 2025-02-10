@@ -74,4 +74,4 @@ Implement Database (Optional): Use an SQLite or JSON file to store inventory dat
 
 Code the Logic: Implement the CRUD functionality for stock and orders.
 
-Enhance UI/UX: Add animations using Guna2Transition, Guna2ShadowForm, and Guna2DragControl.
+
