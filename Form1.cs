@@ -1,99 +1,105 @@
-using LiveCharts;
-using LiveCharts.WinForms;
-using LiveCharts.Wpf;
-using LiveChartsCore;
-using LiveChartsCore.Kernel.Sketches;
-using LiveChartsCore.SkiaSharpView;
-using LiveChartsCore.SkiaSharpView.Painting;
-using LiveChartsCore.SkiaSharpView.Painting.Effects;
-using MaterialSkin;
-using MaterialSkin.Controls;
-using SkiaSharp;
-using System;
+﻿using System;
+using System.Runtime.InteropServices;
 using System.Windows.Forms;
-using Axis = LiveChartsCore.SkiaSharpView.Axis;
+using Guna.UI2.WinForms;
 
 namespace inventory
 {
-    public partial class Form1 : MaterialForm
+    public partial class Form1 : Form
     {
+        private bool isDragging = false;
+        private SidebarManager sidebarManager;
+
         public Form1()
         {
             InitializeComponent();
-
-            var materialSkinManager = MaterialSkinManager.Instance;
-            materialSkinManager.AddFormToManage(this);
-            materialSkinManager.Theme = MaterialSkinManager.Themes.DARK;
-            materialSkinManager.ColorScheme = new ColorScheme(
-                Primary.Red500, Primary.Red600, Primary.Yellow700, Accent.Red400, TextShade.WHITE);
-
-            cartesianChart1.Series = new ISeries[]
-            {
-                new ColumnSeries<double>
-                {
-                    Values = new double[] { 2, 5, 4, 2, 4, 3, 5 }
-                },
-                new LineSeries<int>
-                {
-                    Values = new int[] { 4, 6, 5, 3, 3, 1, 2 }
-                }
-            };
-            cartesianChart1.XAxes = new Axis[]
-            {
-                new Axis
-                {
-                    Name = "X Axis",
-                    NamePaint = new SolidColorPaint(SKColors.White),
-
-                    LabelsPaint = new SolidColorPaint(SKColors.White),
-                    TextSize = 15,
-
-                    SeparatorsPaint = new SolidColorPaint(SKColors.LightSlateGray) { StrokeThickness = 2 }
-                }
-            };
-
-            cartesianChart1.YAxes = new Axis[]
-            {
-                new Axis
-                {
-                    Name = "Y Axis",
-                    NamePaint = new SolidColorPaint(SKColors.White),
-                    LabelsRotation = 45,
-                    LabelsPaint = new SolidColorPaint(SKColors.White),
-                    TextSize = 15,
-
-                    SeparatorsPaint = new SolidColorPaint(SKColors.LightSlateGray)
-                    {
-                        StrokeThickness = 2,
-                        PathEffect = new DashEffect(new float[] { 3, 3 })
-                    }
-                }
-            };
+            sidebarManager = new SidebarManager(sidebarPanel, tabControl1);
+            this.Load += Form1_Load; // Attach the Load event
         }
 
-
-        private void Form1_Load_1(object sender, EventArgs e)
+        private void Form1_Load(object sender, EventArgs e)
         {
+            sidebarManager.ToggleSidebar();
+            sidebarManager.ToggleSidebar();
+
+            // 🔹 Ensure sidebar and toggle panel are fully visible
+            sidebarPanel.Refresh();
+            sidebarPanel.Invalidate();
+            sidebarPanel.Update();
+
+            guna2Panel1.Refresh();
+            guna2Panel1.Invalidate();
+            guna2Panel1.Update();
+
+            // 🔹 Bring Sidebar & Toggle Panel to the front
+            guna2Panel1.BringToFront();
+            sidebarPanel.BringToFront();
+
+            // ✅ Apply button colors & refresh UI
+            sidebarManager.ApplyTagColors();
+            sidebarManager.UpdateSidebarUI(); // Ensure all buttons update on startup
         }
 
-        private void materialButton1_Click(object sender, EventArgs e)
+        private void BtnMinimize_Click(object sender, EventArgs e)
         {
+            this.WindowState = FormWindowState.Minimized;
         }
 
-        private void logout_Click(object sender, EventArgs e)
+        private void BtnClose_Click(object sender, EventArgs e)
         {
-            DialogResult result = MessageBox.Show("Are you sure you want to log out?", "Logout", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+            Application.Exit();
+        }
 
-            if (result == DialogResult.Yes)
+        private void Guna2Taskbar_MouseDown(object sender, MouseEventArgs e)
+        {
+            if (e.Button == MouseButtons.Left)
             {
-                Application.Exit();
+                isDragging = true;
+                this.Opacity = 0.7;
+                ReleaseCapture();
+                SendMessage(Handle, 0xA1, 0x2, 0);
             }
         }
-        
-        private void cartesianChart1_Load(object sender, EventArgs e)
+
+        private void Guna2Taskbar_MouseUp(object sender, MouseEventArgs e)
         {
-            
+            isDragging = false;
+            this.Opacity = 1.0;
         }
 
+        private void Guna2Taskbar_MouseMove(object sender, MouseEventArgs e)
+        {
+            if (isDragging && e.Button != MouseButtons.Left)
+            {
+                isDragging = false;
+                this.Opacity = 1.0;
+            }
+        }
+
+        [DllImport("user32.dll")]
+        private static extern void ReleaseCapture();
+
+        [DllImport("user32.dll")]
+        private static extern void SendMessage(IntPtr hWnd, int msg, int wParam, int lParam);
+
+        private void guna2Button6_Click(object sender, EventArgs e)
+        {
+            Close();
+        }
+
+        private void sidebarPanel_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void btnToggle_Click(object sender, EventArgs e)
+        {
+            sidebarManager.ToggleSidebar();
+        }
+
+        private void guna2Taskbar_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
     }
 }

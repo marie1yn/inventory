@@ -1,6 +1,6 @@
 namespace inventory
 {
-    internal static class Program
+    internal static class Program2
     {
         /// <summary>
         ///  The main entry point for the application.
