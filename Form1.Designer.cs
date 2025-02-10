@@ -70,7 +70,6 @@ namespace inventory
             guna2Panel1 = new Guna2Panel();
             imageList1 = new ImageList(components);
             tabControl1 = new TabControl();
-            tabPage1 = new TabPage();
             tabPage2 = new TabPage();
             guna2Taskbar.SuspendLayout();
             sidebarPanel.SuspendLayout();
@@ -179,7 +178,7 @@ namespace inventory
             logout.DisabledState.FillColor = Color.FromArgb(169, 169, 169);
             logout.DisabledState.ForeColor = Color.FromArgb(141, 141, 141);
             logout.FillColor = Color.FromArgb(120, 20, 20);
-            logout.Font = new Font("Arial", 12F, FontStyle.Bold);
+            logout.Font = new Font("Arial", 12F, FontStyle.Bold, GraphicsUnit.Point);
             logout.ForeColor = Color.White;
             logout.HoverState.FillColor = Color.FromArgb(128, 150, 100, 20);
             logout.HoverState.ForeColor = Color.DarkGray;
@@ -204,7 +203,7 @@ namespace inventory
             roles.DisabledState.FillColor = Color.FromArgb(169, 169, 169);
             roles.DisabledState.ForeColor = Color.FromArgb(141, 141, 141);
             roles.FillColor = Color.FromArgb(30, 30, 30);
-            roles.Font = new Font("Arial", 12F, FontStyle.Bold);
+            roles.Font = new Font("Arial", 12F, FontStyle.Bold, GraphicsUnit.Point);
             roles.ForeColor = Color.White;
             roles.HoverState.FillColor = Color.FromArgb(128, 150, 100, 20);
             roles.HoverState.ForeColor = Color.DarkGray;
@@ -230,7 +229,7 @@ namespace inventory
             stats.DisabledState.FillColor = Color.FromArgb(169, 169, 169);
             stats.DisabledState.ForeColor = Color.FromArgb(141, 141, 141);
             stats.FillColor = Color.FromArgb(30, 30, 30);
-            stats.Font = new Font("Arial", 12F, FontStyle.Bold);
+            stats.Font = new Font("Arial", 12F, FontStyle.Bold, GraphicsUnit.Point);
             stats.ForeColor = Color.White;
             stats.HoverState.FillColor = Color.FromArgb(128, 150, 100, 20);
             stats.HoverState.ForeColor = Color.DarkGray;
@@ -256,7 +255,7 @@ namespace inventory
             orders.DisabledState.FillColor = Color.FromArgb(169, 169, 169);
             orders.DisabledState.ForeColor = Color.FromArgb(141, 141, 141);
             orders.FillColor = Color.FromArgb(30, 30, 30);
-            orders.Font = new Font("Arial", 12F, FontStyle.Bold);
+            orders.Font = new Font("Arial", 12F, FontStyle.Bold, GraphicsUnit.Point);
             orders.ForeColor = Color.White;
             orders.HoverState.FillColor = Color.FromArgb(128, 150, 100, 20);
             orders.HoverState.ForeColor = Color.DarkGray;
@@ -282,7 +281,7 @@ namespace inventory
             stocks.DisabledState.FillColor = Color.FromArgb(169, 169, 169);
             stocks.DisabledState.ForeColor = Color.FromArgb(141, 141, 141);
             stocks.FillColor = Color.FromArgb(30, 30, 30);
-            stocks.Font = new Font("Arial", 12F, FontStyle.Bold);
+            stocks.Font = new Font("Arial", 12F, FontStyle.Bold, GraphicsUnit.Point);
             stocks.ForeColor = Color.White;
             stocks.HoverState.FillColor = Color.FromArgb(128, 150, 100, 20);
             stocks.HoverState.ForeColor = Color.DarkGray;
@@ -308,7 +307,7 @@ namespace inventory
             dashboard.DisabledState.FillColor = Color.FromArgb(169, 169, 169);
             dashboard.DisabledState.ForeColor = Color.FromArgb(141, 141, 141);
             dashboard.FillColor = Color.FromArgb(30, 30, 30);
-            dashboard.Font = new Font("Arial", 12F, FontStyle.Bold);
+            dashboard.Font = new Font("Arial", 12F, FontStyle.Bold, GraphicsUnit.Point);
             dashboard.ForeColor = Color.White;
             dashboard.HoverState.FillColor = Color.FromArgb(128, 150, 100, 20);
             dashboard.HoverState.ForeColor = Color.DarkGray;
@@ -333,7 +332,7 @@ namespace inventory
             btnToggle.DisabledState.FillColor = Color.FromArgb(169, 169, 169);
             btnToggle.DisabledState.ForeColor = Color.FromArgb(141, 141, 141);
             btnToggle.FillColor = Color.FromArgb(120, 20, 20);
-            btnToggle.Font = new Font("Arial", 20.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            btnToggle.Font = new Font("Arial", 20.25F, FontStyle.Bold, GraphicsUnit.Point);
             btnToggle.ForeColor = Color.White;
             btnToggle.Location = new Point(0, 0);
             btnToggle.Name = "btnToggle";
@@ -371,7 +370,6 @@ namespace inventory
             // 
             // tabControl1
             // 
-            tabControl1.Controls.Add(tabPage1);
             tabControl1.Controls.Add(tabPage2);
             tabControl1.Dock = DockStyle.Fill;
             tabControl1.Location = new Point(0, 87);
@@ -380,22 +378,12 @@ namespace inventory
             tabControl1.Size = new Size(1366, 681);
             tabControl1.TabIndex = 3;
             // 
-            // tabPage1
-            // 
-            tabPage1.Location = new Point(4, 24);
-            tabPage1.Name = "tabPage1";
-            tabPage1.Padding = new Padding(3);
-            tabPage1.Size = new Size(1358, 653);
-            tabPage1.TabIndex = 0;
-            tabPage1.Text = "tabPage1";
-            tabPage1.UseVisualStyleBackColor = true;
-            // 
             // tabPage2
             // 
             tabPage2.Location = new Point(4, 24);
             tabPage2.Name = "tabPage2";
             tabPage2.Padding = new Padding(3);
-            tabPage2.Size = new Size(1358, 740);
+            tabPage2.Size = new Size(1358, 653);
             tabPage2.TabIndex = 1;
             tabPage2.Text = "tabPage2";
             tabPage2.UseVisualStyleBackColor = true;
@@ -435,7 +423,6 @@ namespace inventory
         protected Guna2Button stocks;
         private Guna2Panel guna2Panel2;
         private TabControl tabControl1;
-        private TabPage tabPage1;
         private TabPage tabPage2;
     }
 }
