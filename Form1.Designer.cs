@@ -27,21 +27,14 @@ namespace inventory
         private void InitializeComponent()
         {
             components = new Container();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges25 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges32 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges33 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges28 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges29 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges30 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges31 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges26 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges21 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges22 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges23 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges24 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges19 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges20 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges5 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges6 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges7 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges8 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges9 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges10 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges11 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges27 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges12 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges13 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges14 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
@@ -49,11 +42,25 @@ namespace inventory
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges16 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges17 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges18 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges19 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges20 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges21 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges22 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges23 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges24 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges25 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges8 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges9 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges10 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges11 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges1 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges2 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges3 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges4 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges5 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges6 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             ComponentResourceManager resources = new ComponentResourceManager(typeof(Form1));
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges7 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             guna2BorderlessForm1 = new Guna2BorderlessForm(components);
             guna2Taskbar = new Guna2Panel();
             btnClose = new Guna2ControlBox();
@@ -71,6 +78,12 @@ namespace inventory
             imageList1 = new ImageList(components);
             tabControl1 = new TabControl();
             tabPage2 = new TabPage();
+            guna2TextBox2 = new Guna2TextBox();
+            guna2TextBox1 = new Guna2TextBox();
+            materialCard1 = new MaterialSkin.Controls.MaterialCard();
+            txtTopProduct = new Guna2TextBox();
+            btnNotif = new Guna2ImageButton();
+            cartesianChart1 = new LiveChartsCore.SkiaSharpView.WinForms.CartesianChart();
             tabPage1 = new TabPage();
             tabPage3 = new TabPage();
             tabPage4 = new TabPage();
@@ -79,6 +92,8 @@ namespace inventory
             sidebarPanel.SuspendLayout();
             guna2Panel1.SuspendLayout();
             tabControl1.SuspendLayout();
+            tabPage2.SuspendLayout();
+            materialCard1.SuspendLayout();
             SuspendLayout();
             // 
             // guna2BorderlessForm1
@@ -95,14 +110,14 @@ namespace inventory
             // 
             guna2Taskbar.Controls.Add(btnClose);
             guna2Taskbar.Controls.Add(btnMinimize);
-            guna2Taskbar.CustomizableEdges = customizableEdges25;
+            guna2Taskbar.CustomizableEdges = customizableEdges32;
             guna2Taskbar.Dock = DockStyle.Top;
             guna2Taskbar.FillColor = Color.FromArgb(120, 20, 20);
             guna2Taskbar.Location = new Point(0, 0);
             guna2Taskbar.Margin = new Padding(3, 4, 3, 4);
             guna2Taskbar.Name = "guna2Taskbar";
-            guna2Taskbar.ShadowDecoration.CustomizableEdges = customizableEdges26;
-            guna2Taskbar.Size = new Size(1561, 47);
+            guna2Taskbar.ShadowDecoration.CustomizableEdges = customizableEdges33;
+            guna2Taskbar.Size = new Size(1366, 47);
             guna2Taskbar.TabIndex = 0;
             guna2Taskbar.Paint += guna2Taskbar_Paint;
             guna2Taskbar.MouseDown += Guna2Taskbar_MouseDown;
@@ -112,15 +127,15 @@ namespace inventory
             // btnClose
             // 
             btnClose.Anchor = AnchorStyles.Top | AnchorStyles.Right;
-            btnClose.CustomizableEdges = customizableEdges21;
+            btnClose.CustomizableEdges = customizableEdges28;
             btnClose.FillColor = Color.FromArgb(120, 20, 20);
             btnClose.HoverState.FillColor = Color.White;
             btnClose.HoverState.IconColor = Color.Black;
             btnClose.IconColor = Color.White;
-            btnClose.Location = new Point(1510, 0);
+            btnClose.Location = new Point(1315, 0);
             btnClose.Margin = new Padding(3, 4, 3, 4);
             btnClose.Name = "btnClose";
-            btnClose.ShadowDecoration.CustomizableEdges = customizableEdges22;
+            btnClose.ShadowDecoration.CustomizableEdges = customizableEdges29;
             btnClose.Size = new Size(51, 47);
             btnClose.TabIndex = 0;
             btnClose.Click += BtnClose_Click;
@@ -129,15 +144,15 @@ namespace inventory
             // 
             btnMinimize.Anchor = AnchorStyles.Top | AnchorStyles.Right;
             btnMinimize.ControlBoxType = Guna.UI2.WinForms.Enums.ControlBoxType.MinimizeBox;
-            btnMinimize.CustomizableEdges = customizableEdges23;
+            btnMinimize.CustomizableEdges = customizableEdges30;
             btnMinimize.FillColor = Color.FromArgb(120, 20, 20);
             btnMinimize.HoverState.FillColor = Color.White;
             btnMinimize.HoverState.IconColor = Color.Black;
             btnMinimize.IconColor = Color.White;
-            btnMinimize.Location = new Point(1458, 0);
+            btnMinimize.Location = new Point(1263, 0);
             btnMinimize.Margin = new Padding(3, 4, 3, 4);
             btnMinimize.Name = "btnMinimize";
-            btnMinimize.ShadowDecoration.CustomizableEdges = customizableEdges24;
+            btnMinimize.ShadowDecoration.CustomizableEdges = customizableEdges31;
             btnMinimize.Size = new Size(51, 47);
             btnMinimize.TabIndex = 1;
             btnMinimize.Click += BtnMinimize_Click;
@@ -154,35 +169,35 @@ namespace inventory
             sidebarPanel.Controls.Add(stocks);
             sidebarPanel.Controls.Add(dashboard);
             sidebarPanel.CustomBorderColor = Color.DimGray;
-            sidebarPanel.CustomizableEdges = customizableEdges19;
+            sidebarPanel.CustomizableEdges = customizableEdges26;
             sidebarPanel.Dock = DockStyle.Left;
             sidebarPanel.FillColor = Color.FromArgb(30, 30, 30);
             sidebarPanel.ForeColor = SystemColors.WindowFrame;
             sidebarPanel.Location = new Point(0, 47);
             sidebarPanel.Margin = new Padding(3, 4, 3, 4);
             sidebarPanel.Name = "sidebarPanel";
-            sidebarPanel.ShadowDecoration.CustomizableEdges = customizableEdges20;
-            sidebarPanel.Size = new Size(229, 977);
+            sidebarPanel.ShadowDecoration.CustomizableEdges = customizableEdges27;
+            sidebarPanel.Size = new Size(229, 721);
             sidebarPanel.TabIndex = 1;
             sidebarPanel.Paint += sidebarPanel_Paint;
             // 
             // guna2Panel2
             // 
             guna2Panel2.BackColor = Color.FromArgb(64, 64, 64);
-            guna2Panel2.CustomizableEdges = customizableEdges5;
+            guna2Panel2.CustomizableEdges = customizableEdges12;
             guna2Panel2.Dock = DockStyle.Right;
             guna2Panel2.Location = new Point(226, 0);
             guna2Panel2.Margin = new Padding(3, 4, 3, 4);
             guna2Panel2.Name = "guna2Panel2";
-            guna2Panel2.ShadowDecoration.CustomizableEdges = customizableEdges6;
-            guna2Panel2.Size = new Size(3, 977);
+            guna2Panel2.ShadowDecoration.CustomizableEdges = customizableEdges13;
+            guna2Panel2.Size = new Size(3, 721);
             guna2Panel2.TabIndex = 7;
             // 
             // logout
             // 
             logout.BackColor = Color.FromArgb(30, 30, 30);
             logout.Cursor = Cursors.Hand;
-            logout.CustomizableEdges = customizableEdges7;
+            logout.CustomizableEdges = customizableEdges14;
             logout.DisabledState.BorderColor = Color.DarkGray;
             logout.DisabledState.CustomBorderColor = Color.DarkGray;
             logout.DisabledState.FillColor = Color.FromArgb(169, 169, 169);
@@ -195,10 +210,10 @@ namespace inventory
             logout.Image = Properties.Resources.logout__1_;
             logout.ImageAlign = HorizontalAlignment.Left;
             logout.ImageSize = new Size(30, 30);
-            logout.Location = new Point(0, 815);
+            logout.Location = new Point(0, 666);
             logout.Margin = new Padding(3, 4, 3, 4);
             logout.Name = "logout";
-            logout.ShadowDecoration.CustomizableEdges = customizableEdges8;
+            logout.ShadowDecoration.CustomizableEdges = customizableEdges15;
             logout.Size = new Size(225, 60);
             logout.TabIndex = 6;
             logout.Tag = "LOGOUT";
@@ -208,7 +223,7 @@ namespace inventory
             // 
             roles.BackColor = Color.FromArgb(30, 30, 30);
             roles.Cursor = Cursors.Hand;
-            roles.CustomizableEdges = customizableEdges9;
+            roles.CustomizableEdges = customizableEdges16;
             roles.DisabledState.BorderColor = Color.DarkGray;
             roles.DisabledState.CustomBorderColor = Color.DarkGray;
             roles.DisabledState.FillColor = Color.FromArgb(169, 169, 169);
@@ -225,7 +240,7 @@ namespace inventory
             roles.Margin = new Padding(3, 4, 3, 4);
             roles.Name = "roles";
             roles.RightToLeft = RightToLeft.No;
-            roles.ShadowDecoration.CustomizableEdges = customizableEdges10;
+            roles.ShadowDecoration.CustomizableEdges = customizableEdges17;
             roles.Size = new Size(225, 60);
             roles.TabIndex = 5;
             roles.Tag = "Roles";
@@ -235,7 +250,7 @@ namespace inventory
             // 
             stats.BackColor = Color.FromArgb(30, 30, 30);
             stats.Cursor = Cursors.Hand;
-            stats.CustomizableEdges = customizableEdges11;
+            stats.CustomizableEdges = customizableEdges18;
             stats.DisabledState.BorderColor = Color.DarkGray;
             stats.DisabledState.CustomBorderColor = Color.DarkGray;
             stats.DisabledState.FillColor = Color.FromArgb(169, 169, 169);
@@ -252,7 +267,7 @@ namespace inventory
             stats.Margin = new Padding(3, 4, 3, 4);
             stats.Name = "stats";
             stats.RightToLeft = RightToLeft.No;
-            stats.ShadowDecoration.CustomizableEdges = customizableEdges12;
+            stats.ShadowDecoration.CustomizableEdges = customizableEdges19;
             stats.Size = new Size(225, 60);
             stats.TabIndex = 4;
             stats.Tag = "Statistics";
@@ -262,7 +277,7 @@ namespace inventory
             // 
             orders.BackColor = Color.FromArgb(30, 30, 30);
             orders.Cursor = Cursors.Hand;
-            orders.CustomizableEdges = customizableEdges13;
+            orders.CustomizableEdges = customizableEdges20;
             orders.DisabledState.BorderColor = Color.DarkGray;
             orders.DisabledState.CustomBorderColor = Color.DarkGray;
             orders.DisabledState.FillColor = Color.FromArgb(169, 169, 169);
@@ -279,7 +294,7 @@ namespace inventory
             orders.Margin = new Padding(3, 4, 3, 4);
             orders.Name = "orders";
             orders.RightToLeft = RightToLeft.No;
-            orders.ShadowDecoration.CustomizableEdges = customizableEdges14;
+            orders.ShadowDecoration.CustomizableEdges = customizableEdges21;
             orders.Size = new Size(225, 60);
             orders.TabIndex = 3;
             orders.Tag = "Orders";
@@ -289,7 +304,7 @@ namespace inventory
             // 
             stocks.BackColor = Color.FromArgb(30, 30, 30);
             stocks.Cursor = Cursors.Hand;
-            stocks.CustomizableEdges = customizableEdges15;
+            stocks.CustomizableEdges = customizableEdges22;
             stocks.DisabledState.BorderColor = Color.DarkGray;
             stocks.DisabledState.CustomBorderColor = Color.DarkGray;
             stocks.DisabledState.FillColor = Color.FromArgb(169, 169, 169);
@@ -306,7 +321,7 @@ namespace inventory
             stocks.Margin = new Padding(3, 4, 3, 4);
             stocks.Name = "stocks";
             stocks.RightToLeft = RightToLeft.No;
-            stocks.ShadowDecoration.CustomizableEdges = customizableEdges16;
+            stocks.ShadowDecoration.CustomizableEdges = customizableEdges23;
             stocks.Size = new Size(225, 60);
             stocks.TabIndex = 2;
             stocks.Tag = "Stock";
@@ -316,7 +331,7 @@ namespace inventory
             // 
             dashboard.BackColor = Color.FromArgb(30, 30, 30);
             dashboard.Cursor = Cursors.Hand;
-            dashboard.CustomizableEdges = customizableEdges17;
+            dashboard.CustomizableEdges = customizableEdges24;
             dashboard.DisabledState.BorderColor = Color.DarkGray;
             dashboard.DisabledState.CustomBorderColor = Color.DarkGray;
             dashboard.DisabledState.FillColor = Color.FromArgb(169, 169, 169);
@@ -333,7 +348,7 @@ namespace inventory
             dashboard.Margin = new Padding(3, 4, 3, 4);
             dashboard.Name = "dashboard";
             dashboard.RightToLeft = RightToLeft.No;
-            dashboard.ShadowDecoration.CustomizableEdges = customizableEdges18;
+            dashboard.ShadowDecoration.CustomizableEdges = customizableEdges25;
             dashboard.Size = new Size(225, 60);
             dashboard.TabIndex = 1;
             dashboard.Tag = "Dashboard";
@@ -342,7 +357,7 @@ namespace inventory
             // btnToggle
             // 
             btnToggle.Cursor = Cursors.Hand;
-            btnToggle.CustomizableEdges = customizableEdges1;
+            btnToggle.CustomizableEdges = customizableEdges8;
             btnToggle.DisabledState.BorderColor = Color.DarkGray;
             btnToggle.DisabledState.CustomBorderColor = Color.DarkGray;
             btnToggle.DisabledState.FillColor = Color.FromArgb(169, 169, 169);
@@ -353,7 +368,7 @@ namespace inventory
             btnToggle.Location = new Point(0, 0);
             btnToggle.Margin = new Padding(3, 4, 3, 4);
             btnToggle.Name = "btnToggle";
-            btnToggle.ShadowDecoration.CustomizableEdges = customizableEdges2;
+            btnToggle.ShadowDecoration.CustomizableEdges = customizableEdges9;
             btnToggle.Size = new Size(50, 67);
             btnToggle.TabIndex = 0;
             btnToggle.Text = "☰";
@@ -362,14 +377,14 @@ namespace inventory
             // guna2Panel1
             // 
             guna2Panel1.Controls.Add(btnToggle);
-            guna2Panel1.CustomizableEdges = customizableEdges3;
+            guna2Panel1.CustomizableEdges = customizableEdges10;
             guna2Panel1.Dock = DockStyle.Top;
             guna2Panel1.FillColor = Color.FromArgb(120, 20, 20);
             guna2Panel1.Location = new Point(229, 47);
             guna2Panel1.Margin = new Padding(3, 4, 3, 4);
             guna2Panel1.Name = "guna2Panel1";
-            guna2Panel1.ShadowDecoration.CustomizableEdges = customizableEdges4;
-            guna2Panel1.Size = new Size(1332, 69);
+            guna2Panel1.ShadowDecoration.CustomizableEdges = customizableEdges11;
+            guna2Panel1.Size = new Size(1137, 69);
             guna2Panel1.TabIndex = 2;
             // 
             // imageList1
@@ -398,25 +413,131 @@ namespace inventory
             tabControl1.Margin = new Padding(3, 4, 3, 4);
             tabControl1.Name = "tabControl1";
             tabControl1.SelectedIndex = 0;
-            tabControl1.Size = new Size(1332, 908);
+            tabControl1.Size = new Size(1137, 652);
             tabControl1.TabIndex = 3;
             // 
             // tabPage2
             // 
+            tabPage2.Controls.Add(guna2TextBox2);
+            tabPage2.Controls.Add(guna2TextBox1);
+            tabPage2.Controls.Add(materialCard1);
             tabPage2.Location = new Point(4, 29);
             tabPage2.Margin = new Padding(3, 4, 3, 4);
             tabPage2.Name = "tabPage2";
             tabPage2.Padding = new Padding(3, 4, 3, 4);
-            tabPage2.Size = new Size(1324, 875);
+            tabPage2.Size = new Size(1129, 619);
             tabPage2.TabIndex = 1;
             tabPage2.Text = "Dashboard";
             tabPage2.UseVisualStyleBackColor = true;
+            // 
+            // guna2TextBox2
+            // 
+            guna2TextBox2.Anchor = AnchorStyles.Top | AnchorStyles.Right;
+            guna2TextBox2.CustomizableEdges = customizableEdges1;
+            guna2TextBox2.DefaultText = "";
+            guna2TextBox2.DisabledState.BorderColor = Color.FromArgb(208, 208, 208);
+            guna2TextBox2.DisabledState.FillColor = Color.FromArgb(226, 226, 226);
+            guna2TextBox2.DisabledState.ForeColor = Color.FromArgb(138, 138, 138);
+            guna2TextBox2.DisabledState.PlaceholderForeColor = Color.FromArgb(138, 138, 138);
+            guna2TextBox2.FocusedState.BorderColor = Color.FromArgb(94, 148, 255);
+            guna2TextBox2.Font = new Font("Segoe UI", 9F);
+            guna2TextBox2.HoverState.BorderColor = Color.FromArgb(94, 148, 255);
+            guna2TextBox2.Location = new Point(869, 361);
+            guna2TextBox2.Margin = new Padding(3, 4, 3, 4);
+            guna2TextBox2.Name = "guna2TextBox2";
+            guna2TextBox2.PasswordChar = '\0';
+            guna2TextBox2.PlaceholderText = "";
+            guna2TextBox2.SelectedText = "";
+            guna2TextBox2.ShadowDecoration.CustomizableEdges = customizableEdges2;
+            guna2TextBox2.Size = new Size(472, 261);
+            guna2TextBox2.TabIndex = 5;
+            // 
+            // guna2TextBox1
+            // 
+            guna2TextBox1.Anchor = AnchorStyles.Top | AnchorStyles.Right;
+            guna2TextBox1.CustomizableEdges = customizableEdges3;
+            guna2TextBox1.DefaultText = "";
+            guna2TextBox1.DisabledState.BorderColor = Color.FromArgb(208, 208, 208);
+            guna2TextBox1.DisabledState.FillColor = Color.FromArgb(226, 226, 226);
+            guna2TextBox1.DisabledState.ForeColor = Color.FromArgb(138, 138, 138);
+            guna2TextBox1.DisabledState.PlaceholderForeColor = Color.FromArgb(138, 138, 138);
+            guna2TextBox1.FocusedState.BorderColor = Color.FromArgb(94, 148, 255);
+            guna2TextBox1.Font = new Font("Segoe UI", 9F);
+            guna2TextBox1.HoverState.BorderColor = Color.FromArgb(94, 148, 255);
+            guna2TextBox1.Location = new Point(869, 63);
+            guna2TextBox1.Margin = new Padding(3, 4, 3, 4);
+            guna2TextBox1.Name = "guna2TextBox1";
+            guna2TextBox1.PasswordChar = '\0';
+            guna2TextBox1.PlaceholderText = "";
+            guna2TextBox1.SelectedText = "";
+            guna2TextBox1.ShadowDecoration.CustomizableEdges = customizableEdges4;
+            guna2TextBox1.Size = new Size(472, 261);
+            guna2TextBox1.TabIndex = 4;
+            // 
+            // materialCard1
+            // 
+            materialCard1.BackColor = Color.FromArgb(255, 255, 255);
+            materialCard1.Controls.Add(txtTopProduct);
+            materialCard1.Controls.Add(btnNotif);
+            materialCard1.Controls.Add(cartesianChart1);
+            materialCard1.Depth = 0;
+            materialCard1.ForeColor = Color.FromArgb(222, 0, 0, 0);
+            materialCard1.Location = new Point(72, 63);
+            materialCard1.Margin = new Padding(14);
+            materialCard1.MouseState = MaterialSkin.MouseState.HOVER;
+            materialCard1.Name = "materialCard1";
+            materialCard1.Padding = new Padding(14);
+            materialCard1.Size = new Size(767, 609);
+            materialCard1.TabIndex = 3;
+            // 
+            // txtTopProduct
+            // 
+            txtTopProduct.CustomizableEdges = customizableEdges5;
+            txtTopProduct.DefaultText = "";
+            txtTopProduct.DisabledState.BorderColor = Color.FromArgb(208, 208, 208);
+            txtTopProduct.DisabledState.FillColor = Color.FromArgb(226, 226, 226);
+            txtTopProduct.DisabledState.ForeColor = Color.FromArgb(138, 138, 138);
+            txtTopProduct.DisabledState.PlaceholderForeColor = Color.FromArgb(138, 138, 138);
+            txtTopProduct.FocusedState.BorderColor = Color.FromArgb(94, 148, 255);
+            txtTopProduct.Font = new Font("Segoe UI", 9F);
+            txtTopProduct.HoverState.BorderColor = Color.FromArgb(94, 148, 255);
+            txtTopProduct.Location = new Point(17, 18);
+            txtTopProduct.Margin = new Padding(3, 4, 3, 4);
+            txtTopProduct.Name = "txtTopProduct";
+            txtTopProduct.PasswordChar = '\0';
+            txtTopProduct.PlaceholderText = "";
+            txtTopProduct.SelectedText = "";
+            txtTopProduct.ShadowDecoration.CustomizableEdges = customizableEdges6;
+            txtTopProduct.Size = new Size(652, 73);
+            txtTopProduct.TabIndex = 0;
+            // 
+            // btnNotif
+            // 
+            btnNotif.CheckedState.ImageSize = new Size(64, 64);
+            btnNotif.HoverState.ImageSize = new Size(64, 64);
+            btnNotif.Image = (Image)resources.GetObject("btnNotif.Image");
+            btnNotif.ImageOffset = new Point(0, 0);
+            btnNotif.ImageRotate = 0F;
+            btnNotif.Location = new Point(675, 17);
+            btnNotif.Name = "btnNotif";
+            btnNotif.PressedState.ImageSize = new Size(64, 64);
+            btnNotif.ShadowDecoration.CustomizableEdges = customizableEdges7;
+            btnNotif.Size = new Size(77, 73);
+            btnNotif.TabIndex = 1;
+            // 
+            // cartesianChart1
+            // 
+            cartesianChart1.Location = new Point(15, 122);
+            cartesianChart1.MatchAxesScreenDataRatio = false;
+            cartesianChart1.Name = "cartesianChart1";
+            cartesianChart1.Size = new Size(735, 474);
+            cartesianChart1.TabIndex = 2;
             // 
             // tabPage1
             // 
             tabPage1.Location = new Point(4, 29);
             tabPage1.Name = "tabPage1";
-            tabPage1.Size = new Size(1324, 875);
+            tabPage1.Size = new Size(1129, 619);
             tabPage1.TabIndex = 2;
             tabPage1.Text = "Stocks";
             tabPage1.UseVisualStyleBackColor = true;
@@ -425,7 +546,7 @@ namespace inventory
             // 
             tabPage3.Location = new Point(4, 29);
             tabPage3.Name = "tabPage3";
-            tabPage3.Size = new Size(1324, 875);
+            tabPage3.Size = new Size(1129, 619);
             tabPage3.TabIndex = 3;
             tabPage3.Text = "Orders";
             tabPage3.UseVisualStyleBackColor = true;
@@ -434,7 +555,7 @@ namespace inventory
             // 
             tabPage4.Location = new Point(4, 29);
             tabPage4.Name = "tabPage4";
-            tabPage4.Size = new Size(1324, 875);
+            tabPage4.Size = new Size(1129, 619);
             tabPage4.TabIndex = 4;
             tabPage4.Text = "Stats";
             tabPage4.UseVisualStyleBackColor = true;
@@ -443,7 +564,7 @@ namespace inventory
             // 
             tabPage5.Location = new Point(4, 29);
             tabPage5.Name = "tabPage5";
-            tabPage5.Size = new Size(1324, 875);
+            tabPage5.Size = new Size(1129, 619);
             tabPage5.TabIndex = 5;
             tabPage5.Text = "Roles";
             tabPage5.UseVisualStyleBackColor = true;
@@ -454,7 +575,7 @@ namespace inventory
             AutoScaleMode = AutoScaleMode.Font;
             AutoSize = true;
             BackColor = Color.White;
-            ClientSize = new Size(1561, 1024);
+            ClientSize = new Size(1366, 768);
             Controls.Add(tabControl1);
             Controls.Add(guna2Panel1);
             Controls.Add(sidebarPanel);
@@ -469,6 +590,8 @@ namespace inventory
             sidebarPanel.ResumeLayout(false);
             guna2Panel1.ResumeLayout(false);
             tabControl1.ResumeLayout(false);
+            tabPage2.ResumeLayout(false);
+            materialCard1.ResumeLayout(false);
             ResumeLayout(false);
         }
 
@@ -489,5 +612,11 @@ namespace inventory
         private TabPage tabPage3;
         private TabPage tabPage4;
         private TabPage tabPage5;
+        private Guna2ImageButton btnNotif;
+        private Guna2TextBox txtTopProduct;
+        private LiveChartsCore.SkiaSharpView.WinForms.CartesianChart cartesianChart1;
+        private MaterialSkin.Controls.MaterialCard materialCard1;
+        private Guna2TextBox guna2TextBox2;
+        private Guna2TextBox guna2TextBox1;
     }
 }
