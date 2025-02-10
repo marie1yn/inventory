@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 using System.Drawing;
 using System.Drawing.Imaging;
 using System.Windows.Forms;
@@ -10,34 +11,93 @@ namespace inventory
     public class SidebarManager
     {
         private Guna2Panel sidebarPanel;
+        private TabControl tabControl;
         private Timer animationTimer;
         private bool isSidebarExpanded = true;
         private const int expandedWidth = 200;
         private const int collapsedWidth = 50;
-        private int animationStep = 30; // Adjust speed (higher = faster)
-        private Color defaultTextColor = Color.White; // Normal text color
-        private Color hoverTextColor = Color.DarkGray; // Hover text color
+        private int animationStep = 30;
+        private Dictionary<Guna2Button, Image> originalImages = new Dictionary<Guna2Button, Image>();
 
-        public SidebarManager(Guna2Panel panel)
+        public SidebarManager(Guna2Panel panel, TabControl tabControl)
         {
             sidebarPanel = panel ?? throw new ArgumentNullException(nameof(panel));
+            this.tabControl = tabControl ?? throw new ArgumentNullException(nameof(tabControl));
 
-            // Initialize animation timer
             animationTimer = new Timer();
             animationTimer.Interval = 10;
             animationTimer.Tick += AnimateSidebar;
 
+            AddButtonClickEvents();
             AddHoverEffects();
+            ApplyTagColors();
             UpdateSidebarUI();
+            sidebarPanel.Refresh();
+        }
+
+        public void ApplyTagColors()
+        {
+            foreach (Control control in sidebarPanel.Controls)
+            {
+                if (control is Guna2Button button)
+                {
+                    button.ForeColor = Color.White; // Default text color
+
+                    if (!originalImages.ContainsKey(button) && button.Image != null)
+                    {
+                        originalImages[button] = new Bitmap(button.Image);
+                    }
+
+                    if (button.Image != null && originalImages.ContainsKey(button))
+                    {
+                        button.Image = ChangeImageColor(originalImages[button], Color.White); // Default icon color
+                    }
+
+                    button.Invalidate();
+                    button.Update();
+                }
+            }
+
+            sidebarPanel.Invalidate();
+            sidebarPanel.Update();
+        }
+
+        private void AddButtonClickEvents()
+        {
+            foreach (Control control in sidebarPanel.Controls)
+            {
+                if (control is Guna2Button button)
+                {
+                    button.Click += SidebarButton_Click;
+                }
+            }
+        }
+
+        private void SidebarButton_Click(object sender, EventArgs e)
+        {
+            if (sender is Guna2Button button && button.Tag != null)
+            {
+                string tabName = button.Tag.ToString();
+                foreach (TabPage tab in tabControl.TabPages)
+                {
+                    if (tab.Text == tabName)
+                    {
+                        tabControl.SelectedTab = tab;
+                        break;
+                    }
+                }
+            }
         }
 
         public void ToggleSidebar()
         {
-            if (!animationTimer.Enabled) // Prevent multiple clicks during animation
+            if (!animationTimer.Enabled)
             {
                 isSidebarExpanded = !isSidebarExpanded;
                 animationTimer.Start();
             }
+            sidebarPanel.Invalidate();
+            ApplyTagColors();
         }
 
         private void AnimateSidebar(object sender, EventArgs e)
@@ -60,24 +120,16 @@ namespace inventory
             }
         }
 
-        private void UpdateSidebarUI()
+        public void UpdateSidebarUI()
         {
             foreach (Control control in sidebarPanel.Controls)
             {
                 if (control is Guna2Button button)
                 {
-                    // Keep icons visible even when sidebar is collapsed
                     button.ImageAlign = HorizontalAlignment.Left;
                     button.TextAlign = isSidebarExpanded ? HorizontalAlignment.Left : HorizontalAlignment.Center;
                     button.ImageSize = new Size(30, 30);
-                    button.ForeColor = defaultTextColor; // Reset text color
                     button.Text = isSidebarExpanded ? (button.Tag?.ToString() ?? "") : "";
-
-                    // Set default icon color to match text color
-                    if (button.Image != null)
-                    {
-                        button.Image = ChangeImageColor(button.Image, defaultTextColor);
-                    }
                 }
             }
         }
@@ -88,24 +140,26 @@ namespace inventory
             {
                 if (control is Guna2Button button)
                 {
-                    button.ForeColor = defaultTextColor; // Default text color
-
                     button.MouseEnter += (sender, e) =>
                     {
-                        button.ForeColor = hoverTextColor; // Change text color on hover
-                        if (button.Image != null)
+                        button.ForeColor = Color.DarkGray;
+                        if (button.Image != null && originalImages.ContainsKey(button))
                         {
-                            button.Image = ChangeImageColor(button.Image, hoverTextColor); // Match icon color to text
+                            button.Image = ChangeImageColor(originalImages[button], Color.DarkGray);
                         }
+                        button.Invalidate();
+                        button.Update();
                     };
 
                     button.MouseLeave += (sender, e) =>
                     {
-                        button.ForeColor = defaultTextColor; // Revert text color
-                        if (button.Image != null)
+                        button.ForeColor = Color.White;
+                        if (button.Image != null && originalImages.ContainsKey(button))
                         {
-                            button.Image = ChangeImageColor(button.Image, defaultTextColor); // Match icon color to text
+                            button.Image = ChangeImageColor(originalImages[button], Color.White);
                         }
+                        button.Invalidate();
+                        button.Update();
                     };
                 }
             }
@@ -113,15 +167,16 @@ namespace inventory
 
         private Image ChangeImageColor(Image image, Color targetColor)
         {
+            if (image == null) return null;
+
             Bitmap newBitmap = new Bitmap(image.Width, image.Height);
             using (Graphics g = Graphics.FromImage(newBitmap))
             {
-                // Create a color matrix to apply the target color
                 ColorMatrix colorMatrix = new ColorMatrix(new float[][]
                 {
-                    new float[] { 0, 0, 0, 0, 0 },
-                    new float[] { 0, 0, 0, 0, 0 },
-                    new float[] { 0, 0, 0, 0, 0 },
+                    new float[] { 1, 0, 0, 0, 0 },
+                    new float[] { 0, 1, 0, 0, 0 },
+                    new float[] { 0, 0, 1, 0, 0 },
                     new float[] { 0, 0, 0, 1, 0 },
                     new float[] { targetColor.R / 255f, targetColor.G / 255f, targetColor.B / 255f, 0, 1 }
                 });
