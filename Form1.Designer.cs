@@ -104,6 +104,7 @@ namespace inventory
             guna2BorderlessForm1.DockForm = false;
             guna2BorderlessForm1.DockIndicatorTransparencyValue = 0.5D;
             guna2BorderlessForm1.DragForm = false;
+            guna2BorderlessForm1.ResizeForm = false;
             guna2BorderlessForm1.TransparentWhileDrag = true;
             // 
             // guna2Taskbar
@@ -114,10 +115,9 @@ namespace inventory
             guna2Taskbar.Dock = DockStyle.Top;
             guna2Taskbar.FillColor = Color.FromArgb(120, 20, 20);
             guna2Taskbar.Location = new Point(0, 0);
-            guna2Taskbar.Margin = new Padding(3, 4, 3, 4);
             guna2Taskbar.Name = "guna2Taskbar";
             guna2Taskbar.ShadowDecoration.CustomizableEdges = customizableEdges33;
-            guna2Taskbar.Size = new Size(1366, 47);
+            guna2Taskbar.Size = new Size(1366, 35);
             guna2Taskbar.TabIndex = 0;
             guna2Taskbar.Paint += guna2Taskbar_Paint;
             guna2Taskbar.MouseDown += Guna2Taskbar_MouseDown;
@@ -132,11 +132,10 @@ namespace inventory
             btnClose.HoverState.FillColor = Color.White;
             btnClose.HoverState.IconColor = Color.Black;
             btnClose.IconColor = Color.White;
-            btnClose.Location = new Point(1315, 0);
-            btnClose.Margin = new Padding(3, 4, 3, 4);
+            btnClose.Location = new Point(1322, 0);
             btnClose.Name = "btnClose";
             btnClose.ShadowDecoration.CustomizableEdges = customizableEdges29;
-            btnClose.Size = new Size(51, 47);
+            btnClose.Size = new Size(45, 35);
             btnClose.TabIndex = 0;
             btnClose.Click += BtnClose_Click;
             // 
@@ -149,11 +148,10 @@ namespace inventory
             btnMinimize.HoverState.FillColor = Color.White;
             btnMinimize.HoverState.IconColor = Color.Black;
             btnMinimize.IconColor = Color.White;
-            btnMinimize.Location = new Point(1263, 0);
-            btnMinimize.Margin = new Padding(3, 4, 3, 4);
+            btnMinimize.Location = new Point(1276, 0);
             btnMinimize.Name = "btnMinimize";
             btnMinimize.ShadowDecoration.CustomizableEdges = customizableEdges31;
-            btnMinimize.Size = new Size(51, 47);
+            btnMinimize.Size = new Size(45, 35);
             btnMinimize.TabIndex = 1;
             btnMinimize.Click += BtnMinimize_Click;
             // 
@@ -173,11 +171,10 @@ namespace inventory
             sidebarPanel.Dock = DockStyle.Left;
             sidebarPanel.FillColor = Color.FromArgb(30, 30, 30);
             sidebarPanel.ForeColor = SystemColors.WindowFrame;
-            sidebarPanel.Location = new Point(0, 47);
-            sidebarPanel.Margin = new Padding(3, 4, 3, 4);
+            sidebarPanel.Location = new Point(0, 35);
             sidebarPanel.Name = "sidebarPanel";
             sidebarPanel.ShadowDecoration.CustomizableEdges = customizableEdges27;
-            sidebarPanel.Size = new Size(229, 721);
+            sidebarPanel.Size = new Size(200, 733);
             sidebarPanel.TabIndex = 1;
             sidebarPanel.Paint += sidebarPanel_Paint;
             // 
@@ -186,15 +183,15 @@ namespace inventory
             guna2Panel2.BackColor = Color.FromArgb(64, 64, 64);
             guna2Panel2.CustomizableEdges = customizableEdges12;
             guna2Panel2.Dock = DockStyle.Right;
-            guna2Panel2.Location = new Point(226, 0);
-            guna2Panel2.Margin = new Padding(3, 4, 3, 4);
+            guna2Panel2.Location = new Point(197, 0);
             guna2Panel2.Name = "guna2Panel2";
             guna2Panel2.ShadowDecoration.CustomizableEdges = customizableEdges13;
-            guna2Panel2.Size = new Size(3, 721);
+            guna2Panel2.Size = new Size(3, 733);
             guna2Panel2.TabIndex = 7;
             // 
             // logout
             // 
+            logout.Anchor = AnchorStyles.Bottom | AnchorStyles.Left;
             logout.BackColor = Color.FromArgb(30, 30, 30);
             logout.Cursor = Cursors.Hand;
             logout.CustomizableEdges = customizableEdges14;
@@ -210,11 +207,10 @@ namespace inventory
             logout.Image = Properties.Resources.logout__1_;
             logout.ImageAlign = HorizontalAlignment.Left;
             logout.ImageSize = new Size(30, 30);
-            logout.Location = new Point(0, 666);
-            logout.Margin = new Padding(3, 4, 3, 4);
+            logout.Location = new Point(0, 692);
             logout.Name = "logout";
             logout.ShadowDecoration.CustomizableEdges = customizableEdges15;
-            logout.Size = new Size(225, 60);
+            logout.Size = new Size(197, 45);
             logout.TabIndex = 6;
             logout.Tag = "LOGOUT";
             logout.Click += guna2Button6_Click;
@@ -236,12 +232,11 @@ namespace inventory
             roles.Image = Properties.Resources.parcel;
             roles.ImageAlign = HorizontalAlignment.Left;
             roles.ImageSize = new Size(30, 30);
-            roles.Location = new Point(0, 379);
-            roles.Margin = new Padding(3, 4, 3, 4);
+            roles.Location = new Point(0, 284);
             roles.Name = "roles";
             roles.RightToLeft = RightToLeft.No;
             roles.ShadowDecoration.CustomizableEdges = customizableEdges17;
-            roles.Size = new Size(225, 60);
+            roles.Size = new Size(197, 45);
             roles.TabIndex = 5;
             roles.Tag = "Roles";
             roles.TextAlign = HorizontalAlignment.Left;
@@ -263,12 +258,11 @@ namespace inventory
             stats.Image = Properties.Resources.data_usage;
             stats.ImageAlign = HorizontalAlignment.Left;
             stats.ImageSize = new Size(30, 30);
-            stats.Location = new Point(0, 293);
-            stats.Margin = new Padding(3, 4, 3, 4);
+            stats.Location = new Point(0, 220);
             stats.Name = "stats";
             stats.RightToLeft = RightToLeft.No;
             stats.ShadowDecoration.CustomizableEdges = customizableEdges19;
-            stats.Size = new Size(225, 60);
+            stats.Size = new Size(197, 45);
             stats.TabIndex = 4;
             stats.Tag = "Statistics";
             stats.TextAlign = HorizontalAlignment.Left;
@@ -290,12 +284,11 @@ namespace inventory
             orders.Image = Properties.Resources.shopping_cart;
             orders.ImageAlign = HorizontalAlignment.Left;
             orders.ImageSize = new Size(30, 30);
-            orders.Location = new Point(0, 209);
-            orders.Margin = new Padding(3, 4, 3, 4);
+            orders.Location = new Point(0, 157);
             orders.Name = "orders";
             orders.RightToLeft = RightToLeft.No;
             orders.ShadowDecoration.CustomizableEdges = customizableEdges21;
-            orders.Size = new Size(225, 60);
+            orders.Size = new Size(197, 45);
             orders.TabIndex = 3;
             orders.Tag = "Orders";
             orders.TextAlign = HorizontalAlignment.Left;
@@ -317,12 +310,11 @@ namespace inventory
             stocks.Image = Properties.Resources.money_graph_with_up_arrow;
             stocks.ImageAlign = HorizontalAlignment.Left;
             stocks.ImageSize = new Size(30, 30);
-            stocks.Location = new Point(0, 124);
-            stocks.Margin = new Padding(3, 4, 3, 4);
+            stocks.Location = new Point(0, 93);
             stocks.Name = "stocks";
             stocks.RightToLeft = RightToLeft.No;
             stocks.ShadowDecoration.CustomizableEdges = customizableEdges23;
-            stocks.Size = new Size(225, 60);
+            stocks.Size = new Size(197, 45);
             stocks.TabIndex = 2;
             stocks.Tag = "Stock";
             stocks.TextAlign = HorizontalAlignment.Left;
@@ -344,12 +336,11 @@ namespace inventory
             dashboard.Image = Properties.Resources.dashboard__1_;
             dashboard.ImageAlign = HorizontalAlignment.Left;
             dashboard.ImageSize = new Size(30, 30);
-            dashboard.Location = new Point(0, 37);
-            dashboard.Margin = new Padding(3, 4, 3, 4);
+            dashboard.Location = new Point(0, 28);
             dashboard.Name = "dashboard";
             dashboard.RightToLeft = RightToLeft.No;
             dashboard.ShadowDecoration.CustomizableEdges = customizableEdges25;
-            dashboard.Size = new Size(225, 60);
+            dashboard.Size = new Size(197, 45);
             dashboard.TabIndex = 1;
             dashboard.Tag = "Dashboard";
             dashboard.TextAlign = HorizontalAlignment.Left;
@@ -366,10 +357,9 @@ namespace inventory
             btnToggle.Font = new Font("Arial", 20.25F, FontStyle.Bold);
             btnToggle.ForeColor = Color.White;
             btnToggle.Location = new Point(0, 0);
-            btnToggle.Margin = new Padding(3, 4, 3, 4);
             btnToggle.Name = "btnToggle";
             btnToggle.ShadowDecoration.CustomizableEdges = customizableEdges9;
-            btnToggle.Size = new Size(50, 67);
+            btnToggle.Size = new Size(44, 50);
             btnToggle.TabIndex = 0;
             btnToggle.Text = "☰";
             btnToggle.Click += btnToggle_Click;
@@ -380,11 +370,10 @@ namespace inventory
             guna2Panel1.CustomizableEdges = customizableEdges10;
             guna2Panel1.Dock = DockStyle.Top;
             guna2Panel1.FillColor = Color.FromArgb(120, 20, 20);
-            guna2Panel1.Location = new Point(229, 47);
-            guna2Panel1.Margin = new Padding(3, 4, 3, 4);
+            guna2Panel1.Location = new Point(200, 35);
             guna2Panel1.Name = "guna2Panel1";
             guna2Panel1.ShadowDecoration.CustomizableEdges = customizableEdges11;
-            guna2Panel1.Size = new Size(1137, 69);
+            guna2Panel1.Size = new Size(1166, 52);
             guna2Panel1.TabIndex = 2;
             // 
             // imageList1
@@ -409,11 +398,10 @@ namespace inventory
             tabControl1.Controls.Add(tabPage4);
             tabControl1.Controls.Add(tabPage5);
             tabControl1.Dock = DockStyle.Fill;
-            tabControl1.Location = new Point(229, 116);
-            tabControl1.Margin = new Padding(3, 4, 3, 4);
+            tabControl1.Location = new Point(200, 87);
             tabControl1.Name = "tabControl1";
             tabControl1.SelectedIndex = 0;
-            tabControl1.Size = new Size(1137, 652);
+            tabControl1.Size = new Size(1166, 681);
             tabControl1.TabIndex = 3;
             // 
             // tabPage2
@@ -421,11 +409,10 @@ namespace inventory
             tabPage2.Controls.Add(guna2TextBox2);
             tabPage2.Controls.Add(guna2TextBox1);
             tabPage2.Controls.Add(materialCard1);
-            tabPage2.Location = new Point(4, 29);
-            tabPage2.Margin = new Padding(3, 4, 3, 4);
+            tabPage2.Location = new Point(4, 24);
             tabPage2.Name = "tabPage2";
-            tabPage2.Padding = new Padding(3, 4, 3, 4);
-            tabPage2.Size = new Size(1129, 619);
+            tabPage2.Padding = new Padding(3);
+            tabPage2.Size = new Size(1158, 653);
             tabPage2.TabIndex = 1;
             tabPage2.Text = "Dashboard";
             tabPage2.UseVisualStyleBackColor = true;
@@ -442,14 +429,13 @@ namespace inventory
             guna2TextBox2.FocusedState.BorderColor = Color.FromArgb(94, 148, 255);
             guna2TextBox2.Font = new Font("Segoe UI", 9F);
             guna2TextBox2.HoverState.BorderColor = Color.FromArgb(94, 148, 255);
-            guna2TextBox2.Location = new Point(869, 361);
-            guna2TextBox2.Margin = new Padding(3, 4, 3, 4);
+            guna2TextBox2.Location = new Point(742, 271);
             guna2TextBox2.Name = "guna2TextBox2";
             guna2TextBox2.PasswordChar = '\0';
             guna2TextBox2.PlaceholderText = "";
             guna2TextBox2.SelectedText = "";
             guna2TextBox2.ShadowDecoration.CustomizableEdges = customizableEdges2;
-            guna2TextBox2.Size = new Size(472, 261);
+            guna2TextBox2.Size = new Size(413, 196);
             guna2TextBox2.TabIndex = 5;
             // 
             // guna2TextBox1
@@ -464,14 +450,13 @@ namespace inventory
             guna2TextBox1.FocusedState.BorderColor = Color.FromArgb(94, 148, 255);
             guna2TextBox1.Font = new Font("Segoe UI", 9F);
             guna2TextBox1.HoverState.BorderColor = Color.FromArgb(94, 148, 255);
-            guna2TextBox1.Location = new Point(869, 63);
-            guna2TextBox1.Margin = new Padding(3, 4, 3, 4);
+            guna2TextBox1.Location = new Point(742, 47);
             guna2TextBox1.Name = "guna2TextBox1";
             guna2TextBox1.PasswordChar = '\0';
             guna2TextBox1.PlaceholderText = "";
             guna2TextBox1.SelectedText = "";
             guna2TextBox1.ShadowDecoration.CustomizableEdges = customizableEdges4;
-            guna2TextBox1.Size = new Size(472, 261);
+            guna2TextBox1.Size = new Size(413, 196);
             guna2TextBox1.TabIndex = 4;
             // 
             // materialCard1
@@ -482,12 +467,12 @@ namespace inventory
             materialCard1.Controls.Add(cartesianChart1);
             materialCard1.Depth = 0;
             materialCard1.ForeColor = Color.FromArgb(222, 0, 0, 0);
-            materialCard1.Location = new Point(72, 63);
-            materialCard1.Margin = new Padding(14);
+            materialCard1.Location = new Point(63, 47);
+            materialCard1.Margin = new Padding(12, 10, 12, 10);
             materialCard1.MouseState = MaterialSkin.MouseState.HOVER;
             materialCard1.Name = "materialCard1";
-            materialCard1.Padding = new Padding(14);
-            materialCard1.Size = new Size(767, 609);
+            materialCard1.Padding = new Padding(12, 10, 12, 10);
+            materialCard1.Size = new Size(671, 457);
             materialCard1.TabIndex = 3;
             // 
             // txtTopProduct
@@ -501,14 +486,13 @@ namespace inventory
             txtTopProduct.FocusedState.BorderColor = Color.FromArgb(94, 148, 255);
             txtTopProduct.Font = new Font("Segoe UI", 9F);
             txtTopProduct.HoverState.BorderColor = Color.FromArgb(94, 148, 255);
-            txtTopProduct.Location = new Point(17, 18);
-            txtTopProduct.Margin = new Padding(3, 4, 3, 4);
+            txtTopProduct.Location = new Point(15, 14);
             txtTopProduct.Name = "txtTopProduct";
             txtTopProduct.PasswordChar = '\0';
             txtTopProduct.PlaceholderText = "";
             txtTopProduct.SelectedText = "";
             txtTopProduct.ShadowDecoration.CustomizableEdges = customizableEdges6;
-            txtTopProduct.Size = new Size(652, 73);
+            txtTopProduct.Size = new Size(570, 55);
             txtTopProduct.TabIndex = 0;
             // 
             // btnNotif
@@ -518,60 +502,66 @@ namespace inventory
             btnNotif.Image = (Image)resources.GetObject("btnNotif.Image");
             btnNotif.ImageOffset = new Point(0, 0);
             btnNotif.ImageRotate = 0F;
-            btnNotif.Location = new Point(675, 17);
+            btnNotif.Location = new Point(591, 13);
+            btnNotif.Margin = new Padding(3, 2, 3, 2);
             btnNotif.Name = "btnNotif";
             btnNotif.PressedState.ImageSize = new Size(64, 64);
             btnNotif.ShadowDecoration.CustomizableEdges = customizableEdges7;
-            btnNotif.Size = new Size(77, 73);
+            btnNotif.Size = new Size(67, 55);
             btnNotif.TabIndex = 1;
             // 
             // cartesianChart1
             // 
-            cartesianChart1.Location = new Point(15, 122);
+            cartesianChart1.Location = new Point(13, 92);
+            cartesianChart1.Margin = new Padding(3, 2, 3, 2);
             cartesianChart1.MatchAxesScreenDataRatio = false;
             cartesianChart1.Name = "cartesianChart1";
-            cartesianChart1.Size = new Size(735, 474);
+            cartesianChart1.Size = new Size(643, 356);
             cartesianChart1.TabIndex = 2;
             // 
             // tabPage1
             // 
-            tabPage1.Location = new Point(4, 29);
+            tabPage1.Location = new Point(4, 24);
+            tabPage1.Margin = new Padding(3, 2, 3, 2);
             tabPage1.Name = "tabPage1";
-            tabPage1.Size = new Size(1129, 619);
+            tabPage1.Size = new Size(1158, 653);
             tabPage1.TabIndex = 2;
             tabPage1.Text = "Stocks";
             tabPage1.UseVisualStyleBackColor = true;
             // 
             // tabPage3
             // 
-            tabPage3.Location = new Point(4, 29);
+            tabPage3.Location = new Point(4, 24);
+            tabPage3.Margin = new Padding(3, 2, 3, 2);
             tabPage3.Name = "tabPage3";
-            tabPage3.Size = new Size(1129, 619);
+            tabPage3.Size = new Size(1158, 653);
             tabPage3.TabIndex = 3;
             tabPage3.Text = "Orders";
             tabPage3.UseVisualStyleBackColor = true;
             // 
             // tabPage4
             // 
-            tabPage4.Location = new Point(4, 29);
+            tabPage4.Location = new Point(4, 24);
+            tabPage4.Margin = new Padding(3, 2, 3, 2);
             tabPage4.Name = "tabPage4";
-            tabPage4.Size = new Size(1129, 619);
+            tabPage4.Size = new Size(1158, 653);
             tabPage4.TabIndex = 4;
             tabPage4.Text = "Stats";
             tabPage4.UseVisualStyleBackColor = true;
             // 
             // tabPage5
             // 
-            tabPage5.Location = new Point(4, 29);
+            tabPage5.Location = new Point(4, 24);
+            tabPage5.Margin = new Padding(3, 2, 3, 2);
             tabPage5.Name = "tabPage5";
-            tabPage5.Size = new Size(1129, 619);
+            tabPage5.Size = new Size(1158, 653);
             tabPage5.TabIndex = 5;
             tabPage5.Text = "Roles";
             tabPage5.UseVisualStyleBackColor = true;
             // 
             // Form1
             // 
-            AutoScaleDimensions = new SizeF(8F, 20F);
+            AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             AutoSize = true;
             BackColor = Color.White;
@@ -582,7 +572,6 @@ namespace inventory
             Controls.Add(guna2Taskbar);
             ForeColor = Color.DimGray;
             FormBorderStyle = FormBorderStyle.None;
-            Margin = new Padding(3, 4, 3, 4);
             Name = "Form1";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "Inventory Management System";
