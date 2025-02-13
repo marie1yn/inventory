@@ -10,29 +10,30 @@ namespace inventory
 {
     public class SidebarManager
     {
-        private Guna2Panel sidebarPanel;
+        private Guna2Panel sidebarPanel; 
         private TabControl tabControl;
+        private Form mainForm;
         private Timer animationTimer;
         private bool isSidebarExpanded = true;
         private const int expandedWidth = 200;
         private const int collapsedWidth = 50;
-        private int animationStep = 30;
+        private int animationSpeed = 10;  
+        private int animationStep;
         private Dictionary<Guna2Button, Image> originalImages = new Dictionary<Guna2Button, Image>();
 
         public SidebarManager(Guna2Panel panel, TabControl tabControl)
         {
             sidebarPanel = panel ?? throw new ArgumentNullException(nameof(panel));
-            this.tabControl = tabControl ?? throw new ArgumentNullException(nameof(tabControl));
+            this.tabControl = tabControl ?? throw new ArgumentNullException(nameof(tabControl)); 
 
-            animationTimer = new Timer();
-            animationTimer.Interval = 10;
+            animationTimer = new Timer { Interval =10};
+            animationTimer.Interval = animationSpeed;
             animationTimer.Tick += AnimateSidebar;
 
             AddButtonClickEvents();
             AddHoverEffects();
             ApplyTagColors();
             UpdateSidebarUI();
-            sidebarPanel.Refresh();
         }
 
         public void ApplyTagColors()
@@ -41,25 +42,15 @@ namespace inventory
             {
                 if (control is Guna2Button button)
                 {
-                    button.ForeColor = Color.White; // Default text color
+                    button.ForeColor = Color.White;
 
                     if (!originalImages.ContainsKey(button) && button.Image != null)
-                    {
                         originalImages[button] = new Bitmap(button.Image);
-                    }
 
                     if (button.Image != null && originalImages.ContainsKey(button))
-                    {
-                        button.Image = ChangeImageColor(originalImages[button], Color.White); // Default icon color
-                    }
-
-                    button.Invalidate();
-                    button.Update();
+                        button.Image = ChangeImageColor(originalImages[button], Color.White);
                 }
             }
-
-            sidebarPanel.Invalidate();
-            sidebarPanel.Update();
         }
 
         private void AddButtonClickEvents()
@@ -67,37 +58,66 @@ namespace inventory
             foreach (Control control in sidebarPanel.Controls)
             {
                 if (control is Guna2Button button)
+                    button.MouseDown += SidebarButton_MouseDown;
+
+            }
+        }
+        private void SidebarButton_MouseDown(object sender, MouseEventArgs e)
+        {
+            if (e.Button == MouseButtons.Left && sender is Guna2Button button)
+            {
+                string tabName = button.Tag?.ToString();
+                if (!string.IsNullOrEmpty(tabName))
                 {
-                    button.Click += SidebarButton_Click;
+                    foreach (TabPage tab in tabControl.TabPages)
+                    {
+                        if (tab.Text == tabName)
+                        {
+                            tabControl.SelectedTab = tab;
+
+                            // Close the sidebar after selecting a tab
+                            if (isSidebarExpanded)
+                            {
+                                ToggleSidebar();
+                            }
+
+                            break;
+                        }
+                    }
                 }
             }
         }
+
 
         private void SidebarButton_Click(object sender, EventArgs e)
         {
             if (sender is Guna2Button button && button.Tag != null)
             {
                 string tabName = button.Tag.ToString();
+
                 foreach (TabPage tab in tabControl.TabPages)
                 {
                     if (tab.Text == tabName)
                     {
-                        tabControl.SelectedTab = tab;
-                        break;
+                        tabControl.SelectedTab = tab; 
+                        ToggleSidebar();
+                        return;
                     }
                 }
             }
+            
         }
+
 
         public void ToggleSidebar()
         {
             if (!animationTimer.Enabled)
             {
                 isSidebarExpanded = !isSidebarExpanded;
+                sidebarPanel.BringToFront();
+                animationStep = Math.Max(5, Math.Abs(expandedWidth - collapsedWidth) / 10);
                 animationTimer.Start();
             }
-            sidebarPanel.Invalidate();
-            ApplyTagColors();
         }
 
         private void AnimateSidebar(object sender, EventArgs e)
@@ -105,15 +125,11 @@ namespace inventory
             int targetWidth = isSidebarExpanded ? expandedWidth : collapsedWidth;
             int currentWidth = sidebarPanel.Width;
 
-            if (isSidebarExpanded && currentWidth < expandedWidth)
-            {
-                sidebarPanel.Width = Math.Min(currentWidth + animationStep, expandedWidth);
-            }
-            else if (!isSidebarExpanded && currentWidth > collapsedWidth)
-            {
-                sidebarPanel.Width = Math.Max(currentWidth - animationStep, collapsedWidth);
-            }
-            else
+            sidebarPanel.Width = isSidebarExpanded
+                ? Math.Min(currentWidth + animationStep, expandedWidth)
+                : Math.Max(currentWidth - animationStep, collapsedWidth);
+
+            if (sidebarPanel.Width == targetWidth)
             {
                 animationTimer.Stop();
                 UpdateSidebarUI();
@@ -144,22 +160,14 @@ namespace inventory
                     {
                         button.ForeColor = Color.DarkGray;
                         if (button.Image != null && originalImages.ContainsKey(button))
-                        {
                             button.Image = ChangeImageColor(originalImages[button], Color.DarkGray);
-                        }
-                        button.Invalidate();
-                        button.Update();
                     };
 
                     button.MouseLeave += (sender, e) =>
                     {
                         button.ForeColor = Color.White;
                         if (button.Image != null && originalImages.ContainsKey(button))
-                        {
                             button.Image = ChangeImageColor(originalImages[button], Color.White);
-                        }
-                        button.Invalidate();
-                        button.Update();
                     };
                 }
             }
@@ -189,6 +197,7 @@ namespace inventory
                 }
             }
             return newBitmap;
+
         }
     }
 }

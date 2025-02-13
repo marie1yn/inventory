@@ -14,30 +14,14 @@ namespace inventory
         {
             InitializeComponent();
             sidebarManager = new SidebarManager(sidebarPanel, tabControl1);
-            this.Load += Form1_Load; // Attach the Load event
         }
 
         private void Form1_Load(object sender, EventArgs e)
         {
+
             sidebarManager.ToggleSidebar();
-            sidebarManager.ToggleSidebar();
-
-            // 🔹 Ensure sidebar and toggle panel are fully visible
-            sidebarPanel.Refresh();
-            sidebarPanel.Invalidate();
-            sidebarPanel.Update();
-
-            guna2Panel1.Refresh();
-            guna2Panel1.Invalidate();
-            guna2Panel1.Update();
-
-            // 🔹 Bring Sidebar & Toggle Panel to the front
-            guna2Panel1.BringToFront();
-            sidebarPanel.BringToFront();
-
-            // ✅ Apply button colors & refresh UI
             sidebarManager.ApplyTagColors();
-            sidebarManager.UpdateSidebarUI(); // Ensure all buttons update on startup
+            sidebarManager.UpdateSidebarUI();
         }
 
         private void BtnMinimize_Click(object sender, EventArgs e)
@@ -75,31 +59,39 @@ namespace inventory
                 this.Opacity = 1.0;
             }
         }
+        protected override CreateParams CreateParams
+        {
+            get
+            {
+                CreateParams cp = base.CreateParams;
+                cp.ExStyle |= 0x02000000;
+                return cp;
+            }
+        }
 
         [DllImport("user32.dll")]
         private static extern void ReleaseCapture();
 
         [DllImport("user32.dll")]
         private static extern void SendMessage(IntPtr hWnd, int msg, int wParam, int lParam);
-
-        private void guna2Button6_Click(object sender, EventArgs e)
-        {
-            Close();
-        }
-
-        private void sidebarPanel_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
-
+        
         private void btnToggle_Click(object sender, EventArgs e)
         {
             sidebarManager.ToggleSidebar();
+            if (sender is Guna2Button button && button.Tag != null)
+            {
+                string tabName = button.Tag.ToString();
+
+                foreach (TabPage tab in tabControl1.TabPages)
+                {
+                    if (tab.Text == tabName)  // Match button tag with tab text
+                    {
+                        tabControl1.SelectedTab = tab; // Switch to the correct tab
+                        return;
+                    }
+                }
+            }
         }
 
-        private void guna2Taskbar_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
     }
 }
