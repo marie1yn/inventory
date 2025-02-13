@@ -84,9 +84,9 @@ namespace inventory
 
                 foreach (TabPage tab in tabControl1.TabPages)
                 {
-                    if (tab.Text == tabName)  // Match button tag with tab text
+                    if (tab.Text == tabName) 
                     {
-                        tabControl1.SelectedTab = tab; // Switch to the correct tab
+                        tabControl1.SelectedTab = tab; 
                         return;
                     }
                 }

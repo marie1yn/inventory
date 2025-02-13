@@ -75,7 +75,6 @@ namespace inventory
                         {
                             tabControl.SelectedTab = tab;
 
-                            // Close the sidebar after selecting a tab
                             if (isSidebarExpanded)
                             {
                                 ToggleSidebar();
