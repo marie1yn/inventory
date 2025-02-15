@@ -10,30 +10,57 @@ namespace inventory
 {
     public class SidebarManager
     {
-        private Guna2Panel sidebarPanel; 
+        private Guna2Panel sidebarPanel;
         private TabControl tabControl;
-        private Form mainForm;
+        private Guna2Button activeButton = null;
+        private Color hoverColor = Color.DarkGray;
+        private Color activeColor = Color.FromArgb(128, 150, 100, 20);
         private Timer animationTimer;
         private bool isSidebarExpanded = true;
         private const int expandedWidth = 200;
         private const int collapsedWidth = 50;
-        private int animationSpeed = 10;  
+        private int animationSpeed = 10;
         private int animationStep;
-        private Dictionary<Guna2Button, Image> originalImages = new Dictionary<Guna2Button, Image>();
+        public Dictionary<Guna2Button, Image> originalImages = new Dictionary<Guna2Button, Image>();
 
-        public SidebarManager(Guna2Panel panel, TabControl tabControl)
+        public SidebarManager(Guna2Panel panel, TabControl tabControl, Guna2Button defaultActiveButton = null)
         {
             sidebarPanel = panel ?? throw new ArgumentNullException(nameof(panel));
-            this.tabControl = tabControl ?? throw new ArgumentNullException(nameof(tabControl)); 
+            this.tabControl = tabControl ?? throw new ArgumentNullException(nameof(tabControl));
 
-            animationTimer = new Timer { Interval =10};
-            animationTimer.Interval = animationSpeed;
+            animationTimer = new Timer { Interval = animationSpeed };
             animationTimer.Tick += AnimateSidebar;
 
             AddButtonClickEvents();
             AddHoverEffects();
             ApplyTagColors();
             UpdateSidebarUI();
+
+            if (defaultActiveButton != null)
+            {
+                SetActiveButton(defaultActiveButton);
+                defaultActiveButton.PerformClick(); // Ensure the tab is set properly on startup
+            }
+        }
+
+        public void SetActiveButton(Guna2Button button)
+        {
+            if (button == null || button.Name == "logout") // Prevent logout from becoming active
+                return;
+
+            if (activeButton != null && activeButton != button)
+            {
+                activeButton.ForeColor = Color.White;
+                activeButton.FillColor = Color.Transparent;
+                if (activeButton.Image != null && originalImages.ContainsKey(activeButton))
+                    activeButton.Image = ChangeImageColor(originalImages[activeButton], Color.White);
+            }
+
+            activeButton = button;
+            activeButton.ForeColor = hoverColor;
+            activeButton.FillColor = activeColor;
+            if (activeButton.Image != null && originalImages.ContainsKey(activeButton))
+                activeButton.Image = ChangeImageColor(originalImages[activeButton], hoverColor);
         }
 
         public void ApplyTagColors()
@@ -43,12 +70,21 @@ namespace inventory
                 if (control is Guna2Button button)
                 {
                     button.ForeColor = Color.White;
+                    button.FillColor = Color.Transparent;
 
                     if (!originalImages.ContainsKey(button) && button.Image != null)
                         originalImages[button] = new Bitmap(button.Image);
 
                     if (button.Image != null && originalImages.ContainsKey(button))
                         button.Image = ChangeImageColor(originalImages[button], Color.White);
+
+                    if (button.Name == "logout")
+                    {
+                        button.FillColor = Color.Maroon;
+                        button.ForeColor = Color.White;
+                        if (button.Image != null && originalImages.ContainsKey(button))
+                            button.Image = ChangeImageColor(originalImages[button], Color.White);
+                    }
                 }
             }
         }
@@ -59,9 +95,9 @@ namespace inventory
             {
                 if (control is Guna2Button button)
                     button.MouseDown += SidebarButton_MouseDown;
-
             }
         }
+
         private void SidebarButton_MouseDown(object sender, MouseEventArgs e)
         {
             if (e.Button == MouseButtons.Left && sender is Guna2Button button)
@@ -74,39 +110,17 @@ namespace inventory
                         if (tab.Text == tabName)
                         {
                             tabControl.SelectedTab = tab;
-
+                            SetActiveButton(button);
                             if (isSidebarExpanded)
                             {
                                 ToggleSidebar();
                             }
-
                             break;
                         }
                     }
                 }
             }
         }
-
-
-        private void SidebarButton_Click(object sender, EventArgs e)
-        {
-            if (sender is Guna2Button button && button.Tag != null)
-            {
-                string tabName = button.Tag.ToString();
-
-                foreach (TabPage tab in tabControl.TabPages)
-                {
-                    if (tab.Text == tabName)
-                    {
-                        tabControl.SelectedTab = tab; 
-                        ToggleSidebar();
-                        return;
-                    }
-                }
-            }
-            
-        }
-
 
         public void ToggleSidebar()
         {
@@ -157,22 +171,30 @@ namespace inventory
                 {
                     button.MouseEnter += (sender, e) =>
                     {
-                        button.ForeColor = Color.DarkGray;
-                        if (button.Image != null && originalImages.ContainsKey(button))
-                            button.Image = ChangeImageColor(originalImages[button], Color.DarkGray);
+                        if (button != activeButton)
+                        {
+                            button.ForeColor = hoverColor;
+                            button.FillColor = hoverColor;
+                            if (button.Image != null && originalImages.ContainsKey(button))
+                                button.Image = ChangeImageColor(originalImages[button], hoverColor);
+                        }
                     };
 
                     button.MouseLeave += (sender, e) =>
                     {
-                        button.ForeColor = Color.White;
-                        if (button.Image != null && originalImages.ContainsKey(button))
-                            button.Image = ChangeImageColor(originalImages[button], Color.White);
+                        if (button != activeButton)
+                        {
+                            button.ForeColor = Color.White;
+                            button.FillColor = button.Name == "logout" ? Color.Maroon : Color.Transparent;
+                            if (button.Image != null && originalImages.ContainsKey(button))
+                                button.Image = ChangeImageColor(originalImages[button], Color.White);
+                        }
                     };
                 }
             }
         }
 
-        private Image ChangeImageColor(Image image, Color targetColor)
+        public Image ChangeImageColor(Image image, Color targetColor)
         {
             if (image == null) return null;
 
@@ -196,7 +218,6 @@ namespace inventory
                 }
             }
             return newBitmap;
-
         }
     }
 }
