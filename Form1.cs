@@ -2,8 +2,10 @@
 using System.Runtime.InteropServices;
 using System.Drawing;
 using System.Windows.Forms;
+using Guna.Charts.WinForms;
 using Guna.UI2.WinForms;
 using Timer = System.Windows.Forms.Timer;
+using Guna.Charts.WinForms;
 
 namespace inventory
 {
@@ -14,10 +16,12 @@ namespace inventory
         private int notificationCount = 0;
         private Guna2CircleButton notificationBadge;
         private Timer notificationTimer;
+        private GunaChart gunaChart;
 
         public Form1()
         {
             InitializeComponent();
+            InitializeGunaChart();
             sidebarManager = new SidebarManager(sidebarPanel, tabControl1, dashboard);
             InitializeNotificationBadge();
             InitializeNotificationTimer();
@@ -33,6 +37,7 @@ namespace inventory
 
             logout.FillColor = Color.Maroon;
             logout.ForeColor = Color.White;
+            search.BorderRadius = search.Height / 2;
 
             if (!sidebarManager.originalImages.ContainsKey(logout) && logout.Image != null)
                 sidebarManager.originalImages[logout] = new Bitmap(logout.Image);
@@ -40,7 +45,15 @@ namespace inventory
             if (logout.Image != null && sidebarManager.originalImages.ContainsKey(logout))
                 logout.Image = sidebarManager.ChangeImageColor(sidebarManager.originalImages[logout], Color.White);
         }
+        private void InitializeGunaChart()
+        {
+            gunaChart = new GunaChart();
+            gunaChart.Dock = DockStyle.Fill;
+            Controls.Add(gunaChart);
 
+            gunaChart.Datasets.Add(gunaHorizontalBarDataset1);
+
+        }
         private void InitializeNotificationBadge()
         {
             notificationBadge = new Guna2CircleButton
@@ -158,9 +171,9 @@ namespace inventory
             }
         }
 
-        private void guna2TextBox3_TextChanged(object sender, EventArgs e)
+        private void gunaChart1_Load(object sender, EventArgs e)
         {
-            search.BorderRadius = search.Height / 2;
+
         }
     }
 }
