@@ -222,6 +222,11 @@ namespace inventory
         {
             label1.Text = "Role Manager";
         }
+
+        private void guna2Button1_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
 
