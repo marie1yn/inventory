@@ -219,5 +219,6 @@ namespace inventory
             }
             return newBitmap;
         }
+
     }
 }

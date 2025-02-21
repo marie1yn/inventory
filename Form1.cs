@@ -26,7 +26,6 @@ namespace inventory
             InitializeNotificationBadge();
             InitializeNotificationTimer();
         }
-
         private void Form1_Load(object sender, EventArgs e)
         {
             sidebarManager.ToggleSidebar();
@@ -34,17 +33,18 @@ namespace inventory
             sidebarManager.UpdateSidebarUI();
             sidebarManager.SetActiveButton(dashboard);
             dashboard.PerformClick();
-
+            guna2VScrollBar1.BindingContainer = guna2Panel4;
             logout.FillColor = Color.Maroon;
             logout.ForeColor = Color.White;
-            search.BorderRadius = search.Height / 2;
 
             if (!sidebarManager.originalImages.ContainsKey(logout) && logout.Image != null)
                 sidebarManager.originalImages[logout] = new Bitmap(logout.Image);
 
             if (logout.Image != null && sidebarManager.originalImages.ContainsKey(logout))
                 logout.Image = sidebarManager.ChangeImageColor(sidebarManager.originalImages[logout], Color.White);
+
         }
+
         private void InitializeGunaChart()
         {
             gunaChart = new GunaChart();
@@ -170,10 +170,58 @@ namespace inventory
                 }
             }
         }
-
-        private void gunaChart1_Load(object sender, EventArgs e)
+        protected override void OnClick(EventArgs e)
         {
+            base.OnClick(e);
+            ResetSearchBox();
+        }
 
+        private void search_Enter(object sender, EventArgs e)
+        {
+            if (search.Text == "Search Product")
+            {
+                search.Text = "";
+                search.ForeColor = Color.Black;
+            }
+        }
+
+        private void search_Leave(object sender, EventArgs e)
+        {
+            ResetSearchBox();
+        }
+
+        private void ResetSearchBox()
+        {
+            if (string.IsNullOrWhiteSpace(search.Text)) // If empty, reset text
+            {
+                search.Text = "Search Product";
+                search.ForeColor = Color.Gray;
+            }
+        }
+        private void dashboard_Click(object sender, EventArgs e)
+        {
+            label1.Text = "Dashboard";
+        }
+
+        private void stocks_Click(object sender, EventArgs e)
+        {
+            label1.Text = "Stock Management";
+        }
+
+        private void orders_Click(object sender, EventArgs e)
+        {
+            label1.Text = "Orders and Reservations";
+        }
+
+        private void statistics_Click(object sender, EventArgs e)
+        {
+            label1.Text = "Statistics";
+        }
+
+        private void roles_Click(object sender, EventArgs e)
+        {
+            label1.Text = "Role Manager";
         }
     }
 }
+
