@@ -31,16 +31,8 @@ namespace inventory
             logout.ForeColor = Color.White;
 
             SetInitialComboBoxValues(this);
-            SetupScrollBar(orderPanel_scroll, orderPanel);
-            SetupScrollBar(stockPanel_scroll, stockPanel);
             Example(guna2Chart1);
         }
-        private void SetupScrollBar(Guna2VScrollBar scrollBar, Panel panel)
-        {
-            scrollBar.Maximum = panel.DisplayRectangle.Height - panel.ClientSize.Height;
-            scrollBar.Scroll += (s, e) => panel.AutoScrollPosition = new Point(0, scrollBar.Value);
-        }
-
         private void SetInitialComboBoxValues(Control parent)
         {
             foreach (Control control in parent.Controls)
@@ -140,7 +132,7 @@ namespace inventory
             var stackedBar1 = new GunaStackedBarDataset
             {
                 Label = "Product A",
-                FillColors = new Guna.Charts.WinForms.ColorCollection
+                FillColors = new ColorCollection
                 {
                     Color.FromArgb(245, 245, 220), // Beige 🤍
                     Color.FromArgb(247, 231, 206), // Champagne ✨
@@ -151,16 +143,16 @@ namespace inventory
             var stackedBar2 = new GunaStackedBarDataset
             {
                 Label = "Product B",
-                FillColors = new Guna.Charts.WinForms.ColorCollection
+                FillColors = new ColorCollection
                 {
                     Color.FromArgb(85, 107, 47)  // Dark Olive Green 🌿
                 }
             };
-            
+
             var stackedBar3 = new GunaStackedBarDataset
             {
                 Label = "Product C",
-                FillColors = new Guna.Charts.WinForms.ColorCollection
+                FillColors = new ColorCollection
                 {
                     Color.FromArgb(128, 0, 0) // Maroon ❤️
                 }
@@ -171,9 +163,22 @@ namespace inventory
             {
                 Label = "Total Revenue",
                 BorderWidth = 2,
-                BorderColor = Color.FromArgb(30,30,30),
+                BorderColor = Color.FromArgb(50, 50, 50),
                 //BorderColor = Color.FromArgb(184, 134, 11),  // Deep Gold 🌟
                 FillColor = Color.FromArgb(50, 50, 50),  // Dark Gray ⚫
+                PointRadius = 6,
+                PointFillColors = new ColorCollection()
+                {
+                    Color.Maroon,
+                    Color.DarkGray,
+                    Color.Black,
+                    Color.FromArgb(184, 134, 11),
+                    Color.FromArgb(85, 107, 47),
+                },
+                PointBorderColors = new ColorCollection()
+                {
+                    Color.White,
+                }
             };
 
 

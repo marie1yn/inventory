@@ -63,6 +63,26 @@ namespace inventory.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap _51a01bde_2cc6_4016_8417_6a29e78dbe07 {
+            get {
+                object obj = ResourceManager.GetObject("51a01bde-2cc6-4016-8417-6a29e78dbe07", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap account {
+            get {
+                object obj = ResourceManager.GetObject("account", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap dashboard__1_ {
             get {
                 object obj = ResourceManager.GetObject("dashboard (1)", resourceCulture);
@@ -76,6 +96,16 @@ namespace inventory.Properties {
         internal static System.Drawing.Bitmap data_usage {
             get {
                 object obj = ResourceManager.GetObject("data-usage", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap dish {
+            get {
+                object obj = ResourceManager.GetObject("dish", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -143,6 +173,16 @@ namespace inventory.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap order {
+            get {
+                object obj = ResourceManager.GetObject("order", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap parcel {
             get {
                 object obj = ResourceManager.GetObject("parcel", resourceCulture);
@@ -176,6 +216,16 @@ namespace inventory.Properties {
         internal static System.Drawing.Bitmap shopping_cart {
             get {
                 object obj = ResourceManager.GetObject("shopping-cart", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap users_avatar {
+            get {
+                object obj = ResourceManager.GetObject("users-avatar", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
