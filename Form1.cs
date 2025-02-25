@@ -128,7 +128,7 @@ namespace inventory
         }
         public static void Example(GunaChart guna2Chart1)
         {
-            string[] months = { "January", "February", "March", "April", "May", "June", "July", "Ausust", "September", "November", "December" };
+            string[] months = { "January", "February", "March", "April", "May", "June", "July", "August", "September", "November", "December" };
 
             // 🛠️ Chart Configuration
             guna2Chart1.YAxes.GridLines.Display = false;
