@@ -9,6 +9,18 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Compile Remove="DATA\**" />
+    <Compile Remove="DomainLayer\**" />
+    <Compile Remove="InfrastructureLayer\**" />
+    <EmbeddedResource Remove="DATA\**" />
+    <EmbeddedResource Remove="DomainLayer\**" />
+    <EmbeddedResource Remove="InfrastructureLayer\**" />
+    <None Remove="DATA\**" />
+    <None Remove="DomainLayer\**" />
+    <None Remove="InfrastructureLayer\**" />
+  </ItemGroup>
+
+  <ItemGroup>
     <PackageReference Include="Guna.Charts.WinForms" Version="1.1.0" />
     <PackageReference Include="Guna.UI2.WinForms" Version="2.0.4.7" />
     <PackageReference Include="Microsoft.AspNetCore.Identity.EntityFrameworkCore" Version="8.0.1" />
