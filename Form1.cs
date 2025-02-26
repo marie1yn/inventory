@@ -16,7 +16,7 @@ namespace inventory
         public Form1()
         {
             InitializeComponent();
-            sidebarManager = new SidebarManager(sidebarPanel, tabControl1, dashboard);
+            sidebarManager = new SidebarManager(sidebarPanel, tabControl1, dashboardbtn);
         }
 
         private void Form1_Load(object sender, EventArgs e)
@@ -24,15 +24,46 @@ namespace inventory
             sidebarManager.ToggleSidebar();
             sidebarManager.ApplyTagColors();
             sidebarManager.UpdateSidebarUI();
-            sidebarManager.SetActiveButton(dashboard);
-            dashboard.PerformClick();
+            sidebarManager.SetActiveButton(dashboardbtn);
+            dashboardbtn.PerformClick();
 
             logout.FillColor = Color.Maroon;
             logout.ForeColor = Color.White;
 
             SetInitialComboBoxValues(this);
             Example(guna2Chart1);
+            AddProductCard();
         }
+        private void AddProductCard()
+        {
+            var newCard = new ProductCard();
+            stockPanel.Controls.Add(newCard);
+            UpdateScrollbar();
+        }
+
+        private void UpdateScrollbar()
+        {
+            stockPanel.AutoScroll = false;
+            stockPanel.Controls.Clear();
+            stockScrollbar.Minimum = 0;
+
+            int totalHeight = 0;
+            foreach (Control ctrl in stockPanel.Controls)
+            {
+                totalHeight += ctrl.Height + ctrl.Margin.Bottom;
+            }
+
+            stockScrollbar.Maximum = Math.Max(0, totalHeight - stockPanel.ClientSize.Height);
+            stockScrollbar.LargeChange = stockPanel.ClientSize.Height / 2;
+            stockScrollbar.SmallChange = 20;
+            stockScrollbar.Value = Math.Min(stockScrollbar.Value, stockScrollbar.Maximum);
+        }
+        private void stockScrollbar_Scroll(object sender, ScrollEventArgs e)
+        {
+            stockPanel.VerticalScroll.Value = e.NewValue;
+            stockPanel.PerformLayout(); 
+        }
+
         private void SetInitialComboBoxValues(Control parent)
         {
             foreach (Control control in parent.Controls)
@@ -110,13 +141,13 @@ namespace inventory
         private void btnsales_dashboard_Click(object sender, EventArgs e)
         {
             tabControl1.SelectedTab = lblstatistics;
-            sidebarManager.SetActiveButton(statistics);
+            sidebarManager.SetActiveButton(statisticsbtn);
         }
 
         private void guna2Button3_Click(object sender, EventArgs e)
         {
             tabControl1.SelectedTab = lblstatistics;
-            sidebarManager.SetActiveButton(statistics);
+            sidebarManager.SetActiveButton(statisticsbtn);
         }
         public static void Example(GunaChart guna2Chart1)
         {
@@ -216,5 +247,10 @@ namespace inventory
 
         [DllImport("user32.dll")]
         private static extern void SendMessage(IntPtr hWnd, int msg, int wParam, int lParam);
+
+        private void guna2Panel23_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
     }
 }
