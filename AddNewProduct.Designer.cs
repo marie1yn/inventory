@@ -1,6 +1,6 @@
 ﻿namespace inventory
 {
-    partial class ManageStock
+    partial class AddNewProduct
     {
         /// <summary>
         /// Required designer variable.
@@ -58,7 +58,7 @@
             guna2Taskbar.Name = "guna2Taskbar";
             guna2Taskbar.ShadowDecoration.CustomizableEdges = customizableEdges4;
             guna2Taskbar.Size = new Size(800, 47);
-            guna2Taskbar.TabIndex = 1;
+            guna2Taskbar.TabIndex = 2;
             // 
             // label1
             // 
@@ -68,9 +68,9 @@
             label1.ForeColor = Color.White;
             label1.Location = new Point(12, 9);
             label1.Name = "label1";
-            label1.Size = new Size(168, 27);
+            label1.Size = new Size(206, 27);
             label1.TabIndex = 2;
-            label1.Text = "Manage Stock";
+            label1.Text = "Add New Product";
             label1.TextAlign = ContentAlignment.MiddleLeft;
             // 
             // guna2ControlBox1
@@ -88,18 +88,16 @@
             guna2ControlBox1.ShadowDecoration.CustomizableEdges = customizableEdges2;
             guna2ControlBox1.Size = new Size(51, 47);
             guna2ControlBox1.TabIndex = 2;
-            guna2ControlBox1.Click += BtnClose_Click;
             // 
-            // ManageStock
+            // AddNewProduct
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 450);
             Controls.Add(guna2Taskbar);
             FormBorderStyle = FormBorderStyle.None;
-            Name = "ManageStock";
-            StartPosition = FormStartPosition.CenterScreen;
-            Text = "Manage Stock";
+            Name = "AddNewProduct";
+            Text = "AddNewProduct";
             guna2Taskbar.ResumeLayout(false);
             guna2Taskbar.PerformLayout();
             ResumeLayout(false);

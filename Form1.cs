@@ -32,50 +32,20 @@ namespace inventory
 
             SetInitialComboBoxValues(this);
             Example(guna2Chart1);
-            AddProductCard();
-        }
-        private void AddProductCard()
-        {
-            var newCard = new ProductCard();
-            stockPanel.Controls.Add(newCard);
-            UpdateScrollbar();
-        }
-
-        private void UpdateScrollbar()
-        {
-            stockPanel.AutoScroll = false;
-            stockPanel.Controls.Clear();
-            stockScrollbar.Minimum = 0;
-
-            int totalHeight = 0;
-            foreach (Control ctrl in stockPanel.Controls)
+            stockScrollbar.BindingContainer = stockPanel;
+            orderScrollbar.BindingContainer = orderPanel;
+            //for testing cards...
+            for (int i = 0; i < 10; i++)
             {
-                totalHeight += ctrl.Height + ctrl.Margin.Bottom;
+                stockPanel.Controls.Add(new ProductCard());
+                orderPanel.Controls.Add(new OrderCard());
             }
-
-            stockScrollbar.Maximum = Math.Max(0, totalHeight - stockPanel.ClientSize.Height);
-            stockScrollbar.LargeChange = stockPanel.ClientSize.Height / 2;
-            stockScrollbar.SmallChange = 20;
-            stockScrollbar.Value = Math.Min(stockScrollbar.Value, stockScrollbar.Maximum);
         }
-        private void stockScrollbar_Scroll(object sender, ScrollEventArgs e)
+        private void btnToggle_Click(object sender, EventArgs e)
         {
-            stockPanel.VerticalScroll.Value = e.NewValue;
-            stockPanel.PerformLayout(); 
-        }
-
-        private void SetInitialComboBoxValues(Control parent)
-        {
-            foreach (Control control in parent.Controls)
+            if (sidebarManager != null)
             {
-                if (control is Guna2ComboBox comboBox && comboBox.Items.Count > 0)
-                {
-                    comboBox.SelectedIndex = 0;
-                }
-                if (control.HasChildren)
-                {
-                    SetInitialComboBoxValues(control);
-                }
+                sidebarManager.ToggleSidebar();
             }
         }
         private void taskbar_MouseDown(object sender, MouseEventArgs e)
@@ -86,7 +56,6 @@ namespace inventory
                 SendMessage(Handle, 0xA1, 0x2, 0);
             }
         }
-
         private void SidebarButton_Click(object sender, EventArgs e)
         {
             if (sender is Guna2Button button && button.Tag is string tabName)
@@ -102,7 +71,6 @@ namespace inventory
                 }
             }
         }
-
         private void search_Enter(object sender, EventArgs e)
         {
             if (sender is Guna2TextBox searchBox &&
@@ -112,9 +80,7 @@ namespace inventory
                 searchBox.ForeColor = Color.Black;
             }
         }
-
         private void search_Leave(object sender, EventArgs e) => ResetSearchBox();
-
         private void ResetSearchBox()
         {
             foreach (var searchBox in new[] { searchStocks, searchRoles, searchOrder })
@@ -127,23 +93,37 @@ namespace inventory
                 }
             }
         }
-        private void btnToggle_Click(object sender, EventArgs e)
+        private void SetInitialComboBoxValues(Control parent)
         {
-            if (sidebarManager != null)
+            foreach (Control control in parent.Controls)
             {
-                sidebarManager.ToggleSidebar();
+                if (control is Guna2ComboBox comboBox && comboBox.Items.Count > 0)
+                {
+                    comboBox.SelectedIndex = 0;
+                }
+                if (control.HasChildren)
+                {
+                    SetInitialComboBoxValues(control);
+                }
             }
         }
         private void manageBtn_Click(object sender, EventArgs e)
         {
             new ManageStock().Show();
         }
+        private void guna2Button4_Click(object sender, EventArgs e)
+        {
+            new AddNewProduct().Show();
+        }
         private void btnsales_dashboard_Click(object sender, EventArgs e)
         {
             tabControl1.SelectedTab = lblstatistics;
             sidebarManager.SetActiveButton(statisticsbtn);
         }
-
+        private void guna2Button5_Click(object sender, EventArgs e)
+        {
+            new AddOrder().Show();
+        }
         private void guna2Button3_Click(object sender, EventArgs e)
         {
             tabControl1.SelectedTab = lblstatistics;
@@ -236,11 +216,11 @@ namespace inventory
             // 🔄 Update the chart
             guna2Chart1.Update();
         }
-        private void dashboard_Click(object sender, EventArgs e) => label1.Text = "Dashboard";
-        private void stocks_Click(object sender, EventArgs e) => label1.Text = "Stocks";
-        private void orders_Click(object sender, EventArgs e) => label1.Text = "Orders";
-        private void statistics_Click(object sender, EventArgs e) => label1.Text = "Statistics";
-        private void roles_Click(object sender, EventArgs e) => label1.Text = "Roles";
+        private void dashboard_Click(object sender, EventArgs e) => labelTab.Text = "Dashboard";
+        private void stocks_Click(object sender, EventArgs e) => labelTab.Text = "Stocks";
+        private void orders_Click(object sender, EventArgs e) => labelTab.Text = "Orders";
+        private void statistics_Click(object sender, EventArgs e) => labelTab.Text = "Statistics";
+        private void roles_Click(object sender, EventArgs e) => labelTab.Text = "Roles";
 
         [DllImport("user32.dll")]
         private static extern void ReleaseCapture();
@@ -248,9 +228,5 @@ namespace inventory
         [DllImport("user32.dll")]
         private static extern void SendMessage(IntPtr hWnd, int msg, int wParam, int lParam);
 
-        private void guna2Panel23_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
     }
 }
