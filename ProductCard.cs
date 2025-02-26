@@ -37,7 +37,7 @@ namespace inventory
 
         public bool IsExpiring
         {
-            set { lblWarning.Text = value ? "# About to expire!" : ""; }
+            set { lblWarning.Text = value ? " About to expire!" : ""; }
         }
     }
 
