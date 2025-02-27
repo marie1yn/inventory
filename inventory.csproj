@@ -12,12 +12,18 @@
     <Compile Remove="DATA\**" />
     <Compile Remove="DomainLayer\**" />
     <Compile Remove="InfrastructureLayer\**" />
+    <Compile Remove="ServiceLayer\**" />
+    <Compile Remove="WebApplication1\**" />
     <EmbeddedResource Remove="DATA\**" />
     <EmbeddedResource Remove="DomainLayer\**" />
     <EmbeddedResource Remove="InfrastructureLayer\**" />
+    <EmbeddedResource Remove="ServiceLayer\**" />
+    <EmbeddedResource Remove="WebApplication1\**" />
     <None Remove="DATA\**" />
     <None Remove="DomainLayer\**" />
     <None Remove="InfrastructureLayer\**" />
+    <None Remove="ServiceLayer\**" />
+    <None Remove="WebApplication1\**" />
   </ItemGroup>
 
   <ItemGroup>
