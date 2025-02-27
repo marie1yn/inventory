@@ -8,5 +8,10 @@ namespace inventory.Models
 {
     public class Program1
     {
+        //[STAThread]
+        //static void Main()
+        //{
+
+        //}
     }
 }

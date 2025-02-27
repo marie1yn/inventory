@@ -27,20 +27,14 @@ namespace inventory
         private void InitializeComponent()
         {
             components = new Container();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges101 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges102 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges97 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges98 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges99 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges100 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges95 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges96 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges85 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges86 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges81 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges82 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges83 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges84 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges85 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges86 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges99 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges100 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges87 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges88 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges89 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
@@ -49,6 +43,10 @@ namespace inventory
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges92 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges93 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges94 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges95 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges96 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges97 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges98 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges2 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges3 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges4 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
@@ -114,6 +112,13 @@ namespace inventory
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges57 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges70 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges71 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges60 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges61 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            DataGridViewCellStyle dataGridViewCellStyle7 = new DataGridViewCellStyle();
+            DataGridViewCellStyle dataGridViewCellStyle8 = new DataGridViewCellStyle();
+            DataGridViewCellStyle dataGridViewCellStyle9 = new DataGridViewCellStyle();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges58 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges59 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             Guna.Charts.WinForms.ChartFont chartFont1 = new Guna.Charts.WinForms.ChartFont();
             Guna.Charts.WinForms.ChartFont chartFont2 = new Guna.Charts.WinForms.ChartFont();
             Guna.Charts.WinForms.ChartFont chartFont3 = new Guna.Charts.WinForms.ChartFont();
@@ -172,13 +177,6 @@ namespace inventory
             Guna.Charts.WinForms.LPoint lPoint12 = new Guna.Charts.WinForms.LPoint();
             Guna.UI2.AnimatorNS.Animation animation1 = new Guna.UI2.AnimatorNS.Animation();
             ComponentResourceManager resources = new ComponentResourceManager(typeof(Form1));
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges60 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges61 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges58 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges59 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            DataGridViewCellStyle dataGridViewCellStyle7 = new DataGridViewCellStyle();
-            DataGridViewCellStyle dataGridViewCellStyle8 = new DataGridViewCellStyle();
-            DataGridViewCellStyle dataGridViewCellStyle9 = new DataGridViewCellStyle();
             guna2BorderlessForm1 = new Guna2BorderlessForm(components);
             taskbar = new Guna2Panel();
             btnClose = new Guna2ControlBox();
@@ -190,7 +188,6 @@ namespace inventory
             statistics = new Guna2Button();
             orders = new Guna2Button();
             stocks = new Guna2Button();
-            dashboard = new Guna2Button();
             btnToggle = new Guna2Button();
             guna2Panel1 = new Guna2Panel();
             guna2ImageButton4 = new Guna2ImageButton();
@@ -247,6 +244,9 @@ namespace inventory
             guna2ComboBox1 = new Guna2ComboBox();
             lblstatistics = new TabPage();
             guna2Panel3 = new Guna2Panel();
+            guna2Panel20 = new Guna2Panel();
+            guna2DataGridView6 = new Guna2DataGridView();
+            guna2ComboBox3 = new Guna2ComboBox();
             guna2Chart1 = new Guna.Charts.WinForms.GunaChart();
             guna2Panel4 = new Guna2Panel();
             label17 = new Label();
@@ -277,9 +277,6 @@ namespace inventory
             tileBtn = new Guna2Transition();
             gunaLineDataset1 = new Guna.Charts.WinForms.GunaLineDataset();
             gunaStackedBarDataset2 = new Guna.Charts.WinForms.GunaStackedBarDataset();
-            guna2Panel20 = new Guna2Panel();
-            guna2ComboBox3 = new Guna2ComboBox();
-            guna2DataGridView6 = new Guna2DataGridView();
             taskbar.SuspendLayout();
             sidebarPanel.SuspendLayout();
             guna2Panel1.SuspendLayout();
@@ -305,6 +302,8 @@ namespace inventory
             orderPanel.SuspendLayout();
             lblstatistics.SuspendLayout();
             guna2Panel3.SuspendLayout();
+            guna2Panel20.SuspendLayout();
+            ((ISupportInitialize)guna2DataGridView6).BeginInit();
             guna2Panel4.SuspendLayout();
             guna2Panel17.SuspendLayout();
             guna2Panel18.SuspendLayout();
@@ -315,8 +314,6 @@ namespace inventory
             panel1.SuspendLayout();
             guna2GradientPanel1.SuspendLayout();
             ((ISupportInitialize)guna2DataGridView3).BeginInit();
-            guna2Panel20.SuspendLayout();
-            ((ISupportInitialize)guna2DataGridView6).BeginInit();
             SuspendLayout();
             // 
             // guna2BorderlessForm1
@@ -333,14 +330,14 @@ namespace inventory
             // 
             taskbar.Controls.Add(btnClose);
             taskbar.Controls.Add(btnMinimize);
-            taskbar.CustomizableEdges = customizableEdges101;
+            taskbar.CustomizableEdges = customizableEdges85;
             tileBtn.SetDecoration(taskbar, Guna.UI2.AnimatorNS.DecorationType.None);
             taskbar.Dock = DockStyle.Top;
             taskbar.FillColor = Color.FromArgb(120, 20, 20);
             taskbar.Location = new Point(0, 0);
             taskbar.Margin = new Padding(3, 4, 3, 4);
             taskbar.Name = "taskbar";
-            taskbar.ShadowDecoration.CustomizableEdges = customizableEdges102;
+            taskbar.ShadowDecoration.CustomizableEdges = customizableEdges86;
             taskbar.Size = new Size(1366, 47);
             taskbar.TabIndex = 0;
             taskbar.MouseDown += taskbar_MouseDown;
@@ -349,7 +346,7 @@ namespace inventory
             // 
             btnClose.Anchor = AnchorStyles.Top | AnchorStyles.Right;
             btnClose.Cursor = Cursors.Hand;
-            btnClose.CustomizableEdges = customizableEdges97;
+            btnClose.CustomizableEdges = customizableEdges81;
             tileBtn.SetDecoration(btnClose, Guna.UI2.AnimatorNS.DecorationType.None);
             btnClose.FillColor = Color.FromArgb(120, 20, 20);
             btnClose.HoverState.FillColor = Color.White;
@@ -358,7 +355,7 @@ namespace inventory
             btnClose.Location = new Point(1316, 0);
             btnClose.Margin = new Padding(3, 4, 3, 4);
             btnClose.Name = "btnClose";
-            btnClose.ShadowDecoration.CustomizableEdges = customizableEdges98;
+            btnClose.ShadowDecoration.CustomizableEdges = customizableEdges82;
             btnClose.Size = new Size(51, 47);
             btnClose.TabIndex = 0;
             // 
@@ -367,7 +364,7 @@ namespace inventory
             btnMinimize.Anchor = AnchorStyles.Top | AnchorStyles.Right;
             btnMinimize.ControlBoxType = Guna.UI2.WinForms.Enums.ControlBoxType.MinimizeBox;
             btnMinimize.Cursor = Cursors.Hand;
-            btnMinimize.CustomizableEdges = customizableEdges99;
+            btnMinimize.CustomizableEdges = customizableEdges83;
             tileBtn.SetDecoration(btnMinimize, Guna.UI2.AnimatorNS.DecorationType.None);
             btnMinimize.FillColor = Color.FromArgb(120, 20, 20);
             btnMinimize.HoverState.FillColor = Color.White;
@@ -376,7 +373,7 @@ namespace inventory
             btnMinimize.Location = new Point(1263, 0);
             btnMinimize.Margin = new Padding(3, 4, 3, 4);
             btnMinimize.Name = "btnMinimize";
-            btnMinimize.ShadowDecoration.CustomizableEdges = customizableEdges100;
+            btnMinimize.ShadowDecoration.CustomizableEdges = customizableEdges84;
             btnMinimize.Size = new Size(51, 47);
             btnMinimize.TabIndex = 1;
             // 
@@ -390,9 +387,9 @@ namespace inventory
             sidebarPanel.Controls.Add(statistics);
             sidebarPanel.Controls.Add(orders);
             sidebarPanel.Controls.Add(stocks);
-            sidebarPanel.Controls.Add(dashboard);
+            sidebarPanel.Controls.Add(this);
             sidebarPanel.CustomBorderColor = Color.DimGray;
-            sidebarPanel.CustomizableEdges = customizableEdges95;
+            sidebarPanel.CustomizableEdges = customizableEdges99;
             tileBtn.SetDecoration(sidebarPanel, Guna.UI2.AnimatorNS.DecorationType.None);
             sidebarPanel.Dock = DockStyle.Left;
             sidebarPanel.FillColor = Color.FromArgb(30, 30, 30);
@@ -400,20 +397,27 @@ namespace inventory
             sidebarPanel.Location = new Point(0, 47);
             sidebarPanel.Margin = new Padding(3, 4, 3, 4);
             sidebarPanel.Name = "sidebarPanel";
-            sidebarPanel.ShadowDecoration.CustomizableEdges = customizableEdges96;
+            sidebarPanel.ShadowDecoration.CustomizableEdges = customizableEdges100;
             sidebarPanel.Size = new Size(229, 721);
             sidebarPanel.TabIndex = 1;
+            sidebarPanel.Controls.SetChildIndex(this, 0);
+            sidebarPanel.Controls.SetChildIndex(stocks, 0);
+            sidebarPanel.Controls.SetChildIndex(orders, 0);
+            sidebarPanel.Controls.SetChildIndex(statistics, 0);
+            sidebarPanel.Controls.SetChildIndex(roles, 0);
+            sidebarPanel.Controls.SetChildIndex(logout, 0);
+            sidebarPanel.Controls.SetChildIndex(guna2Panel2, 0);
             // 
             // guna2Panel2
             // 
             guna2Panel2.BackColor = Color.FromArgb(64, 64, 64);
-            guna2Panel2.CustomizableEdges = customizableEdges81;
+            guna2Panel2.CustomizableEdges = customizableEdges87;
             tileBtn.SetDecoration(guna2Panel2, Guna.UI2.AnimatorNS.DecorationType.None);
             guna2Panel2.Dock = DockStyle.Right;
             guna2Panel2.Location = new Point(226, 0);
             guna2Panel2.Margin = new Padding(3, 4, 3, 4);
             guna2Panel2.Name = "guna2Panel2";
-            guna2Panel2.ShadowDecoration.CustomizableEdges = customizableEdges82;
+            guna2Panel2.ShadowDecoration.CustomizableEdges = customizableEdges88;
             guna2Panel2.Size = new Size(3, 721);
             guna2Panel2.TabIndex = 7;
             // 
@@ -422,7 +426,7 @@ namespace inventory
             logout.Anchor = AnchorStyles.Bottom | AnchorStyles.Left;
             logout.BackColor = Color.FromArgb(30, 30, 30);
             logout.Cursor = Cursors.Hand;
-            logout.CustomizableEdges = customizableEdges83;
+            logout.CustomizableEdges = customizableEdges89;
             tileBtn.SetDecoration(logout, Guna.UI2.AnimatorNS.DecorationType.None);
             logout.DisabledState.BorderColor = Color.DarkGray;
             logout.DisabledState.CustomBorderColor = Color.DarkGray;
@@ -439,7 +443,7 @@ namespace inventory
             logout.Location = new Point(0, 637);
             logout.Margin = new Padding(3, 4, 3, 4);
             logout.Name = "logout";
-            logout.ShadowDecoration.CustomizableEdges = customizableEdges84;
+            logout.ShadowDecoration.CustomizableEdges = customizableEdges90;
             logout.Size = new Size(225, 60);
             logout.TabIndex = 6;
             logout.Tag = "LOGOUT";
@@ -449,7 +453,7 @@ namespace inventory
             // 
             roles.BackColor = Color.FromArgb(30, 30, 30);
             roles.Cursor = Cursors.Hand;
-            roles.CustomizableEdges = customizableEdges85;
+            roles.CustomizableEdges = customizableEdges91;
             tileBtn.SetDecoration(roles, Guna.UI2.AnimatorNS.DecorationType.None);
             roles.DisabledState.BorderColor = Color.DarkGray;
             roles.DisabledState.CustomBorderColor = Color.DarkGray;
@@ -467,7 +471,7 @@ namespace inventory
             roles.Margin = new Padding(3, 4, 3, 4);
             roles.Name = "roles";
             roles.RightToLeft = RightToLeft.No;
-            roles.ShadowDecoration.CustomizableEdges = customizableEdges86;
+            roles.ShadowDecoration.CustomizableEdges = customizableEdges92;
             roles.Size = new Size(225, 60);
             roles.TabIndex = 5;
             roles.Tag = "Roles";
@@ -479,7 +483,7 @@ namespace inventory
             // 
             statistics.BackColor = Color.FromArgb(30, 30, 30);
             statistics.Cursor = Cursors.Hand;
-            statistics.CustomizableEdges = customizableEdges87;
+            statistics.CustomizableEdges = customizableEdges93;
             tileBtn.SetDecoration(statistics, Guna.UI2.AnimatorNS.DecorationType.None);
             statistics.DisabledState.BorderColor = Color.DarkGray;
             statistics.DisabledState.CustomBorderColor = Color.DarkGray;
@@ -497,7 +501,7 @@ namespace inventory
             statistics.Margin = new Padding(3, 4, 3, 4);
             statistics.Name = "statistics";
             statistics.RightToLeft = RightToLeft.No;
-            statistics.ShadowDecoration.CustomizableEdges = customizableEdges88;
+            statistics.ShadowDecoration.CustomizableEdges = customizableEdges94;
             statistics.Size = new Size(225, 60);
             statistics.TabIndex = 4;
             statistics.Tag = "Statistics";
@@ -509,7 +513,7 @@ namespace inventory
             // 
             orders.BackColor = Color.FromArgb(30, 30, 30);
             orders.Cursor = Cursors.Hand;
-            orders.CustomizableEdges = customizableEdges89;
+            orders.CustomizableEdges = customizableEdges95;
             tileBtn.SetDecoration(orders, Guna.UI2.AnimatorNS.DecorationType.None);
             orders.DisabledState.BorderColor = Color.DarkGray;
             orders.DisabledState.CustomBorderColor = Color.DarkGray;
@@ -527,7 +531,7 @@ namespace inventory
             orders.Margin = new Padding(3, 4, 3, 4);
             orders.Name = "orders";
             orders.RightToLeft = RightToLeft.No;
-            orders.ShadowDecoration.CustomizableEdges = customizableEdges90;
+            orders.ShadowDecoration.CustomizableEdges = customizableEdges96;
             orders.Size = new Size(225, 60);
             orders.TabIndex = 3;
             orders.Tag = "Orders";
@@ -539,7 +543,7 @@ namespace inventory
             // 
             stocks.BackColor = Color.FromArgb(30, 30, 30);
             stocks.Cursor = Cursors.Hand;
-            stocks.CustomizableEdges = customizableEdges91;
+            stocks.CustomizableEdges = customizableEdges97;
             tileBtn.SetDecoration(stocks, Guna.UI2.AnimatorNS.DecorationType.None);
             stocks.DisabledState.BorderColor = Color.DarkGray;
             stocks.DisabledState.CustomBorderColor = Color.DarkGray;
@@ -557,43 +561,13 @@ namespace inventory
             stocks.Margin = new Padding(3, 4, 3, 4);
             stocks.Name = "stocks";
             stocks.RightToLeft = RightToLeft.No;
-            stocks.ShadowDecoration.CustomizableEdges = customizableEdges92;
+            stocks.ShadowDecoration.CustomizableEdges = customizableEdges98;
             stocks.Size = new Size(225, 60);
             stocks.TabIndex = 2;
             stocks.Tag = "Stocks";
             stocks.Text = "Stocks";
             stocks.TextAlign = HorizontalAlignment.Left;
             stocks.Click += stocks_Click;
-            // 
-            // dashboard
-            // 
-            dashboard.BackColor = Color.FromArgb(30, 30, 30);
-            dashboard.Cursor = Cursors.Hand;
-            dashboard.CustomizableEdges = customizableEdges93;
-            tileBtn.SetDecoration(dashboard, Guna.UI2.AnimatorNS.DecorationType.None);
-            dashboard.DisabledState.BorderColor = Color.DarkGray;
-            dashboard.DisabledState.CustomBorderColor = Color.DarkGray;
-            dashboard.DisabledState.FillColor = Color.FromArgb(169, 169, 169);
-            dashboard.DisabledState.ForeColor = Color.FromArgb(141, 141, 141);
-            dashboard.FillColor = Color.FromArgb(30, 30, 30);
-            dashboard.Font = new Font("Arial", 12F, FontStyle.Bold);
-            dashboard.ForeColor = Color.White;
-            dashboard.HoverState.FillColor = Color.FromArgb(128, 150, 100, 20);
-            dashboard.HoverState.ForeColor = Color.DarkGray;
-            dashboard.Image = Properties.Resources.dashboard__1_;
-            dashboard.ImageAlign = HorizontalAlignment.Left;
-            dashboard.ImageSize = new Size(30, 30);
-            dashboard.Location = new Point(0, 37);
-            dashboard.Margin = new Padding(3, 4, 3, 4);
-            dashboard.Name = "dashboard";
-            dashboard.RightToLeft = RightToLeft.No;
-            dashboard.ShadowDecoration.CustomizableEdges = customizableEdges94;
-            dashboard.Size = new Size(225, 60);
-            dashboard.TabIndex = 1;
-            dashboard.Tag = "Dashboard";
-            dashboard.Text = "Dashboard";
-            dashboard.TextAlign = HorizontalAlignment.Left;
-            dashboard.Click += dashboard_Click;
             // 
             // btnToggle
             // 
@@ -625,11 +599,11 @@ namespace inventory
             tileBtn.SetDecoration(guna2Panel1, Guna.UI2.AnimatorNS.DecorationType.None);
             guna2Panel1.Dock = DockStyle.Top;
             guna2Panel1.FillColor = Color.FromArgb(120, 20, 20);
-            guna2Panel1.Location = new Point(229, 47);
+            guna2Panel1.Location = new Point(0, 47);
             guna2Panel1.Margin = new Padding(3, 4, 3, 4);
             guna2Panel1.Name = "guna2Panel1";
             guna2Panel1.ShadowDecoration.CustomizableEdges = customizableEdges5;
-            guna2Panel1.Size = new Size(1137, 69);
+            guna2Panel1.Size = new Size(1366, 69);
             guna2Panel1.TabIndex = 2;
             // 
             // guna2ImageButton4
@@ -644,7 +618,7 @@ namespace inventory
             guna2ImageButton4.ImageOffset = new Point(0, 0);
             guna2ImageButton4.ImageRotate = 0F;
             guna2ImageButton4.ImageSize = new Size(45, 45);
-            guna2ImageButton4.Location = new Point(1022, 0);
+            guna2ImageButton4.Location = new Point(1251, 0);
             guna2ImageButton4.Name = "guna2ImageButton4";
             guna2ImageButton4.PressedState.ImageSize = new Size(45, 45);
             guna2ImageButton4.ShadowDecoration.CustomizableEdges = customizableEdges1;
@@ -689,11 +663,11 @@ namespace inventory
             tabControl1.Controls.Add(lblroles);
             tileBtn.SetDecoration(tabControl1, Guna.UI2.AnimatorNS.DecorationType.None);
             tabControl1.Dock = DockStyle.Fill;
-            tabControl1.Location = new Point(229, 47);
+            tabControl1.Location = new Point(0, 47);
             tabControl1.Margin = new Padding(3, 4, 3, 4);
             tabControl1.Name = "tabControl1";
             tabControl1.SelectedIndex = 0;
-            tabControl1.Size = new Size(1137, 721);
+            tabControl1.Size = new Size(1366, 721);
             tabControl1.SizeMode = TabSizeMode.Fixed;
             tabControl1.TabIndex = 3;
             // 
@@ -707,7 +681,7 @@ namespace inventory
             lbldashboard.Margin = new Padding(3, 4, 3, 4);
             lbldashboard.Name = "lbldashboard";
             lbldashboard.Padding = new Padding(3, 4, 3, 4);
-            lbldashboard.Size = new Size(1129, 688);
+            lbldashboard.Size = new Size(1358, 688);
             lbldashboard.TabIndex = 1;
             lbldashboard.Text = "Dashboard";
             lbldashboard.UseVisualStyleBackColor = true;
@@ -722,7 +696,7 @@ namespace inventory
             tileBtn.SetDecoration(guna2Panel12, Guna.UI2.AnimatorNS.DecorationType.None);
             guna2Panel12.Dock = DockStyle.Right;
             guna2Panel12.FillColor = Color.FromArgb(235, 192, 192);
-            guna2Panel12.Location = new Point(641, 4);
+            guna2Panel12.Location = new Point(870, 4);
             guna2Panel12.Name = "guna2Panel12";
             guna2Panel12.ShadowDecoration.CustomizableEdges = customizableEdges11;
             guna2Panel12.Size = new Size(485, 680);
@@ -830,11 +804,11 @@ namespace inventory
             // 
             label12.AutoSize = true;
             tileBtn.SetDecoration(label12, Guna.UI2.AnimatorNS.DecorationType.None);
-            label12.Font = new Font("Arial Nova", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label12.Font = new Font("Microsoft Sans Serif", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
             label12.ForeColor = Color.Black;
             label12.Location = new Point(25, 68);
             label12.Name = "label12";
-            label12.Size = new Size(85, 25);
+            label12.Size = new Size(90, 25);
             label12.TabIndex = 2;
             label12.Text = "Upsales";
             // 
@@ -871,11 +845,11 @@ namespace inventory
             // 
             label8.AutoSize = true;
             tileBtn.SetDecoration(label8, Guna.UI2.AnimatorNS.DecorationType.None);
-            label8.Font = new Font("Arial Nova", 19.8000011F, FontStyle.Bold);
+            label8.Font = new Font("Microsoft Sans Serif", 19.8000011F, FontStyle.Bold);
             label8.ForeColor = Color.Black;
             label8.Location = new Point(18, 156);
             label8.Name = "label8";
-            label8.Size = new Size(75, 41);
+            label8.Size = new Size(77, 39);
             label8.TabIndex = 1;
             label8.Text = "120";
             // 
@@ -909,11 +883,11 @@ namespace inventory
             // 
             label10.AutoSize = true;
             tileBtn.SetDecoration(label10, Guna.UI2.AnimatorNS.DecorationType.None);
-            label10.Font = new Font("Arial Nova", 19.8000011F, FontStyle.Bold);
+            label10.Font = new Font("Microsoft Sans Serif", 19.8000011F, FontStyle.Bold);
             label10.ForeColor = Color.Black;
             label10.Location = new Point(18, 156);
             label10.Name = "label10";
-            label10.Size = new Size(75, 41);
+            label10.Size = new Size(77, 39);
             label10.TabIndex = 1;
             label10.Text = "101";
             // 
@@ -947,11 +921,11 @@ namespace inventory
             // 
             label6.AutoSize = true;
             tileBtn.SetDecoration(label6, Guna.UI2.AnimatorNS.DecorationType.None);
-            label6.Font = new Font("Arial Nova", 19.8000011F, FontStyle.Bold);
+            label6.Font = new Font("Microsoft Sans Serif", 19.8000011F, FontStyle.Bold);
             label6.ForeColor = Color.Black;
             label6.Location = new Point(18, 156);
             label6.Name = "label6";
-            label6.Size = new Size(75, 41);
+            label6.Size = new Size(77, 39);
             label6.TabIndex = 1;
             label6.Text = "125";
             // 
@@ -985,11 +959,11 @@ namespace inventory
             // 
             label3.AutoSize = true;
             tileBtn.SetDecoration(label3, Guna.UI2.AnimatorNS.DecorationType.None);
-            label3.Font = new Font("Arial Nova", 19.8000011F, FontStyle.Bold);
+            label3.Font = new Font("Microsoft Sans Serif", 19.8000011F, FontStyle.Bold);
             label3.ForeColor = Color.Black;
             label3.Location = new Point(18, 156);
             label3.Name = "label3";
-            label3.Size = new Size(116, 41);
+            label3.Size = new Size(121, 39);
             label3.TabIndex = 1;
             label3.Text = "Php ...";
             // 
@@ -1012,7 +986,7 @@ namespace inventory
             guna2Panel6.Location = new Point(3, 4);
             guna2Panel6.Name = "guna2Panel6";
             guna2Panel6.ShadowDecoration.CustomizableEdges = customizableEdges23;
-            guna2Panel6.Size = new Size(1123, 680);
+            guna2Panel6.Size = new Size(1352, 680);
             guna2Panel6.TabIndex = 8;
             // 
             // lblstocks
@@ -1021,7 +995,7 @@ namespace inventory
             tileBtn.SetDecoration(lblstocks, Guna.UI2.AnimatorNS.DecorationType.None);
             lblstocks.Location = new Point(4, 29);
             lblstocks.Name = "lblstocks";
-            lblstocks.Size = new Size(1129, 688);
+            lblstocks.Size = new Size(1358, 688);
             lblstocks.TabIndex = 2;
             lblstocks.Text = "Stocks";
             lblstocks.UseVisualStyleBackColor = true;
@@ -1037,7 +1011,7 @@ namespace inventory
             guna2Panel5.Location = new Point(0, 0);
             guna2Panel5.Name = "guna2Panel5";
             guna2Panel5.ShadowDecoration.CustomizableEdges = customizableEdges46;
-            guna2Panel5.Size = new Size(1129, 688);
+            guna2Panel5.Size = new Size(1358, 688);
             guna2Panel5.TabIndex = 6;
             // 
             // guna2Panel15
@@ -1049,7 +1023,7 @@ namespace inventory
             guna2Panel15.CustomizableEdges = customizableEdges34;
             tileBtn.SetDecoration(guna2Panel15, Guna.UI2.AnimatorNS.DecorationType.None);
             guna2Panel15.Dock = DockStyle.Right;
-            guna2Panel15.Location = new Point(837, 0);
+            guna2Panel15.Location = new Point(1066, 0);
             guna2Panel15.Name = "guna2Panel15";
             guna2Panel15.ShadowDecoration.CustomizableEdges = customizableEdges35;
             guna2Panel15.Size = new Size(292, 688);
@@ -1068,7 +1042,7 @@ namespace inventory
             guna2Button4.DisabledState.FillColor = Color.FromArgb(169, 169, 169);
             guna2Button4.DisabledState.ForeColor = Color.FromArgb(141, 141, 141);
             guna2Button4.FillColor = Color.FromArgb(120, 20, 20);
-            guna2Button4.Font = new Font("Arial Nova", 12F, FontStyle.Bold);
+            guna2Button4.Font = new Font("Microsoft Sans Serif", 12F, FontStyle.Bold);
             guna2Button4.ForeColor = Color.White;
             guna2Button4.HoverState.FillColor = Color.FromArgb(128, 150, 100, 20);
             guna2Button4.HoverState.ForeColor = Color.DarkGray;
@@ -1096,7 +1070,7 @@ namespace inventory
             guna2Button3.DisabledState.FillColor = Color.FromArgb(169, 169, 169);
             guna2Button3.DisabledState.ForeColor = Color.FromArgb(141, 141, 141);
             guna2Button3.FillColor = Color.DimGray;
-            guna2Button3.Font = new Font("Arial Nova", 12F, FontStyle.Bold);
+            guna2Button3.Font = new Font("Microsoft Sans Serif", 12F, FontStyle.Bold);
             guna2Button3.ForeColor = Color.White;
             guna2Button3.HoverState.FillColor = Color.FromArgb(128, 150, 100, 20);
             guna2Button3.HoverState.ForeColor = Color.White;
@@ -1116,11 +1090,11 @@ namespace inventory
             // 
             label4.AutoSize = true;
             tileBtn.SetDecoration(label4, Guna.UI2.AnimatorNS.DecorationType.None);
-            label4.Font = new Font("Arial Nova", 19.8000011F, FontStyle.Bold);
+            label4.Font = new Font("Microsoft Sans Serif", 19.8000011F, FontStyle.Bold);
             label4.ForeColor = Color.Black;
             label4.Location = new Point(41, 54);
             label4.Name = "label4";
-            label4.Size = new Size(212, 41);
+            label4.Size = new Size(213, 39);
             label4.TabIndex = 1;
             label4.Text = "Top Product";
             label4.TextAlign = ContentAlignment.MiddleCenter;
@@ -1190,7 +1164,7 @@ namespace inventory
             manageBtn.DisabledState.FillColor = Color.FromArgb(169, 169, 169);
             manageBtn.DisabledState.ForeColor = Color.FromArgb(141, 141, 141);
             manageBtn.FillColor = Color.FromArgb(120, 20, 20);
-            manageBtn.Font = new Font("Arial Nova", 12F, FontStyle.Bold);
+            manageBtn.Font = new Font("Microsoft Sans Serif", 12F, FontStyle.Bold);
             manageBtn.ForeColor = Color.White;
             manageBtn.HoverState.FillColor = Color.FromArgb(128, 150, 100, 20);
             manageBtn.HoverState.ForeColor = Color.DarkGray;
@@ -1210,11 +1184,11 @@ namespace inventory
             // 
             label13.AutoSize = true;
             tileBtn.SetDecoration(label13, Guna.UI2.AnimatorNS.DecorationType.None);
-            label13.Font = new Font("Arial Nova", 12F, FontStyle.Bold);
+            label13.Font = new Font("Microsoft Sans Serif", 12F, FontStyle.Bold);
             label13.ForeColor = Color.Black;
             label13.Location = new Point(53, 21);
             label13.Name = "label13";
-            label13.Size = new Size(146, 25);
+            label13.Size = new Size(148, 25);
             label13.TabIndex = 0;
             label13.Text = "Product Name";
             label13.TextAlign = ContentAlignment.MiddleCenter;
@@ -1340,7 +1314,7 @@ namespace inventory
             tileBtn.SetDecoration(lblorder, Guna.UI2.AnimatorNS.DecorationType.None);
             lblorder.Location = new Point(4, 29);
             lblorder.Name = "lblorder";
-            lblorder.Size = new Size(1129, 688);
+            lblorder.Size = new Size(1358, 688);
             lblorder.TabIndex = 3;
             lblorder.Text = "Orders";
             lblorder.UseVisualStyleBackColor = true;
@@ -1440,11 +1414,11 @@ namespace inventory
             // 
             label16.AutoSize = true;
             tileBtn.SetDecoration(label16, Guna.UI2.AnimatorNS.DecorationType.None);
-            label16.Font = new Font("Arial Nova", 16.2F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label16.Font = new Font("Microsoft Sans Serif", 16.2F, FontStyle.Bold, GraphicsUnit.Point, 0);
             label16.ForeColor = Color.Black;
             label16.Location = new Point(61, 57);
             label16.Name = "label16";
-            label16.Size = new Size(198, 33);
+            label16.Size = new Size(194, 32);
             label16.TabIndex = 2;
             label16.Text = "Order History";
             // 
@@ -1455,7 +1429,7 @@ namespace inventory
             orderPanel.Controls.Add(orderPanel_scroll);
             orderPanel.CustomizableEdges = customizableEdges51;
             tileBtn.SetDecoration(orderPanel, Guna.UI2.AnimatorNS.DecorationType.None);
-            orderPanel.Location = new Point(311, 115);
+            orderPanel.Location = new Point(540, 115);
             orderPanel.Name = "orderPanel";
             orderPanel.ShadowDecoration.CustomizableEdges = customizableEdges52;
             orderPanel.Size = new Size(818, 577);
@@ -1487,7 +1461,7 @@ namespace inventory
             guna2ImageButton2.ImageOffset = new Point(0, 0);
             guna2ImageButton2.ImageRotate = 0F;
             guna2ImageButton2.ImageSize = new Size(30, 30);
-            guna2ImageButton2.Location = new Point(826, 57);
+            guna2ImageButton2.Location = new Point(1055, 57);
             guna2ImageButton2.Name = "guna2ImageButton2";
             guna2ImageButton2.PressedState.ImageSize = new Size(32, 32);
             guna2ImageButton2.ShadowDecoration.CustomizableEdges = customizableEdges53;
@@ -1510,7 +1484,7 @@ namespace inventory
             searchOrder.FocusedState.BorderColor = Color.FromArgb(94, 148, 255);
             searchOrder.Font = new Font("Segoe UI", 9F);
             searchOrder.HoverState.BorderColor = Color.FromArgb(255, 128, 128);
-            searchOrder.Location = new Point(311, 57);
+            searchOrder.Location = new Point(540, 57);
             searchOrder.Margin = new Padding(3, 4, 3, 4);
             searchOrder.Name = "searchOrder";
             searchOrder.PlaceholderText = "";
@@ -1540,7 +1514,7 @@ namespace inventory
             guna2ComboBox1.HoverState.BorderColor = Color.FromArgb(255, 128, 128);
             guna2ComboBox1.ItemHeight = 30;
             guna2ComboBox1.Items.AddRange(new object[] { "Rice Bowls", "Bento" });
-            guna2ComboBox1.Location = new Point(905, 57);
+            guna2ComboBox1.Location = new Point(1134, 57);
             guna2ComboBox1.Name = "guna2ComboBox1";
             guna2ComboBox1.ShadowDecoration.CustomizableEdges = customizableEdges57;
             guna2ComboBox1.Size = new Size(200, 36);
@@ -1553,7 +1527,7 @@ namespace inventory
             tileBtn.SetDecoration(lblstatistics, Guna.UI2.AnimatorNS.DecorationType.None);
             lblstatistics.Location = new Point(4, 29);
             lblstatistics.Name = "lblstatistics";
-            lblstatistics.Size = new Size(1129, 688);
+            lblstatistics.Size = new Size(1358, 688);
             lblstatistics.TabIndex = 4;
             lblstatistics.Text = "Statistics";
             lblstatistics.UseVisualStyleBackColor = true;
@@ -1572,8 +1546,99 @@ namespace inventory
             guna2Panel3.Location = new Point(0, 0);
             guna2Panel3.Name = "guna2Panel3";
             guna2Panel3.ShadowDecoration.CustomizableEdges = customizableEdges71;
-            guna2Panel3.Size = new Size(1129, 688);
+            guna2Panel3.Size = new Size(1358, 688);
             guna2Panel3.TabIndex = 0;
+            // 
+            // guna2Panel20
+            // 
+            guna2Panel20.Controls.Add(guna2DataGridView6);
+            guna2Panel20.Controls.Add(guna2ComboBox3);
+            guna2Panel20.CustomizableEdges = customizableEdges60;
+            tileBtn.SetDecoration(guna2Panel20, Guna.UI2.AnimatorNS.DecorationType.None);
+            guna2Panel20.Dock = DockStyle.Right;
+            guna2Panel20.FillColor = Color.FromArgb(235, 192, 192);
+            guna2Panel20.Location = new Point(1108, 0);
+            guna2Panel20.Name = "guna2Panel20";
+            guna2Panel20.ShadowDecoration.CustomizableEdges = customizableEdges61;
+            guna2Panel20.Size = new Size(250, 688);
+            guna2Panel20.TabIndex = 10;
+            // 
+            // guna2DataGridView6
+            // 
+            dataGridViewCellStyle7.BackColor = Color.White;
+            guna2DataGridView6.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle7;
+            dataGridViewCellStyle8.Alignment = DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle8.BackColor = Color.FromArgb(100, 88, 255);
+            dataGridViewCellStyle8.Font = new Font("Segoe UI", 9F);
+            dataGridViewCellStyle8.ForeColor = Color.White;
+            dataGridViewCellStyle8.SelectionBackColor = SystemColors.Highlight;
+            dataGridViewCellStyle8.SelectionForeColor = SystemColors.HighlightText;
+            dataGridViewCellStyle8.WrapMode = DataGridViewTriState.True;
+            guna2DataGridView6.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle8;
+            guna2DataGridView6.ColumnHeadersHeight = 4;
+            guna2DataGridView6.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.EnableResizing;
+            tileBtn.SetDecoration(guna2DataGridView6, Guna.UI2.AnimatorNS.DecorationType.None);
+            dataGridViewCellStyle9.Alignment = DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle9.BackColor = Color.White;
+            dataGridViewCellStyle9.Font = new Font("Segoe UI", 9F);
+            dataGridViewCellStyle9.ForeColor = Color.DimGray;
+            dataGridViewCellStyle9.SelectionBackColor = Color.FromArgb(231, 229, 255);
+            dataGridViewCellStyle9.SelectionForeColor = Color.FromArgb(71, 69, 94);
+            dataGridViewCellStyle9.WrapMode = DataGridViewTriState.False;
+            guna2DataGridView6.DefaultCellStyle = dataGridViewCellStyle9;
+            guna2DataGridView6.GridColor = Color.FromArgb(231, 229, 255);
+            guna2DataGridView6.Location = new Point(21, 116);
+            guna2DataGridView6.Name = "guna2DataGridView6";
+            guna2DataGridView6.RowHeadersVisible = false;
+            guna2DataGridView6.RowHeadersWidth = 51;
+            guna2DataGridView6.Size = new Size(210, 564);
+            guna2DataGridView6.TabIndex = 9;
+            guna2DataGridView6.ThemeStyle.AlternatingRowsStyle.BackColor = Color.White;
+            guna2DataGridView6.ThemeStyle.AlternatingRowsStyle.Font = null;
+            guna2DataGridView6.ThemeStyle.AlternatingRowsStyle.ForeColor = Color.Empty;
+            guna2DataGridView6.ThemeStyle.AlternatingRowsStyle.SelectionBackColor = Color.Empty;
+            guna2DataGridView6.ThemeStyle.AlternatingRowsStyle.SelectionForeColor = Color.Empty;
+            guna2DataGridView6.ThemeStyle.BackColor = Color.White;
+            guna2DataGridView6.ThemeStyle.GridColor = Color.FromArgb(231, 229, 255);
+            guna2DataGridView6.ThemeStyle.HeaderStyle.BackColor = Color.FromArgb(100, 88, 255);
+            guna2DataGridView6.ThemeStyle.HeaderStyle.BorderStyle = DataGridViewHeaderBorderStyle.None;
+            guna2DataGridView6.ThemeStyle.HeaderStyle.Font = new Font("Segoe UI", 9F);
+            guna2DataGridView6.ThemeStyle.HeaderStyle.ForeColor = Color.White;
+            guna2DataGridView6.ThemeStyle.HeaderStyle.HeaightSizeMode = DataGridViewColumnHeadersHeightSizeMode.EnableResizing;
+            guna2DataGridView6.ThemeStyle.HeaderStyle.Height = 4;
+            guna2DataGridView6.ThemeStyle.ReadOnly = false;
+            guna2DataGridView6.ThemeStyle.RowsStyle.BackColor = Color.White;
+            guna2DataGridView6.ThemeStyle.RowsStyle.BorderStyle = DataGridViewCellBorderStyle.SingleHorizontal;
+            guna2DataGridView6.ThemeStyle.RowsStyle.Font = new Font("Segoe UI", 9F);
+            guna2DataGridView6.ThemeStyle.RowsStyle.ForeColor = Color.DimGray;
+            guna2DataGridView6.ThemeStyle.RowsStyle.Height = 29;
+            guna2DataGridView6.ThemeStyle.RowsStyle.SelectionBackColor = Color.FromArgb(231, 229, 255);
+            guna2DataGridView6.ThemeStyle.RowsStyle.SelectionForeColor = Color.FromArgb(71, 69, 94);
+            // 
+            // guna2ComboBox3
+            // 
+            guna2ComboBox3.Anchor = AnchorStyles.Top | AnchorStyles.Right;
+            guna2ComboBox3.BackColor = Color.Transparent;
+            guna2ComboBox3.BorderColor = Color.Maroon;
+            guna2ComboBox3.BorderRadius = 16;
+            guna2ComboBox3.BorderThickness = 2;
+            guna2ComboBox3.CustomizableEdges = customizableEdges58;
+            tileBtn.SetDecoration(guna2ComboBox3, Guna.UI2.AnimatorNS.DecorationType.None);
+            guna2ComboBox3.DrawMode = DrawMode.OwnerDrawFixed;
+            guna2ComboBox3.DropDownStyle = ComboBoxStyle.DropDownList;
+            guna2ComboBox3.FocusedColor = Color.FromArgb(94, 148, 255);
+            guna2ComboBox3.FocusedState.BorderColor = Color.FromArgb(94, 148, 255);
+            guna2ComboBox3.Font = new Font("Segoe UI", 10F);
+            guna2ComboBox3.ForeColor = Color.FromArgb(68, 88, 112);
+            guna2ComboBox3.HoverState.BorderColor = Color.FromArgb(255, 128, 128);
+            guna2ComboBox3.ItemHeight = 30;
+            guna2ComboBox3.Items.AddRange(new object[] { "Monthly", "This Week", "Today" });
+            guna2ComboBox3.Location = new Point(21, 57);
+            guna2ComboBox3.Name = "guna2ComboBox3";
+            guna2ComboBox3.ShadowDecoration.CustomizableEdges = customizableEdges59;
+            guna2ComboBox3.Size = new Size(210, 36);
+            guna2ComboBox3.TabIndex = 8;
+            guna2ComboBox3.Tag = "";
             // 
             // guna2Chart1
             // 
@@ -1629,11 +1694,11 @@ namespace inventory
             // 
             label17.AutoSize = true;
             tileBtn.SetDecoration(label17, Guna.UI2.AnimatorNS.DecorationType.None);
-            label17.Font = new Font("Arial Nova", 19.8000011F, FontStyle.Bold);
+            label17.Font = new Font("Microsoft Sans Serif", 19.8000011F, FontStyle.Bold);
             label17.ForeColor = Color.Black;
             label17.Location = new Point(19, 57);
             label17.Name = "label17";
-            label17.Size = new Size(75, 41);
+            label17.Size = new Size(77, 39);
             label17.TabIndex = 1;
             label17.Text = "120";
             // 
@@ -1667,11 +1732,11 @@ namespace inventory
             // 
             label19.AutoSize = true;
             tileBtn.SetDecoration(label19, Guna.UI2.AnimatorNS.DecorationType.None);
-            label19.Font = new Font("Arial Nova", 19.8000011F, FontStyle.Bold);
+            label19.Font = new Font("Microsoft Sans Serif", 19.8000011F, FontStyle.Bold);
             label19.ForeColor = Color.Black;
             label19.Location = new Point(18, 57);
             label19.Name = "label19";
-            label19.Size = new Size(75, 41);
+            label19.Size = new Size(77, 39);
             label19.TabIndex = 1;
             label19.Text = "101";
             // 
@@ -1705,11 +1770,11 @@ namespace inventory
             // 
             label21.AutoSize = true;
             tileBtn.SetDecoration(label21, Guna.UI2.AnimatorNS.DecorationType.None);
-            label21.Font = new Font("Arial Nova", 19.8000011F, FontStyle.Bold);
+            label21.Font = new Font("Microsoft Sans Serif", 19.8000011F, FontStyle.Bold);
             label21.ForeColor = Color.Black;
             label21.Location = new Point(19, 57);
             label21.Name = "label21";
-            label21.Size = new Size(75, 41);
+            label21.Size = new Size(77, 39);
             label21.TabIndex = 1;
             label21.Text = "125";
             // 
@@ -1743,11 +1808,11 @@ namespace inventory
             // 
             label23.AutoSize = true;
             tileBtn.SetDecoration(label23, Guna.UI2.AnimatorNS.DecorationType.None);
-            label23.Font = new Font("Arial Nova", 19.8000011F, FontStyle.Bold);
+            label23.Font = new Font("Microsoft Sans Serif", 19.8000011F, FontStyle.Bold);
             label23.ForeColor = Color.Black;
             label23.Location = new Point(17, 57);
             label23.Name = "label23";
-            label23.Size = new Size(116, 41);
+            label23.Size = new Size(121, 39);
             label23.TabIndex = 1;
             label23.Text = "Php ...";
             // 
@@ -1770,7 +1835,7 @@ namespace inventory
             tileBtn.SetDecoration(lblroles, Guna.UI2.AnimatorNS.DecorationType.None);
             lblroles.Location = new Point(4, 29);
             lblroles.Name = "lblroles";
-            lblroles.Size = new Size(1129, 688);
+            lblroles.Size = new Size(1358, 688);
             lblroles.TabIndex = 5;
             lblroles.Text = "Roles";
             lblroles.UseVisualStyleBackColor = true;
@@ -1819,7 +1884,7 @@ namespace inventory
             guna2DataGridView2.RowHeadersDefaultCellStyle = dataGridViewCellStyle13;
             guna2DataGridView2.RowHeadersVisible = false;
             guna2DataGridView2.RowHeadersWidth = 51;
-            guna2DataGridView2.Size = new Size(1057, 563);
+            guna2DataGridView2.Size = new Size(1286, 563);
             guna2DataGridView2.TabIndex = 11;
             guna2DataGridView2.ThemeStyle.AlternatingRowsStyle.BackColor = Color.White;
             guna2DataGridView2.ThemeStyle.AlternatingRowsStyle.Font = null;
@@ -1919,7 +1984,7 @@ namespace inventory
             panel1.Dock = DockStyle.Top;
             panel1.Location = new Point(0, 0);
             panel1.Name = "panel1";
-            panel1.Size = new Size(1129, 125);
+            panel1.Size = new Size(1358, 125);
             panel1.TabIndex = 10;
             // 
             // searchRoles
@@ -1938,7 +2003,7 @@ namespace inventory
             searchRoles.FocusedState.BorderColor = Color.FromArgb(94, 148, 255);
             searchRoles.Font = new Font("Segoe UI", 9F);
             searchRoles.HoverState.BorderColor = Color.FromArgb(255, 128, 128);
-            searchRoles.Location = new Point(293, 58);
+            searchRoles.Location = new Point(522, 58);
             searchRoles.Margin = new Padding(3, 4, 3, 4);
             searchRoles.Name = "searchRoles";
             searchRoles.PlaceholderText = "";
@@ -1961,7 +2026,7 @@ namespace inventory
             guna2ImageButton3.ImageOffset = new Point(0, 0);
             guna2ImageButton3.ImageRotate = 0F;
             guna2ImageButton3.ImageSize = new Size(30, 30);
-            guna2ImageButton3.Location = new Point(808, 58);
+            guna2ImageButton3.Location = new Point(1037, 58);
             guna2ImageButton3.Name = "guna2ImageButton3";
             guna2ImageButton3.PressedState.ImageSize = new Size(32, 32);
             guna2ImageButton3.ShadowDecoration.CustomizableEdges = customizableEdges74;
@@ -1975,7 +2040,7 @@ namespace inventory
             guna2GradientPanel1.Controls.Add(guna2Button2);
             guna2GradientPanel1.CustomizableEdges = customizableEdges79;
             tileBtn.SetDecoration(guna2GradientPanel1, Guna.UI2.AnimatorNS.DecorationType.None);
-            guna2GradientPanel1.Location = new Point(271, 48);
+            guna2GradientPanel1.Location = new Point(500, 48);
             guna2GradientPanel1.Name = "guna2GradientPanel1";
             guna2GradientPanel1.ShadowDecoration.CustomizableEdges = customizableEdges80;
             guna2GradientPanel1.Size = new Size(850, 60);
@@ -2185,96 +2250,6 @@ namespace inventory
             // 
             gunaStackedBarDataset2.Label = "StackedBar2";
             // 
-            // guna2Panel20
-            // 
-            guna2Panel20.Controls.Add(guna2DataGridView6);
-            guna2Panel20.Controls.Add(guna2ComboBox3);
-            guna2Panel20.CustomizableEdges = customizableEdges60;
-            tileBtn.SetDecoration(guna2Panel20, Guna.UI2.AnimatorNS.DecorationType.None);
-            guna2Panel20.Dock = DockStyle.Right;
-            guna2Panel20.FillColor = Color.FromArgb(235, 192, 192);
-            guna2Panel20.Location = new Point(879, 0);
-            guna2Panel20.Name = "guna2Panel20";
-            guna2Panel20.ShadowDecoration.CustomizableEdges = customizableEdges61;
-            guna2Panel20.Size = new Size(250, 688);
-            guna2Panel20.TabIndex = 10;
-            // 
-            // guna2ComboBox3
-            // 
-            guna2ComboBox3.Anchor = AnchorStyles.Top | AnchorStyles.Right;
-            guna2ComboBox3.BackColor = Color.Transparent;
-            guna2ComboBox3.BorderColor = Color.Maroon;
-            guna2ComboBox3.BorderRadius = 16;
-            guna2ComboBox3.BorderThickness = 2;
-            guna2ComboBox3.CustomizableEdges = customizableEdges58;
-            tileBtn.SetDecoration(guna2ComboBox3, Guna.UI2.AnimatorNS.DecorationType.None);
-            guna2ComboBox3.DrawMode = DrawMode.OwnerDrawFixed;
-            guna2ComboBox3.DropDownStyle = ComboBoxStyle.DropDownList;
-            guna2ComboBox3.FocusedColor = Color.FromArgb(94, 148, 255);
-            guna2ComboBox3.FocusedState.BorderColor = Color.FromArgb(94, 148, 255);
-            guna2ComboBox3.Font = new Font("Segoe UI", 10F);
-            guna2ComboBox3.ForeColor = Color.FromArgb(68, 88, 112);
-            guna2ComboBox3.HoverState.BorderColor = Color.FromArgb(255, 128, 128);
-            guna2ComboBox3.ItemHeight = 30;
-            guna2ComboBox3.Items.AddRange(new object[] { "Monthly", "This Week", "Today" });
-            guna2ComboBox3.Location = new Point(21, 57);
-            guna2ComboBox3.Name = "guna2ComboBox3";
-            guna2ComboBox3.ShadowDecoration.CustomizableEdges = customizableEdges59;
-            guna2ComboBox3.Size = new Size(210, 36);
-            guna2ComboBox3.TabIndex = 8;
-            guna2ComboBox3.Tag = "";
-            // 
-            // guna2DataGridView6
-            // 
-            dataGridViewCellStyle7.BackColor = Color.White;
-            guna2DataGridView6.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle7;
-            dataGridViewCellStyle8.Alignment = DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle8.BackColor = Color.FromArgb(100, 88, 255);
-            dataGridViewCellStyle8.Font = new Font("Segoe UI", 9F);
-            dataGridViewCellStyle8.ForeColor = Color.White;
-            dataGridViewCellStyle8.SelectionBackColor = SystemColors.Highlight;
-            dataGridViewCellStyle8.SelectionForeColor = SystemColors.HighlightText;
-            dataGridViewCellStyle8.WrapMode = DataGridViewTriState.True;
-            guna2DataGridView6.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle8;
-            guna2DataGridView6.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            tileBtn.SetDecoration(guna2DataGridView6, Guna.UI2.AnimatorNS.DecorationType.None);
-            dataGridViewCellStyle9.Alignment = DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle9.BackColor = Color.White;
-            dataGridViewCellStyle9.Font = new Font("Segoe UI", 9F);
-            dataGridViewCellStyle9.ForeColor = Color.DimGray;
-            dataGridViewCellStyle9.SelectionBackColor = Color.FromArgb(231, 229, 255);
-            dataGridViewCellStyle9.SelectionForeColor = Color.FromArgb(71, 69, 94);
-            dataGridViewCellStyle9.WrapMode = DataGridViewTriState.False;
-            guna2DataGridView6.DefaultCellStyle = dataGridViewCellStyle9;
-            guna2DataGridView6.GridColor = Color.FromArgb(231, 229, 255);
-            guna2DataGridView6.Location = new Point(21, 116);
-            guna2DataGridView6.Name = "guna2DataGridView6";
-            guna2DataGridView6.RowHeadersVisible = false;
-            guna2DataGridView6.RowHeadersWidth = 51;
-            guna2DataGridView6.Size = new Size(210, 564);
-            guna2DataGridView6.TabIndex = 9;
-            guna2DataGridView6.ThemeStyle.AlternatingRowsStyle.BackColor = Color.White;
-            guna2DataGridView6.ThemeStyle.AlternatingRowsStyle.Font = null;
-            guna2DataGridView6.ThemeStyle.AlternatingRowsStyle.ForeColor = Color.Empty;
-            guna2DataGridView6.ThemeStyle.AlternatingRowsStyle.SelectionBackColor = Color.Empty;
-            guna2DataGridView6.ThemeStyle.AlternatingRowsStyle.SelectionForeColor = Color.Empty;
-            guna2DataGridView6.ThemeStyle.BackColor = Color.White;
-            guna2DataGridView6.ThemeStyle.GridColor = Color.FromArgb(231, 229, 255);
-            guna2DataGridView6.ThemeStyle.HeaderStyle.BackColor = Color.FromArgb(100, 88, 255);
-            guna2DataGridView6.ThemeStyle.HeaderStyle.BorderStyle = DataGridViewHeaderBorderStyle.None;
-            guna2DataGridView6.ThemeStyle.HeaderStyle.Font = new Font("Segoe UI", 9F);
-            guna2DataGridView6.ThemeStyle.HeaderStyle.ForeColor = Color.White;
-            guna2DataGridView6.ThemeStyle.HeaderStyle.HeaightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            guna2DataGridView6.ThemeStyle.HeaderStyle.Height = 4;
-            guna2DataGridView6.ThemeStyle.ReadOnly = false;
-            guna2DataGridView6.ThemeStyle.RowsStyle.BackColor = Color.White;
-            guna2DataGridView6.ThemeStyle.RowsStyle.BorderStyle = DataGridViewCellBorderStyle.SingleHorizontal;
-            guna2DataGridView6.ThemeStyle.RowsStyle.Font = new Font("Segoe UI", 9F);
-            guna2DataGridView6.ThemeStyle.RowsStyle.ForeColor = Color.DimGray;
-            guna2DataGridView6.ThemeStyle.RowsStyle.Height = 29;
-            guna2DataGridView6.ThemeStyle.RowsStyle.SelectionBackColor = Color.FromArgb(231, 229, 255);
-            guna2DataGridView6.ThemeStyle.RowsStyle.SelectionForeColor = Color.FromArgb(71, 69, 94);
-            // 
             // Form1
             // 
             AutoScaleMode = AutoScaleMode.None;
@@ -2282,7 +2257,6 @@ namespace inventory
             ClientSize = new Size(1366, 768);
             Controls.Add(guna2Panel1);
             Controls.Add(tabControl1);
-            Controls.Add(sidebarPanel);
             Controls.Add(taskbar);
             tileBtn.SetDecoration(this, Guna.UI2.AnimatorNS.DecorationType.None);
             ForeColor = Color.DimGray;
@@ -2326,6 +2300,8 @@ namespace inventory
             orderPanel.ResumeLayout(false);
             lblstatistics.ResumeLayout(false);
             guna2Panel3.ResumeLayout(false);
+            guna2Panel20.ResumeLayout(false);
+            ((ISupportInitialize)guna2DataGridView6).EndInit();
             guna2Panel4.ResumeLayout(false);
             guna2Panel4.PerformLayout();
             guna2Panel17.ResumeLayout(false);
@@ -2340,8 +2316,6 @@ namespace inventory
             panel1.ResumeLayout(false);
             guna2GradientPanel1.ResumeLayout(false);
             ((ISupportInitialize)guna2DataGridView3).EndInit();
-            guna2Panel20.ResumeLayout(false);
-            ((ISupportInitialize)guna2DataGridView6).EndInit();
             ResumeLayout(false);
         }
 
