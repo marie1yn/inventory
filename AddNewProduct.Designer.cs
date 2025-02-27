@@ -97,6 +97,7 @@
             Controls.Add(guna2Taskbar);
             FormBorderStyle = FormBorderStyle.None;
             Name = "AddNewProduct";
+            StartPosition = FormStartPosition.CenterScreen;
             Text = "AddNewProduct";
             guna2Taskbar.ResumeLayout(false);
             guna2Taskbar.PerformLayout();

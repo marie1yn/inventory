@@ -97,6 +97,7 @@
             Controls.Add(guna2Taskbar);
             FormBorderStyle = FormBorderStyle.None;
             Name = "AddOrder";
+            StartPosition = FormStartPosition.CenterScreen;
             Text = "AddOrder";
             guna2Taskbar.ResumeLayout(false);
             guna2Taskbar.PerformLayout();
