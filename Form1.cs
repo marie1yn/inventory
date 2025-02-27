@@ -16,7 +16,7 @@ namespace inventory
         public Form1()
         {
             InitializeComponent();
-            sidebarManager = new SidebarManager(sidebarPanel, tabControl1, dashboard);
+            sidebarManager = new SidebarManager(sidebarPanel, tabControl1, dashboardbtn);
         }
 
         private void Form1_Load(object sender, EventArgs e)
@@ -24,35 +24,28 @@ namespace inventory
             sidebarManager.ToggleSidebar();
             sidebarManager.ApplyTagColors();
             sidebarManager.UpdateSidebarUI();
-            sidebarManager.SetActiveButton(dashboard);
-            dashboard.PerformClick();
+            sidebarManager.SetActiveButton(dashboardbtn);
+            dashboardbtn.PerformClick();
 
             logout.FillColor = Color.Maroon;
             logout.ForeColor = Color.White;
 
             SetInitialComboBoxValues(this);
-            SetupScrollBar(orderPanel_scroll, orderPanel);
-            SetupScrollBar(stockPanel_scroll, stockPanel);
             Example(guna2Chart1);
-        }
-        private void SetupScrollBar(Guna2VScrollBar scrollBar, Panel panel)
-        {
-            scrollBar.Maximum = panel.DisplayRectangle.Height - panel.ClientSize.Height;
-            scrollBar.Scroll += (s, e) => panel.AutoScrollPosition = new Point(0, scrollBar.Value);
-        }
-
-        private void SetInitialComboBoxValues(Control parent)
-        {
-            foreach (Control control in parent.Controls)
+            stockScrollbar.BindingContainer = stockPanel;
+            orderScrollbar.BindingContainer = orderPanel;
+            //for testing cards...
+            for (int i = 0; i < 10; i++)
             {
-                if (control is Guna2ComboBox comboBox && comboBox.Items.Count > 0)
-                {
-                    comboBox.SelectedIndex = 0;
-                }
-                if (control.HasChildren)
-                {
-                    SetInitialComboBoxValues(control);
-                }
+                stockPanel.Controls.Add(new ProductCard());
+                orderPanel.Controls.Add(new OrderCard());
+            }
+        }
+        private void btnToggle_Click(object sender, EventArgs e)
+        {
+            if (sidebarManager != null)
+            {
+                sidebarManager.ToggleSidebar();
             }
         }
         private void taskbar_MouseDown(object sender, MouseEventArgs e)
@@ -63,7 +56,6 @@ namespace inventory
                 SendMessage(Handle, 0xA1, 0x2, 0);
             }
         }
-
         private void SidebarButton_Click(object sender, EventArgs e)
         {
             if (sender is Guna2Button button && button.Tag is string tabName)
@@ -79,7 +71,6 @@ namespace inventory
                 }
             }
         }
-
         private void search_Enter(object sender, EventArgs e)
         {
             if (sender is Guna2TextBox searchBox &&
@@ -89,9 +80,7 @@ namespace inventory
                 searchBox.ForeColor = Color.Black;
             }
         }
-
         private void search_Leave(object sender, EventArgs e) => ResetSearchBox();
-
         private void ResetSearchBox()
         {
             foreach (var searchBox in new[] { searchStocks, searchRoles, searchOrder })
@@ -104,31 +93,45 @@ namespace inventory
                 }
             }
         }
-        private void btnToggle_Click(object sender, EventArgs e)
+        private void SetInitialComboBoxValues(Control parent)
         {
-            if (sidebarManager != null)
+            foreach (Control control in parent.Controls)
             {
-                sidebarManager.ToggleSidebar();
+                if (control is Guna2ComboBox comboBox && comboBox.Items.Count > 0)
+                {
+                    comboBox.SelectedIndex = 0;
+                }
+                if (control.HasChildren)
+                {
+                    SetInitialComboBoxValues(control);
+                }
             }
         }
         private void manageBtn_Click(object sender, EventArgs e)
         {
             new ManageStock().Show();
         }
+        private void guna2Button4_Click(object sender, EventArgs e)
+        {
+            new AddNewProduct().Show();
+        }
         private void btnsales_dashboard_Click(object sender, EventArgs e)
         {
             tabControl1.SelectedTab = lblstatistics;
-            sidebarManager.SetActiveButton(statistics);
+            sidebarManager.SetActiveButton(statisticsbtn);
         }
-
+        private void guna2Button5_Click(object sender, EventArgs e)
+        {
+            new AddOrder().Show();
+        }
         private void guna2Button3_Click(object sender, EventArgs e)
         {
             tabControl1.SelectedTab = lblstatistics;
-            sidebarManager.SetActiveButton(statistics);
+            sidebarManager.SetActiveButton(statisticsbtn);
         }
         public static void Example(GunaChart guna2Chart1)
         {
-            string[] months = { "January", "February", "March", "April", "May", "June", "July", "Ausust", "September", "November", "December" };
+            string[] months = { "January", "February", "March", "April", "May", "June", "July", "August", "September", "November", "December" };
 
             // 🛠️ Chart Configuration
             guna2Chart1.YAxes.GridLines.Display = false;
@@ -140,7 +143,7 @@ namespace inventory
             var stackedBar1 = new GunaStackedBarDataset
             {
                 Label = "Product A",
-                FillColors = new Guna.Charts.WinForms.ColorCollection
+                FillColors = new ColorCollection
                 {
                     Color.FromArgb(245, 245, 220), // Beige 🤍
                     Color.FromArgb(247, 231, 206), // Champagne ✨
@@ -151,16 +154,16 @@ namespace inventory
             var stackedBar2 = new GunaStackedBarDataset
             {
                 Label = "Product B",
-                FillColors = new Guna.Charts.WinForms.ColorCollection
+                FillColors = new ColorCollection
                 {
                     Color.FromArgb(85, 107, 47)  // Dark Olive Green 🌿
                 }
             };
-            
+
             var stackedBar3 = new GunaStackedBarDataset
             {
                 Label = "Product C",
-                FillColors = new Guna.Charts.WinForms.ColorCollection
+                FillColors = new ColorCollection
                 {
                     Color.FromArgb(128, 0, 0) // Maroon ❤️
                 }
@@ -171,9 +174,22 @@ namespace inventory
             {
                 Label = "Total Revenue",
                 BorderWidth = 2,
-                BorderColor = Color.FromArgb(30,30,30),
+                BorderColor = Color.FromArgb(50, 50, 50),
                 //BorderColor = Color.FromArgb(184, 134, 11),  // Deep Gold 🌟
                 FillColor = Color.FromArgb(50, 50, 50),  // Dark Gray ⚫
+                PointRadius = 6,
+                PointFillColors = new ColorCollection()
+                {
+                    Color.Maroon,
+                    Color.DarkGray,
+                    Color.Black,
+                    Color.FromArgb(184, 134, 11),
+                    Color.FromArgb(85, 107, 47),
+                },
+                PointBorderColors = new ColorCollection()
+                {
+                    Color.White,
+                }
             };
 
 
@@ -200,16 +216,17 @@ namespace inventory
             // 🔄 Update the chart
             guna2Chart1.Update();
         }
-        private void dashboard_Click(object sender, EventArgs e) => label1.Text = "Dashboard";
-        private void stocks_Click(object sender, EventArgs e) => label1.Text = "Stocks";
-        private void orders_Click(object sender, EventArgs e) => label1.Text = "Orders";
-        private void statistics_Click(object sender, EventArgs e) => label1.Text = "Statistics";
-        private void roles_Click(object sender, EventArgs e) => label1.Text = "Roles";
+        private void dashboard_Click(object sender, EventArgs e) => labelTab.Text = "Dashboard";
+        private void stocks_Click(object sender, EventArgs e) => labelTab.Text = "Stocks";
+        private void orders_Click(object sender, EventArgs e) => labelTab.Text = "Orders";
+        private void statistics_Click(object sender, EventArgs e) => labelTab.Text = "Statistics";
+        private void roles_Click(object sender, EventArgs e) => labelTab.Text = "Roles";
 
         [DllImport("user32.dll")]
         private static extern void ReleaseCapture();
 
         [DllImport("user32.dll")]
         private static extern void SendMessage(IntPtr hWnd, int msg, int wParam, int lParam);
+
     }
 }
