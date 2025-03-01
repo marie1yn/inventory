@@ -19,5 +19,10 @@ namespace inventory
 
         private void BtnMinimize_Click(object sender, EventArgs e) => WindowState = FormWindowState.Minimized;
         private void BtnClose_Click(object sender, EventArgs e) => this.Close();
+
+        private void guna2Button3_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
