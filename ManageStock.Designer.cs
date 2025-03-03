@@ -51,7 +51,7 @@
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges1 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges2 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             guna2BorderlessForm1 = new Guna.UI2.WinForms.Guna2BorderlessForm(components);
-            guna2Taskbar = new Guna.UI2.WinForms.Guna2Panel();
+            taskbar = new Guna.UI2.WinForms.Guna2Panel();
             label1 = new Label();
             guna2ControlBox1 = new Guna.UI2.WinForms.Guna2ControlBox();
             guna2PictureBox1 = new Guna.UI2.WinForms.Guna2PictureBox();
@@ -65,7 +65,7 @@
             label2 = new Label();
             label3 = new Label();
             label4 = new Label();
-            guna2Taskbar.SuspendLayout();
+            taskbar.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)guna2PictureBox1).BeginInit();
             ((System.ComponentModel.ISupportInitialize)guna2DataGridView1).BeginInit();
             ((System.ComponentModel.ISupportInitialize)guna2NumericUpDown2).BeginInit();
@@ -77,19 +77,20 @@
             guna2BorderlessForm1.DockIndicatorTransparencyValue = 0.6D;
             guna2BorderlessForm1.TransparentWhileDrag = true;
             // 
-            // guna2Taskbar
+            // taskbar
             // 
-            guna2Taskbar.Controls.Add(label1);
-            guna2Taskbar.Controls.Add(guna2ControlBox1);
-            guna2Taskbar.CustomizableEdges = customizableEdges17;
-            guna2Taskbar.Dock = DockStyle.Top;
-            guna2Taskbar.FillColor = Color.FromArgb(120, 20, 20);
-            guna2Taskbar.Location = new Point(0, 0);
-            guna2Taskbar.Margin = new Padding(3, 4, 3, 4);
-            guna2Taskbar.Name = "guna2Taskbar";
-            guna2Taskbar.ShadowDecoration.CustomizableEdges = customizableEdges18;
-            guna2Taskbar.Size = new Size(800, 47);
-            guna2Taskbar.TabIndex = 1;
+            taskbar.Controls.Add(label1);
+            taskbar.Controls.Add(guna2ControlBox1);
+            taskbar.CustomizableEdges = customizableEdges17;
+            taskbar.Dock = DockStyle.Top;
+            taskbar.FillColor = Color.FromArgb(120, 20, 20);
+            taskbar.Location = new Point(0, 0);
+            taskbar.Margin = new Padding(3, 4, 3, 4);
+            taskbar.Name = "taskbar";
+            taskbar.ShadowDecoration.CustomizableEdges = customizableEdges18;
+            taskbar.Size = new Size(800, 47);
+            taskbar.TabIndex = 1;
+            taskbar.MouseDown += taskbar_MouseDown;
             // 
             // label1
             // 
@@ -145,7 +146,8 @@
             dataGridViewCellStyle2.SelectionForeColor = SystemColors.HighlightText;
             dataGridViewCellStyle2.WrapMode = DataGridViewTriState.True;
             guna2DataGridView1.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
-            guna2DataGridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            guna2DataGridView1.ColumnHeadersHeight = 4;
+            guna2DataGridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.EnableResizing;
             dataGridViewCellStyle3.Alignment = DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle3.BackColor = Color.White;
             dataGridViewCellStyle3.Font = new Font("Segoe UI", 9F);
@@ -172,7 +174,7 @@
             guna2DataGridView1.ThemeStyle.HeaderStyle.BorderStyle = DataGridViewHeaderBorderStyle.None;
             guna2DataGridView1.ThemeStyle.HeaderStyle.Font = new Font("Segoe UI", 9F);
             guna2DataGridView1.ThemeStyle.HeaderStyle.ForeColor = Color.White;
-            guna2DataGridView1.ThemeStyle.HeaderStyle.HeaightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            guna2DataGridView1.ThemeStyle.HeaderStyle.HeaightSizeMode = DataGridViewColumnHeadersHeightSizeMode.EnableResizing;
             guna2DataGridView1.ThemeStyle.HeaderStyle.Height = 4;
             guna2DataGridView1.ThemeStyle.ReadOnly = false;
             guna2DataGridView1.ThemeStyle.RowsStyle.BackColor = Color.White;
@@ -212,7 +214,6 @@
             guna2Button1.Size = new Size(67, 56);
             guna2Button1.TabIndex = 7;
             guna2Button1.Text = "Add";
-            guna2Button1.Click += this.guna2Button1_Click;
             // 
             // guna2Button2
             // 
@@ -230,7 +231,6 @@
             guna2Button2.Size = new Size(75, 56);
             guna2Button2.TabIndex = 8;
             guna2Button2.Text = "Delete";
-            guna2Button2.Click += this.guna2Button2_Click;
             // 
             // guna2Button3
             // 
@@ -248,7 +248,6 @@
             guna2Button3.Size = new Size(179, 56);
             guna2Button3.TabIndex = 9;
             guna2Button3.Text = "Delete Product";
-            guna2Button3.Click += guna2Button3_Click;
             // 
             // guna2DateTimePicker1
             // 
@@ -331,13 +330,13 @@
             Controls.Add(guna2NumericUpDown2);
             Controls.Add(guna2DataGridView1);
             Controls.Add(guna2PictureBox1);
-            Controls.Add(guna2Taskbar);
+            Controls.Add(taskbar);
             FormBorderStyle = FormBorderStyle.None;
             Name = "ManageStock";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "Manage Stock";
-            guna2Taskbar.ResumeLayout(false);
-            guna2Taskbar.PerformLayout();
+            taskbar.ResumeLayout(false);
+            taskbar.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)guna2PictureBox1).EndInit();
             ((System.ComponentModel.ISupportInitialize)guna2DataGridView1).EndInit();
             ((System.ComponentModel.ISupportInitialize)guna2NumericUpDown2).EndInit();
@@ -348,7 +347,7 @@
         #endregion
 
         private Guna.UI2.WinForms.Guna2BorderlessForm guna2BorderlessForm1;
-        private Guna.UI2.WinForms.Guna2Panel guna2Taskbar;
+        private Guna.UI2.WinForms.Guna2Panel taskbar;
         private Label label1;
         private Guna.UI2.WinForms.Guna2ControlBox guna2ControlBox1;
         private Guna.UI2.WinForms.Guna2PictureBox guna2PictureBox1;
