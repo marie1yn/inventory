@@ -79,13 +79,13 @@ namespace inventory
             DataGridViewCellStyle dataGridViewCellStyle3 = new DataGridViewCellStyle();
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges59 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges60 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges45 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges46 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges43 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges44 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges42 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges40 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges41 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges42 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges43 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges44 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges45 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges46 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges57 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges58 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges47 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
@@ -226,12 +226,12 @@ namespace inventory
             label12 = new Label();
             lblstocks = new TabPage();
             guna2Panel5 = new Guna2Panel();
+            categoryComboBox = new Guna2ComboBox();
+            guna2ImageButton1 = new Guna2ImageButton();
+            searchStocks = new Guna2TextBox();
             panelStock = new Guna2Panel();
             stockScrollbar = new Guna2VScrollBar();
             stockPanel = new FlowLayoutPanel();
-            searchStocks = new Guna2TextBox();
-            guna2ImageButton1 = new Guna2ImageButton();
-            categoryComboBox = new Guna2ComboBox();
             guna2Panel15 = new Guna2Panel();
             guna2Button4 = new Guna2Button();
             guna2Button3 = new Guna2Button();
@@ -1172,6 +1172,73 @@ namespace inventory
             guna2Panel5.Size = new Size(1358, 688);
             guna2Panel5.TabIndex = 6;
             // 
+            // categoryComboBox
+            // 
+            categoryComboBox.Anchor = AnchorStyles.Top | AnchorStyles.Right;
+            categoryComboBox.BackColor = Color.Transparent;
+            categoryComboBox.BorderColor = Color.Maroon;
+            categoryComboBox.BorderRadius = 16;
+            categoryComboBox.BorderThickness = 2;
+            categoryComboBox.CustomizableEdges = customizableEdges40;
+            tileBtn.SetDecoration(categoryComboBox, Guna.UI2.AnimatorNS.DecorationType.None);
+            categoryComboBox.DrawMode = DrawMode.OwnerDrawFixed;
+            categoryComboBox.DropDownStyle = ComboBoxStyle.DropDownList;
+            categoryComboBox.FocusedColor = Color.FromArgb(94, 148, 255);
+            categoryComboBox.FocusedState.BorderColor = Color.FromArgb(94, 148, 255);
+            categoryComboBox.Font = new Font("Segoe UI", 10F);
+            categoryComboBox.ForeColor = Color.FromArgb(68, 88, 112);
+            categoryComboBox.HoverState.BorderColor = Color.FromArgb(255, 128, 128);
+            categoryComboBox.ItemHeight = 30;
+            categoryComboBox.Items.AddRange(new object[] { "Category" });
+            categoryComboBox.Location = new Point(885, 59);
+            categoryComboBox.Name = "categoryComboBox";
+            categoryComboBox.ShadowDecoration.CustomizableEdges = customizableEdges41;
+            categoryComboBox.Size = new Size(200, 36);
+            categoryComboBox.TabIndex = 4;
+            categoryComboBox.Tag = "Category";
+            // 
+            // guna2ImageButton1
+            // 
+            guna2ImageButton1.CheckedState.ImageSize = new Size(64, 64);
+            guna2ImageButton1.Cursor = Cursors.Hand;
+            tileBtn.SetDecoration(guna2ImageButton1, Guna.UI2.AnimatorNS.DecorationType.None);
+            guna2ImageButton1.HoverState.ImageSize = new Size(35, 35);
+            guna2ImageButton1.Image = Properties.Resources.magnifying_glass;
+            guna2ImageButton1.ImageOffset = new Point(0, 0);
+            guna2ImageButton1.ImageRotate = 0F;
+            guna2ImageButton1.ImageSize = new Size(30, 30);
+            guna2ImageButton1.Location = new Point(767, 57);
+            guna2ImageButton1.Name = "guna2ImageButton1";
+            guna2ImageButton1.PressedState.ImageSize = new Size(30, 30);
+            guna2ImageButton1.ShadowDecoration.CustomizableEdges = customizableEdges42;
+            guna2ImageButton1.Size = new Size(40, 40);
+            guna2ImageButton1.TabIndex = 1;
+            // 
+            // searchStocks
+            // 
+            searchStocks.BorderColor = Color.Maroon;
+            searchStocks.BorderRadius = 16;
+            searchStocks.BorderThickness = 2;
+            searchStocks.CustomizableEdges = customizableEdges43;
+            tileBtn.SetDecoration(searchStocks, Guna.UI2.AnimatorNS.DecorationType.None);
+            searchStocks.DefaultText = "";
+            searchStocks.DisabledState.BorderColor = Color.FromArgb(208, 208, 208);
+            searchStocks.DisabledState.FillColor = Color.FromArgb(226, 226, 226);
+            searchStocks.DisabledState.ForeColor = Color.FromArgb(138, 138, 138);
+            searchStocks.DisabledState.PlaceholderForeColor = Color.FromArgb(138, 138, 138);
+            searchStocks.FocusedState.BorderColor = Color.FromArgb(94, 148, 255);
+            searchStocks.Font = new Font("Segoe UI", 9F);
+            searchStocks.HoverState.BorderColor = Color.FromArgb(255, 128, 128);
+            searchStocks.Location = new Point(65, 59);
+            searchStocks.Margin = new Padding(3, 4, 3, 4);
+            searchStocks.Name = "searchStocks";
+            searchStocks.PlaceholderText = "Search Product";
+            searchStocks.SelectedText = "";
+            searchStocks.ShadowDecoration.CustomizableEdges = customizableEdges44;
+            searchStocks.Size = new Size(696, 36);
+            searchStocks.TabIndex = 0;
+            searchStocks.Tag = "Search Product";
+            // 
             // panelStock
             // 
             panelStock.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
@@ -1220,75 +1287,6 @@ namespace inventory
             stockPanel.Padding = new Padding(5);
             stockPanel.Size = new Size(1020, 578);
             stockPanel.TabIndex = 1;
-            // 
-            // searchStocks
-            // 
-            searchStocks.BorderColor = Color.Maroon;
-            searchStocks.BorderRadius = 16;
-            searchStocks.BorderThickness = 2;
-            searchStocks.CustomizableEdges = customizableEdges43;
-            tileBtn.SetDecoration(searchStocks, Guna.UI2.AnimatorNS.DecorationType.None);
-            searchStocks.DefaultText = "Search Product";
-            searchStocks.DisabledState.BorderColor = Color.FromArgb(208, 208, 208);
-            searchStocks.DisabledState.FillColor = Color.FromArgb(226, 226, 226);
-            searchStocks.DisabledState.ForeColor = Color.FromArgb(138, 138, 138);
-            searchStocks.DisabledState.PlaceholderForeColor = Color.FromArgb(138, 138, 138);
-            searchStocks.FocusedState.BorderColor = Color.FromArgb(94, 148, 255);
-            searchStocks.Font = new Font("Segoe UI", 9F);
-            searchStocks.HoverState.BorderColor = Color.FromArgb(255, 128, 128);
-            searchStocks.Location = new Point(65, 59);
-            searchStocks.Margin = new Padding(3, 4, 3, 4);
-            searchStocks.Name = "searchStocks";
-            searchStocks.PlaceholderText = "";
-            searchStocks.SelectedText = "";
-            searchStocks.ShadowDecoration.CustomizableEdges = customizableEdges44;
-            searchStocks.Size = new Size(696, 36);
-            searchStocks.TabIndex = 0;
-            searchStocks.Tag = "Search Product";
-            searchStocks.Enter += search_Enter;
-            searchStocks.Leave += search_Leave;
-            // 
-            // guna2ImageButton1
-            // 
-            guna2ImageButton1.CheckedState.ImageSize = new Size(64, 64);
-            guna2ImageButton1.Cursor = Cursors.Hand;
-            tileBtn.SetDecoration(guna2ImageButton1, Guna.UI2.AnimatorNS.DecorationType.None);
-            guna2ImageButton1.HoverState.ImageSize = new Size(35, 35);
-            guna2ImageButton1.Image = Properties.Resources.magnifying_glass;
-            guna2ImageButton1.ImageOffset = new Point(0, 0);
-            guna2ImageButton1.ImageRotate = 0F;
-            guna2ImageButton1.ImageSize = new Size(30, 30);
-            guna2ImageButton1.Location = new Point(767, 57);
-            guna2ImageButton1.Name = "guna2ImageButton1";
-            guna2ImageButton1.PressedState.ImageSize = new Size(30, 30);
-            guna2ImageButton1.ShadowDecoration.CustomizableEdges = customizableEdges42;
-            guna2ImageButton1.Size = new Size(40, 40);
-            guna2ImageButton1.TabIndex = 1;
-            // 
-            // categoryComboBox
-            // 
-            categoryComboBox.Anchor = AnchorStyles.Top | AnchorStyles.Right;
-            categoryComboBox.BackColor = Color.Transparent;
-            categoryComboBox.BorderColor = Color.Maroon;
-            categoryComboBox.BorderRadius = 16;
-            categoryComboBox.BorderThickness = 2;
-            categoryComboBox.CustomizableEdges = customizableEdges40;
-            tileBtn.SetDecoration(categoryComboBox, Guna.UI2.AnimatorNS.DecorationType.None);
-            categoryComboBox.DrawMode = DrawMode.OwnerDrawFixed;
-            categoryComboBox.DropDownStyle = ComboBoxStyle.DropDownList;
-            categoryComboBox.FocusedColor = Color.FromArgb(94, 148, 255);
-            categoryComboBox.FocusedState.BorderColor = Color.FromArgb(94, 148, 255);
-            categoryComboBox.Font = new Font("Segoe UI", 10F);
-            categoryComboBox.ForeColor = Color.FromArgb(68, 88, 112);
-            categoryComboBox.HoverState.BorderColor = Color.FromArgb(255, 128, 128);
-            categoryComboBox.ItemHeight = 30;
-            categoryComboBox.Items.AddRange(new object[] { "Rice Bowls", "Bento" });
-            categoryComboBox.Location = new Point(885, 59);
-            categoryComboBox.Name = "categoryComboBox";
-            categoryComboBox.ShadowDecoration.CustomizableEdges = customizableEdges41;
-            categoryComboBox.Size = new Size(200, 36);
-            categoryComboBox.TabIndex = 4;
-            categoryComboBox.Tag = "Category";
             // 
             // guna2Panel15
             // 
@@ -1663,7 +1661,7 @@ namespace inventory
             searchOrder.BorderThickness = 2;
             searchOrder.CustomizableEdges = customizableEdges68;
             tileBtn.SetDecoration(searchOrder, Guna.UI2.AnimatorNS.DecorationType.None);
-            searchOrder.DefaultText = "Search Order";
+            searchOrder.DefaultText = "";
             searchOrder.DisabledState.BorderColor = Color.FromArgb(208, 208, 208);
             searchOrder.DisabledState.FillColor = Color.FromArgb(226, 226, 226);
             searchOrder.DisabledState.ForeColor = Color.FromArgb(138, 138, 138);
@@ -1674,14 +1672,12 @@ namespace inventory
             searchOrder.Location = new Point(520, 57);
             searchOrder.Margin = new Padding(3, 4, 3, 4);
             searchOrder.Name = "searchOrder";
-            searchOrder.PlaceholderText = "";
+            searchOrder.PlaceholderText = "Search Order";
             searchOrder.SelectedText = "";
             searchOrder.ShadowDecoration.CustomizableEdges = customizableEdges69;
             searchOrder.Size = new Size(509, 36);
             searchOrder.TabIndex = 5;
             searchOrder.Tag = "Search Order";
-            searchOrder.Enter += search_Enter;
-            searchOrder.Leave += search_Leave;
             // 
             // guna2ComboBox1
             // 
@@ -2324,7 +2320,7 @@ namespace inventory
             searchRoles.BorderThickness = 2;
             searchRoles.CustomizableEdges = customizableEdges92;
             tileBtn.SetDecoration(searchRoles, Guna.UI2.AnimatorNS.DecorationType.None);
-            searchRoles.DefaultText = "Search...";
+            searchRoles.DefaultText = "";
             searchRoles.DisabledState.BorderColor = Color.FromArgb(208, 208, 208);
             searchRoles.DisabledState.FillColor = Color.FromArgb(226, 226, 226);
             searchRoles.DisabledState.ForeColor = Color.FromArgb(138, 138, 138);
@@ -2335,14 +2331,12 @@ namespace inventory
             searchRoles.Location = new Point(22, 10);
             searchRoles.Margin = new Padding(3, 4, 3, 4);
             searchRoles.Name = "searchRoles";
-            searchRoles.PlaceholderText = "";
+            searchRoles.PlaceholderText = "Search";
             searchRoles.SelectedText = "";
             searchRoles.ShadowDecoration.CustomizableEdges = customizableEdges93;
             searchRoles.Size = new Size(509, 36);
             searchRoles.TabIndex = 7;
-            searchRoles.Tag = "Search...";
-            searchRoles.Enter += search_Enter;
-            searchRoles.Leave += search_Leave;
+            searchRoles.Tag = "Search";
             // 
             // label5
             // 

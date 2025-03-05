@@ -17,10 +17,6 @@ namespace inventory
         {
             InitializeComponent();
         }
-
-        private void BtnMinimize_Click(object sender, EventArgs e) => WindowState = FormWindowState.Minimized;
-        private void BtnClose_Click(object sender, EventArgs e) => this.Close();
-
         private void taskbar_MouseDown(object sender, MouseEventArgs e)
         {
             if (e.Button == MouseButtons.Left)

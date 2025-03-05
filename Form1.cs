@@ -87,32 +87,6 @@ namespace inventory
                 }
             }
         }
-
-        private void search_Enter(object sender, EventArgs e)
-        {
-            if (sender is Guna2TextBox searchBox &&
-                (searchBox.Text == "Search Product" || searchBox.Text == "Search..." || searchBox.Text == "Search Order"))
-            {
-                searchBox.Text = "";
-                searchBox.ForeColor = Color.Black;
-            }
-        }
-
-        private void search_Leave(object sender, EventArgs e) => ResetSearchBox();
-
-        private void ResetSearchBox()
-        {
-            foreach (var searchBox in new[] { searchStocks, searchRoles, searchOrder })
-            {
-                if (string.IsNullOrWhiteSpace(searchBox.Text))
-                {
-                    searchBox.Text = searchBox == searchStocks ? "Search Product" :
-                                     searchBox == searchOrder ? "Search Order" : "Search...";
-                    searchBox.ForeColor = Color.Gray;
-                }
-            }
-        }
-
         private void SetInitialComboBoxValues(Control parent)
         {
             foreach (Control control in parent.Controls)

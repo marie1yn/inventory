@@ -89,6 +89,7 @@
             guna2Button8.TabIndex = 13;
             guna2Button8.Tag = "";
             guna2Button8.Text = "Manage";
+            guna2Button8.Click += guna2Button8_Click;
             // 
             // pictureBoxProduct
             // 
