@@ -53,18 +53,18 @@
             guna2Taskbar = new Guna.UI2.WinForms.Guna2Panel();
             label1 = new Label();
             guna2ControlBox1 = new Guna.UI2.WinForms.Guna2ControlBox();
-            guna2Button4 = new Guna.UI2.WinForms.Guna2Button();
-            guna2DateTimePicker1 = new Guna.UI2.WinForms.Guna2DateTimePicker();
-            guna2NumericUpDown2 = new Guna.UI2.WinForms.Guna2NumericUpDown();
+            btnAddProduct = new Guna.UI2.WinForms.Guna2Button();
+            dtpDateAdded = new Guna.UI2.WinForms.Guna2DateTimePicker();
+            nudQuantity = new Guna.UI2.WinForms.Guna2NumericUpDown();
             guna2PictureBox1 = new Guna.UI2.WinForms.Guna2PictureBox();
             guna2Button3 = new Guna.UI2.WinForms.Guna2Button();
             label3 = new Label();
             label2 = new Label();
-            categoryComboBox = new Guna.UI2.WinForms.Guna2ComboBox();
-            guna2TextBox1 = new Guna.UI2.WinForms.Guna2TextBox();
-            guna2TextBox2 = new Guna.UI2.WinForms.Guna2TextBox();
+            cboCategory = new Guna.UI2.WinForms.Guna2ComboBox();
+            txtPrice = new Guna.UI2.WinForms.Guna2TextBox();
+            txtProductName = new Guna.UI2.WinForms.Guna2TextBox();
             guna2Taskbar.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)guna2NumericUpDown2).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)nudQuantity).BeginInit();
             ((System.ComponentModel.ISupportInitialize)guna2PictureBox1).BeginInit();
             SuspendLayout();
             // 
@@ -118,52 +118,53 @@
             guna2ControlBox1.Size = new Size(51, 47);
             guna2ControlBox1.TabIndex = 2;
             // 
-            // guna2Button4
+            // btnAddProduct
             // 
-            guna2Button4.CustomizableEdges = customizableEdges9;
-            guna2Button4.DisabledState.BorderColor = Color.DarkGray;
-            guna2Button4.DisabledState.CustomBorderColor = Color.DarkGray;
-            guna2Button4.DisabledState.FillColor = Color.FromArgb(169, 169, 169);
-            guna2Button4.DisabledState.ForeColor = Color.FromArgb(141, 141, 141);
-            guna2Button4.FillColor = Color.Maroon;
-            guna2Button4.Font = new Font("Segoe UI", 9F);
-            guna2Button4.ForeColor = Color.White;
-            guna2Button4.Location = new Point(294, 369);
-            guna2Button4.Name = "guna2Button4";
-            guna2Button4.ShadowDecoration.CustomizableEdges = customizableEdges10;
-            guna2Button4.Size = new Size(483, 56);
-            guna2Button4.TabIndex = 17;
-            guna2Button4.Text = "Add Product";
+            btnAddProduct.CustomizableEdges = customizableEdges9;
+            btnAddProduct.DisabledState.BorderColor = Color.DarkGray;
+            btnAddProduct.DisabledState.CustomBorderColor = Color.DarkGray;
+            btnAddProduct.DisabledState.FillColor = Color.FromArgb(169, 169, 169);
+            btnAddProduct.DisabledState.ForeColor = Color.FromArgb(141, 141, 141);
+            btnAddProduct.FillColor = Color.Maroon;
+            btnAddProduct.Font = new Font("Segoe UI", 9F);
+            btnAddProduct.ForeColor = Color.White;
+            btnAddProduct.Location = new Point(294, 369);
+            btnAddProduct.Name = "btnAddProduct";
+            btnAddProduct.ShadowDecoration.CustomizableEdges = customizableEdges10;
+            btnAddProduct.Size = new Size(483, 56);
+            btnAddProduct.TabIndex = 17;
+            btnAddProduct.Text = "Add Product";
+            btnAddProduct.Click += btnAddProduct_Click;
             // 
-            // guna2DateTimePicker1
+            // dtpDateAdded
             // 
-            guna2DateTimePicker1.Checked = true;
-            guna2DateTimePicker1.CustomizableEdges = customizableEdges11;
-            guna2DateTimePicker1.FillColor = Color.Maroon;
-            guna2DateTimePicker1.Font = new Font("Segoe UI", 9F);
-            guna2DateTimePicker1.ForeColor = Color.White;
-            guna2DateTimePicker1.Format = DateTimePickerFormat.Long;
-            guna2DateTimePicker1.Location = new Point(560, 277);
-            guna2DateTimePicker1.MaxDate = new DateTime(9998, 12, 31, 0, 0, 0, 0);
-            guna2DateTimePicker1.MinDate = new DateTime(1753, 1, 1, 0, 0, 0, 0);
-            guna2DateTimePicker1.Name = "guna2DateTimePicker1";
-            guna2DateTimePicker1.ShadowDecoration.CustomizableEdges = customizableEdges12;
-            guna2DateTimePicker1.Size = new Size(217, 57);
-            guna2DateTimePicker1.TabIndex = 16;
-            guna2DateTimePicker1.Value = new DateTime(2025, 2, 28, 15, 53, 25, 412);
+            dtpDateAdded.Checked = true;
+            dtpDateAdded.CustomizableEdges = customizableEdges11;
+            dtpDateAdded.FillColor = Color.Maroon;
+            dtpDateAdded.Font = new Font("Segoe UI", 9F);
+            dtpDateAdded.ForeColor = Color.White;
+            dtpDateAdded.Format = DateTimePickerFormat.Long;
+            dtpDateAdded.Location = new Point(387, 277);
+            dtpDateAdded.MaxDate = new DateTime(9998, 12, 31, 0, 0, 0, 0);
+            dtpDateAdded.MinDate = new DateTime(1753, 1, 1, 0, 0, 0, 0);
+            dtpDateAdded.Name = "dtpDateAdded";
+            dtpDateAdded.ShadowDecoration.CustomizableEdges = customizableEdges12;
+            dtpDateAdded.Size = new Size(390, 57);
+            dtpDateAdded.TabIndex = 16;
+            dtpDateAdded.Value = new DateTime(2025, 2, 28, 15, 53, 25, 412);
             // 
-            // guna2NumericUpDown2
+            // nudQuantity
             // 
-            guna2NumericUpDown2.BackColor = Color.Transparent;
-            guna2NumericUpDown2.CustomizableEdges = customizableEdges13;
-            guna2NumericUpDown2.Font = new Font("Segoe UI", 9F);
-            guna2NumericUpDown2.Location = new Point(362, 279);
-            guna2NumericUpDown2.Margin = new Padding(3, 4, 3, 4);
-            guna2NumericUpDown2.Name = "guna2NumericUpDown2";
-            guna2NumericUpDown2.ShadowDecoration.CustomizableEdges = customizableEdges14;
-            guna2NumericUpDown2.Size = new Size(106, 55);
-            guna2NumericUpDown2.TabIndex = 14;
-            guna2NumericUpDown2.UpDownButtonFillColor = Color.Maroon;
+            nudQuantity.BackColor = Color.Transparent;
+            nudQuantity.CustomizableEdges = customizableEdges13;
+            nudQuantity.Font = new Font("Segoe UI", 9F);
+            nudQuantity.Location = new Point(387, 204);
+            nudQuantity.Margin = new Padding(3, 4, 3, 4);
+            nudQuantity.Name = "nudQuantity";
+            nudQuantity.ShadowDecoration.CustomizableEdges = customizableEdges14;
+            nudQuantity.Size = new Size(390, 55);
+            nudQuantity.TabIndex = 14;
+            nudQuantity.UpDownButtonFillColor = Color.Maroon;
             // 
             // guna2PictureBox1
             // 
@@ -196,7 +197,7 @@
             // label3
             // 
             label3.AutoSize = true;
-            label3.Location = new Point(294, 297);
+            label3.Location = new Point(294, 220);
             label3.Name = "label3";
             label3.Size = new Size(68, 20);
             label3.TabIndex = 19;
@@ -205,91 +206,91 @@
             // label2
             // 
             label2.AutoSize = true;
-            label2.Location = new Point(480, 297);
+            label2.Location = new Point(294, 297);
             label2.Name = "label2";
             label2.Size = new Size(79, 20);
             label2.TabIndex = 20;
             label2.Text = "Expiration:";
             // 
-            // categoryComboBox
+            // cboCategory
             // 
-            categoryComboBox.Anchor = AnchorStyles.Top | AnchorStyles.Right;
-            categoryComboBox.BackColor = Color.Transparent;
-            categoryComboBox.BorderColor = Color.Black;
-            categoryComboBox.BorderRadius = 16;
-            categoryComboBox.CustomizableEdges = customizableEdges5;
-            categoryComboBox.DrawMode = DrawMode.OwnerDrawFixed;
-            categoryComboBox.DropDownStyle = ComboBoxStyle.DropDownList;
-            categoryComboBox.FocusedColor = Color.FromArgb(94, 148, 255);
-            categoryComboBox.FocusedState.BorderColor = Color.FromArgb(94, 148, 255);
-            categoryComboBox.Font = new Font("Segoe UI", 10F);
-            categoryComboBox.ForeColor = Color.FromArgb(68, 88, 112);
-            categoryComboBox.HoverState.BorderColor = Color.FromArgb(255, 128, 128);
-            categoryComboBox.ItemHeight = 30;
-            categoryComboBox.Items.AddRange(new object[] { "Category" });
-            categoryComboBox.Location = new Point(577, 82);
-            categoryComboBox.Name = "categoryComboBox";
-            categoryComboBox.ShadowDecoration.CustomizableEdges = customizableEdges6;
-            categoryComboBox.Size = new Size(200, 36);
-            categoryComboBox.TabIndex = 22;
-            categoryComboBox.Tag = "Category";
+            cboCategory.Anchor = AnchorStyles.Top | AnchorStyles.Right;
+            cboCategory.BackColor = Color.Transparent;
+            cboCategory.BorderColor = Color.Black;
+            cboCategory.BorderRadius = 16;
+            cboCategory.CustomizableEdges = customizableEdges5;
+            cboCategory.DrawMode = DrawMode.OwnerDrawFixed;
+            cboCategory.DropDownStyle = ComboBoxStyle.DropDownList;
+            cboCategory.FocusedColor = Color.FromArgb(94, 148, 255);
+            cboCategory.FocusedState.BorderColor = Color.FromArgb(94, 148, 255);
+            cboCategory.Font = new Font("Segoe UI", 10F);
+            cboCategory.ForeColor = Color.FromArgb(68, 88, 112);
+            cboCategory.HoverState.BorderColor = Color.FromArgb(255, 128, 128);
+            cboCategory.ItemHeight = 30;
+            cboCategory.Items.AddRange(new object[] { "Category" });
+            cboCategory.Location = new Point(577, 82);
+            cboCategory.Name = "cboCategory";
+            cboCategory.ShadowDecoration.CustomizableEdges = customizableEdges6;
+            cboCategory.Size = new Size(200, 36);
+            cboCategory.TabIndex = 22;
+            cboCategory.Tag = "Category";
             // 
-            // guna2TextBox1
+            // txtPrice
             // 
-            guna2TextBox1.BorderColor = Color.Black;
-            guna2TextBox1.CustomizableEdges = customizableEdges3;
-            guna2TextBox1.DefaultText = "";
-            guna2TextBox1.DisabledState.BorderColor = Color.FromArgb(208, 208, 208);
-            guna2TextBox1.DisabledState.FillColor = Color.FromArgb(226, 226, 226);
-            guna2TextBox1.DisabledState.ForeColor = Color.FromArgb(138, 138, 138);
-            guna2TextBox1.DisabledState.PlaceholderForeColor = Color.FromArgb(138, 138, 138);
-            guna2TextBox1.FocusedState.BorderColor = Color.FromArgb(94, 148, 255);
-            guna2TextBox1.Font = new Font("Segoe UI", 9F);
-            guna2TextBox1.HoverState.BorderColor = Color.FromArgb(94, 148, 255);
-            guna2TextBox1.Location = new Point(294, 125);
-            guna2TextBox1.Margin = new Padding(3, 4, 3, 4);
-            guna2TextBox1.Name = "guna2TextBox1";
-            guna2TextBox1.PlaceholderText = "Description";
-            guna2TextBox1.SelectedText = "";
-            guna2TextBox1.ShadowDecoration.CustomizableEdges = customizableEdges4;
-            guna2TextBox1.Size = new Size(483, 145);
-            guna2TextBox1.TabIndex = 23;
+            txtPrice.BorderColor = Color.Black;
+            txtPrice.CustomizableEdges = customizableEdges3;
+            txtPrice.DefaultText = "";
+            txtPrice.DisabledState.BorderColor = Color.FromArgb(208, 208, 208);
+            txtPrice.DisabledState.FillColor = Color.FromArgb(226, 226, 226);
+            txtPrice.DisabledState.ForeColor = Color.FromArgb(138, 138, 138);
+            txtPrice.DisabledState.PlaceholderForeColor = Color.FromArgb(138, 138, 138);
+            txtPrice.FocusedState.BorderColor = Color.FromArgb(94, 148, 255);
+            txtPrice.Font = new Font("Segoe UI", 9F);
+            txtPrice.HoverState.BorderColor = Color.FromArgb(94, 148, 255);
+            txtPrice.Location = new Point(294, 138);
+            txtPrice.Margin = new Padding(3, 4, 3, 4);
+            txtPrice.Name = "txtPrice";
+            txtPrice.PlaceholderText = "Price";
+            txtPrice.SelectedText = "";
+            txtPrice.ShadowDecoration.CustomizableEdges = customizableEdges4;
+            txtPrice.Size = new Size(483, 47);
+            txtPrice.TabIndex = 23;
             // 
-            // guna2TextBox2
+            // txtProductName
             // 
-            guna2TextBox2.BorderColor = Color.Black;
-            guna2TextBox2.CustomizableEdges = customizableEdges1;
-            guna2TextBox2.DefaultText = "";
-            guna2TextBox2.DisabledState.BorderColor = Color.FromArgb(208, 208, 208);
-            guna2TextBox2.DisabledState.FillColor = Color.FromArgb(226, 226, 226);
-            guna2TextBox2.DisabledState.ForeColor = Color.FromArgb(138, 138, 138);
-            guna2TextBox2.DisabledState.PlaceholderForeColor = Color.FromArgb(138, 138, 138);
-            guna2TextBox2.FocusedState.BorderColor = Color.FromArgb(94, 148, 255);
-            guna2TextBox2.Font = new Font("Segoe UI", 9F);
-            guna2TextBox2.HoverState.BorderColor = Color.FromArgb(94, 148, 255);
-            guna2TextBox2.Location = new Point(294, 82);
-            guna2TextBox2.Margin = new Padding(3, 4, 3, 4);
-            guna2TextBox2.Name = "guna2TextBox2";
-            guna2TextBox2.PlaceholderText = "Product Name";
-            guna2TextBox2.SelectedText = "";
-            guna2TextBox2.ShadowDecoration.CustomizableEdges = customizableEdges2;
-            guna2TextBox2.Size = new Size(265, 36);
-            guna2TextBox2.TabIndex = 24;
+            txtProductName.BorderColor = Color.Black;
+            txtProductName.CustomizableEdges = customizableEdges1;
+            txtProductName.DefaultText = "";
+            txtProductName.DisabledState.BorderColor = Color.FromArgb(208, 208, 208);
+            txtProductName.DisabledState.FillColor = Color.FromArgb(226, 226, 226);
+            txtProductName.DisabledState.ForeColor = Color.FromArgb(138, 138, 138);
+            txtProductName.DisabledState.PlaceholderForeColor = Color.FromArgb(138, 138, 138);
+            txtProductName.FocusedState.BorderColor = Color.FromArgb(94, 148, 255);
+            txtProductName.Font = new Font("Segoe UI", 9F);
+            txtProductName.HoverState.BorderColor = Color.FromArgb(94, 148, 255);
+            txtProductName.Location = new Point(294, 82);
+            txtProductName.Margin = new Padding(3, 4, 3, 4);
+            txtProductName.Name = "txtProductName";
+            txtProductName.PlaceholderText = "Product Name";
+            txtProductName.SelectedText = "";
+            txtProductName.ShadowDecoration.CustomizableEdges = customizableEdges2;
+            txtProductName.Size = new Size(265, 36);
+            txtProductName.TabIndex = 24;
             // 
             // AddNewProduct
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 450);
-            Controls.Add(guna2TextBox2);
-            Controls.Add(guna2TextBox1);
-            Controls.Add(categoryComboBox);
+            Controls.Add(txtProductName);
+            Controls.Add(txtPrice);
+            Controls.Add(cboCategory);
             Controls.Add(label2);
             Controls.Add(label3);
             Controls.Add(guna2Button3);
-            Controls.Add(guna2Button4);
-            Controls.Add(guna2DateTimePicker1);
-            Controls.Add(guna2NumericUpDown2);
+            Controls.Add(btnAddProduct);
+            Controls.Add(dtpDateAdded);
+            Controls.Add(nudQuantity);
             Controls.Add(guna2PictureBox1);
             Controls.Add(guna2Taskbar);
             FormBorderStyle = FormBorderStyle.None;
@@ -298,7 +299,7 @@
             Text = "AddNewProduct";
             guna2Taskbar.ResumeLayout(false);
             guna2Taskbar.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)guna2NumericUpDown2).EndInit();
+            ((System.ComponentModel.ISupportInitialize)nudQuantity).EndInit();
             ((System.ComponentModel.ISupportInitialize)guna2PictureBox1).EndInit();
             ResumeLayout(false);
             PerformLayout();
@@ -310,15 +311,15 @@
         private Guna.UI2.WinForms.Guna2Panel guna2Taskbar;
         private Label label1;
         private Guna.UI2.WinForms.Guna2ControlBox guna2ControlBox1;
-        private Guna.UI2.WinForms.Guna2Button guna2Button4;
-        private Guna.UI2.WinForms.Guna2DateTimePicker guna2DateTimePicker1;
-        private Guna.UI2.WinForms.Guna2NumericUpDown guna2NumericUpDown2;
+        private Guna.UI2.WinForms.Guna2Button btnAddProduct;
+        private Guna.UI2.WinForms.Guna2DateTimePicker dtpDateAdded;
+        private Guna.UI2.WinForms.Guna2NumericUpDown nudQuantity;
         private Guna.UI2.WinForms.Guna2PictureBox guna2PictureBox1;
         private Guna.UI2.WinForms.Guna2Button guna2Button3;
         private Label label2;
         private Label label3;
-        private Guna.UI2.WinForms.Guna2TextBox guna2TextBox2;
-        private Guna.UI2.WinForms.Guna2TextBox guna2TextBox1;
-        private Guna.UI2.WinForms.Guna2ComboBox categoryComboBox;
+        private Guna.UI2.WinForms.Guna2TextBox txtProductName;
+        private Guna.UI2.WinForms.Guna2TextBox txtPrice;
+        private Guna.UI2.WinForms.Guna2ComboBox cboCategory;
     }
 }
