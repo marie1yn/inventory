@@ -65,6 +65,7 @@
             label2 = new Label();
             label3 = new Label();
             label4 = new Label();
+            label5 = new Label();
             taskbar.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)guna2PictureBox1).BeginInit();
             ((System.ComponentModel.ISupportInitialize)guna2DataGridView1).BeginInit();
@@ -136,7 +137,6 @@
             // 
             dataGridViewCellStyle1.BackColor = Color.White;
             guna2DataGridView1.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
-            guna2DataGridView1.BorderStyle = BorderStyle.FixedSingle;
             dataGridViewCellStyle2.Alignment = DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle2.BackColor = Color.FromArgb(100, 88, 255);
             dataGridViewCellStyle2.Font = new Font("Segoe UI", 9F);
@@ -160,7 +160,7 @@
             guna2DataGridView1.Name = "guna2DataGridView1";
             guna2DataGridView1.RowHeadersVisible = false;
             guna2DataGridView1.RowHeadersWidth = 51;
-            guna2DataGridView1.Size = new Size(483, 188);
+            guna2DataGridView1.Size = new Size(483, 154);
             guna2DataGridView1.TabIndex = 3;
             guna2DataGridView1.ThemeStyle.AlternatingRowsStyle.BackColor = Color.White;
             guna2DataGridView1.ThemeStyle.AlternatingRowsStyle.Font = null;
@@ -189,7 +189,7 @@
             guna2NumericUpDown2.BackColor = Color.Transparent;
             guna2NumericUpDown2.CustomizableEdges = customizableEdges11;
             guna2NumericUpDown2.Font = new Font("Segoe UI", 9F);
-            guna2NumericUpDown2.Location = new Point(295, 278);
+            guna2NumericUpDown2.Location = new Point(518, 277);
             guna2NumericUpDown2.Margin = new Padding(3, 4, 3, 4);
             guna2NumericUpDown2.Name = "guna2NumericUpDown2";
             guna2NumericUpDown2.ShadowDecoration.CustomizableEdges = customizableEdges12;
@@ -207,7 +207,7 @@
             guna2Button1.FillColor = Color.Maroon;
             guna2Button1.Font = new Font("Segoe UI", 9F);
             guna2Button1.ForeColor = Color.White;
-            guna2Button1.Location = new Point(407, 278);
+            guna2Button1.Location = new Point(630, 277);
             guna2Button1.Name = "guna2Button1";
             guna2Button1.ShadowDecoration.CustomizableEdges = customizableEdges10;
             guna2Button1.Size = new Size(67, 56);
@@ -224,7 +224,7 @@
             guna2Button2.FillColor = Color.Maroon;
             guna2Button2.Font = new Font("Segoe UI", 9F);
             guna2Button2.ForeColor = Color.White;
-            guna2Button2.Location = new Point(480, 278);
+            guna2Button2.Location = new Point(703, 277);
             guna2Button2.Name = "guna2Button2";
             guna2Button2.ShadowDecoration.CustomizableEdges = customizableEdges8;
             guna2Button2.Size = new Size(75, 56);
@@ -256,12 +256,12 @@
             guna2DateTimePicker1.Font = new Font("Segoe UI", 9F);
             guna2DateTimePicker1.ForeColor = Color.White;
             guna2DateTimePicker1.Format = DateTimePickerFormat.Long;
-            guna2DateTimePicker1.Location = new Point(561, 278);
+            guna2DateTimePicker1.Location = new Point(295, 277);
             guna2DateTimePicker1.MaxDate = new DateTime(9998, 12, 31, 0, 0, 0, 0);
             guna2DateTimePicker1.MinDate = new DateTime(1753, 1, 1, 0, 0, 0, 0);
             guna2DateTimePicker1.Name = "guna2DateTimePicker1";
             guna2DateTimePicker1.ShadowDecoration.CustomizableEdges = customizableEdges4;
-            guna2DateTimePicker1.Size = new Size(217, 57);
+            guna2DateTimePicker1.Size = new Size(217, 55);
             guna2DateTimePicker1.TabIndex = 10;
             guna2DateTimePicker1.Value = new DateTime(2025, 2, 28, 15, 53, 25, 412);
             // 
@@ -313,11 +313,21 @@
             label4.TabIndex = 13;
             label4.Text = "Sold:";
             // 
+            // label5
+            // 
+            label5.AutoSize = true;
+            label5.Location = new Point(295, 252);
+            label5.Name = "label5";
+            label5.Size = new Size(119, 20);
+            label5.TabIndex = 17;
+            label5.Text = "Expiration Date: ";
+            // 
             // ManageStock
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 450);
+            Controls.Add(label5);
             Controls.Add(label4);
             Controls.Add(label3);
             Controls.Add(label2);
@@ -360,5 +370,6 @@
         private Label label3;
         private Label label2;
         private Label label4;
+        private Label label5;
     }
 }

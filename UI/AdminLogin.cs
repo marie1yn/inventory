@@ -4,6 +4,7 @@ using System.ComponentModel;
 using System.Data;
 using System.Drawing;
 using System.Linq;
+using System.Runtime.InteropServices;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
@@ -15,29 +16,18 @@ namespace inventory
         public AdminLogin()
         {
             InitializeComponent();
-            //guna2PanelFrontPage.Dock = DockStyle.Fill;
-            guna2PanelFrontPage.BringToFront();
-            guna2PanelFrontPage.Visible = true;
-            guna2PanelFrontPage2.Visible = true;
-            guna2PanelFrontPage2.BringToFront();
-
-            guna2PanelAdminLogin.Visible = false;
         }
 
         private void LoginForm_Load(object sender, EventArgs e)
         {
-            
-        }
-
-        private void guna2ControlBox2_Click(object sender, EventArgs e)
-        {
-
+            frontLogin.Visible = true;
+            clickedLogin.Visible = false;
         }
 
         private void guna2ButtonLogin_Click(object sender, EventArgs e)
         {
-            string username = guna2TextBoxUsername.Text;
-            string password = guna2TextBoxPassword.Text;
+            string username = this.username.Text;
+            string password = this.password.Text;
 
             if (username == "admin" && password == "admin123")
             {
@@ -53,22 +43,14 @@ namespace inventory
 
         private void guna2Button1_Click(object sender, EventArgs e)
         {
-            guna2PanelAdminLogin.Visible = false;
+            clickedLogin.Visible = false;
             guna2PanelPhoto.Visible = false;
-        }
-
-        private void guna2TextBoxUsername_TextChanged(object sender, EventArgs e)
-        {
-
         }
 
         private void guna2ButtonAdminLogin_Click(object sender, EventArgs e)
         {
-            guna2PanelFrontPage.Visible = false;
-            guna2PanelAdminLogin.Visible = true;
-
-            guna2PanelAdminLogin.BringToFront();
-            guna2PanelPhoto.BringToFront();
+            clickedLogin.Visible = true;
+            guna2PanelPhoto.Visible = true;
         }
 
         private void guna2ButtonExit_Click(object sender, EventArgs e)
@@ -76,16 +58,20 @@ namespace inventory
             Application.Exit();
         }
 
-        private void guna2ImageButton1_Click(object sender, EventArgs e)
+        private void taskbar_MouseDown(object sender, MouseEventArgs e)
         {
-
+            if (e.Button == MouseButtons.Left)
+            {
+                ReleaseCapture();
+                SendMessage(Handle, 0xA1, 0x2, 0);
+            }
         }
 
-        private void guna2TextBoxPassword_TextChanged(object sender, EventArgs e)
-        {
-            
-        }
+        [DllImport("user32.dll")]
+        private static extern void ReleaseCapture();
 
+        [DllImport("user32.dll")]
+        private static extern void SendMessage(IntPtr hWnd, int msg, int wParam, int lParam);
     }
 }
 

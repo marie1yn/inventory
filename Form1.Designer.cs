@@ -466,6 +466,7 @@ namespace inventory
             logout.TabIndex = 6;
             logout.Tag = "LOGOUT";
             logout.Text = "LOGOUT";
+            logout.Click += logout_Click;
             // 
             // rolesbtn
             // 

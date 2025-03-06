@@ -57,6 +57,14 @@ namespace inventory
             sidebarManager?.ToggleSidebar();
         }
 
+        private void logout_Click(object sender, EventArgs e)
+        {
+            AdminLogin loginForm = new AdminLogin();
+            loginForm.Show();
+            this.Hide();
+            loginForm.FormClosed += (s, args) => Application.Exit();
+        }
+
         private void taskbar_MouseDown(object sender, MouseEventArgs e)
         {
             if (e.Button == MouseButtons.Left)
