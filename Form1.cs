@@ -16,11 +16,13 @@ namespace inventory
         public Form1()
         {
             InitializeComponent();
+            DoubleBuffered = true; 
             sidebarManager = new SidebarManager(sidebarPanel, tabControl1, dashboardbtn);
         }
 
         private void Form1_Load(object sender, EventArgs e)
         {
+            SuspendLayout(); 
             sidebarManager.ToggleSidebar();
             sidebarManager.ApplyTagColors();
             sidebarManager.UpdateSidebarUI();
@@ -37,9 +39,17 @@ namespace inventory
             //for testing cards...
             for (int i = 0; i < 10; i++)
             {
-                stockPanel.Controls.Add(new ProductCard());
-                orderPanel.Controls.Add(new OrderCard());
+                var stockCard = new ProductCard();
+                stockCard.SuspendLayout(); 
+                stockPanel.Controls.Add(stockCard);
+                stockCard.ResumeLayout();
+
+                var orderCard = new OrderCard();
+                orderCard.SuspendLayout();
+                orderPanel.Controls.Add(orderCard);
+                orderCard.ResumeLayout();
             }
+            ResumeLayout(); 
         }
         private void btnToggle_Click(object sender, EventArgs e)
         {
@@ -144,6 +154,7 @@ namespace inventory
         }
         public static void Example(GunaChart guna2Chart1)
         {
+            guna2Chart1.SuspendLayout(); 
             string[] months = { "January", "February", "March", "April", "May", "June", "July", "August", "September", "November", "December" };
 
             // 🛠️ Chart Configuration
