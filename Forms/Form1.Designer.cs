@@ -1038,6 +1038,7 @@ namespace inventory
             // 
             btnsales_dashboard.BorderColor = Color.Maroon;
             btnsales_dashboard.BorderRadius = 15;
+            btnsales_dashboard.Cursor = Cursors.Hand;
             btnsales_dashboard.CustomizableEdges = customizableEdges34;
             tileBtn.SetDecoration(btnsales_dashboard, Guna.UI2.AnimatorNS.DecorationType.None);
             btnsales_dashboard.DisabledState.BorderColor = Color.DarkGray;
@@ -1506,6 +1507,7 @@ namespace inventory
             // 
             guna2Button5.BorderColor = Color.Maroon;
             guna2Button5.BorderRadius = 15;
+            guna2Button5.Cursor = Cursors.Hand;
             guna2Button5.CustomizableEdges = customizableEdges61;
             tileBtn.SetDecoration(guna2Button5, Guna.UI2.AnimatorNS.DecorationType.None);
             guna2Button5.DisabledState.BorderColor = Color.DarkGray;
