@@ -29,8 +29,9 @@
         private void InitializeComponent()
         {
             components = new System.ComponentModel.Container();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges7 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges8 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges9 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges10 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(AdminLogin));
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges1 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges2 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges3 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
@@ -49,6 +50,13 @@
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges29 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges16 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges17 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges13 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges14 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges15 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges26 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges27 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges24 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges25 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges18 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges19 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges26 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
@@ -57,10 +65,9 @@
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges21 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges22 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges23 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges24 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges25 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             guna2Elipse1 = new Guna.UI2.WinForms.Guna2Elipse(components);
             guna2PanelAdminLogin = new Guna.UI2.WinForms.Guna2Panel();
+            guna2PanelPhoto = new Guna.UI2.WinForms.Guna2Panel();
             guna2ButtonLogin = new Guna.UI2.WinForms.Guna2Button();
             guna2TextBoxPassword = new Guna.UI2.WinForms.Guna2TextBox();
             guna2TextBoxUsername = new Guna.UI2.WinForms.Guna2TextBox();
@@ -92,6 +99,7 @@
             guna2Elipse5 = new Guna.UI2.WinForms.Guna2Elipse(components);
             guna2Elipse6 = new Guna.UI2.WinForms.Guna2Elipse(components);
             timer1 = new System.Windows.Forms.Timer(components);
+            sqlCommand1 = new Microsoft.Data.SqlClient.SqlCommand();
             guna2PanelAdminLogin.SuspendLayout();
             guna2Panel2.SuspendLayout();
             guna2Panel4.SuspendLayout();
@@ -100,9 +108,11 @@
             // 
             // guna2PanelAdminLogin
             // 
+            guna2PanelAdminLogin.Anchor = AnchorStyles.Top | AnchorStyles.Left | AnchorStyles.Right;
             guna2PanelAdminLogin.BackColor = Color.White;
             guna2PanelAdminLogin.BorderColor = Color.White;
             guna2PanelAdminLogin.BorderRadius = 20;
+            guna2PanelAdminLogin.Controls.Add(guna2PanelPhoto);
             guna2PanelAdminLogin.Controls.Add(guna2ButtonLogin);
             guna2PanelAdminLogin.Controls.Add(guna2TextBoxPassword);
             guna2PanelAdminLogin.Controls.Add(guna2TextBoxUsername);
@@ -116,6 +126,18 @@
             guna2PanelAdminLogin.Size = new Size(1024, 600);
             guna2PanelAdminLogin.TabIndex = 0;
             guna2PanelAdminLogin.BackColorChanged += guna2TextBoxUsername_TextChanged;
+            // 
+            // guna2PanelPhoto
+            // 
+            guna2PanelPhoto.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
+            guna2PanelPhoto.BackgroundImage = (Image)resources.GetObject("guna2PanelPhoto.BackgroundImage");
+            guna2PanelPhoto.BackgroundImageLayout = ImageLayout.Stretch;
+            guna2PanelPhoto.CustomizableEdges = customizableEdges1;
+            guna2PanelPhoto.Location = new Point(0, 0);
+            guna2PanelPhoto.Name = "guna2PanelPhoto";
+            guna2PanelPhoto.ShadowDecoration.CustomizableEdges = customizableEdges2;
+            guna2PanelPhoto.Size = new Size(475, 597);
+            guna2PanelPhoto.TabIndex = 1;
             // 
             // guna2ButtonLogin
             // 
@@ -251,6 +273,7 @@
             guna2Panel2.ShadowDecoration.CustomizableEdges = customizableEdges15;
             guna2Panel2.Size = new Size(1366, 49);
             guna2Panel2.TabIndex = 2;
+            guna2Panel2.MouseDown += taskbar_MouseDown;
             // 
             // guna2ImageCheckBox1
             // 
@@ -304,14 +327,12 @@
             guna2Panel4.BackColor = Color.RosyBrown;
             guna2Panel4.BackgroundImage = (Image)resources.GetObject("guna2Panel4.BackgroundImage");
             guna2Panel4.BackgroundImageLayout = ImageLayout.Stretch;
-            guna2Panel4.Controls.Add(guna2PanelPhoto);
             guna2Panel4.Controls.Add(guna2PanelAdminLogin);
-            guna2Panel4.Controls.Add(guna2PanelFrontPage);
             guna2Panel4.Controls.Add(guna2PanelFrontPage2);
-            guna2Panel4.CustomizableEdges = customizableEdges28;
+            guna2Panel4.CustomizableEdges = customizableEdges26;
             guna2Panel4.Location = new Point(0, 42);
             guna2Panel4.Name = "guna2Panel4";
-            guna2Panel4.ShadowDecoration.CustomizableEdges = customizableEdges29;
+            guna2Panel4.ShadowDecoration.CustomizableEdges = customizableEdges27;
             guna2Panel4.Size = new Size(1366, 723);
             guna2Panel4.TabIndex = 3;
             // 
@@ -341,6 +362,7 @@
             // 
             // guna2PanelFrontPage2
             // 
+            guna2PanelFrontPage2.Anchor = AnchorStyles.None;
             guna2PanelFrontPage2.BackColor = Color.White;
             guna2PanelFrontPage2.Controls.Add(label4);
             guna2PanelFrontPage2.Controls.Add(guna2ButtonExit);
@@ -441,7 +463,6 @@
             // guna2Elipse3
             // 
             guna2Elipse3.BorderRadius = 15;
-            guna2Elipse3.TargetControl = guna2PanelFrontPage;
             // 
             // guna2DragControl3
             // 
@@ -467,6 +488,11 @@
             // timer1
             // 
             timer1.Interval = 1000;
+            // 
+            // sqlCommand1
+            // 
+            sqlCommand1.CommandTimeout = 30;
+            sqlCommand1.EnableOptimizedParameterBinding = false;
             // 
             // AdminLogin
             // 
@@ -524,9 +550,9 @@
         private Guna.UI2.WinForms.Guna2Elipse guna2Elipse3;
         private Guna.UI2.WinForms.Guna2DragControl guna2DragControl3;
         private Guna.UI2.WinForms.Guna2Elipse guna2Elipse4;
-        private Guna.UI2.WinForms.Guna2Panel guna2PanelFrontPage;
         private Guna.UI2.WinForms.Guna2Elipse guna2Elipse5;
         private Guna.UI2.WinForms.Guna2Elipse guna2Elipse6;
         private System.Windows.Forms.Timer timer1;
+        private Microsoft.Data.SqlClient.SqlCommand sqlCommand1;
     }
 }

@@ -4,6 +4,7 @@ using System.ComponentModel;
 using System.Data;
 using System.Drawing;
 using System.Linq;
+using System.Runtime.InteropServices;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
@@ -16,8 +17,8 @@ namespace inventory
         {
             InitializeComponent();
             //guna2PanelFrontPage.Dock = DockStyle.Fill;
-            guna2PanelFrontPage.BringToFront();
-            guna2PanelFrontPage.Visible = true;
+           // guna2PanelFrontPage.BringToFront();
+         //   guna2PanelFrontPage.Visible = true;
             guna2PanelFrontPage2.Visible = true;
             guna2PanelFrontPage2.BringToFront();
 
@@ -64,7 +65,7 @@ namespace inventory
 
         private void guna2ButtonAdminLogin_Click(object sender, EventArgs e)
         {
-            guna2PanelFrontPage.Visible = false;
+    //        guna2PanelFrontPage.Visible = false;
             guna2PanelAdminLogin.Visible = true;
 
             guna2PanelAdminLogin.BringToFront();
@@ -83,8 +84,24 @@ namespace inventory
 
         private void label3_Click(object sender, EventArgs e)
         {
-
+            
         }
+
+        private void taskbar_MouseDown(object sender, MouseEventArgs e)
+        {
+            if (e.Button == MouseButtons.Left)
+            {
+                ReleaseCapture();
+                SendMessage(Handle, 0xA1, 0x2, 0);
+            }
+        }
+
+        [DllImport("user32.dll")]
+        private static extern void ReleaseCapture();
+
+        [DllImport("user32.dll")]
+        private static extern void SendMessage(IntPtr hWnd, int msg, int wParam, int lParam);
+
     }
 }
 

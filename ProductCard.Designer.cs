@@ -75,7 +75,7 @@
             guna2Button8.DisabledState.FillColor = Color.FromArgb(169, 169, 169);
             guna2Button8.DisabledState.ForeColor = Color.FromArgb(141, 141, 141);
             guna2Button8.FillColor = Color.FromArgb(120, 20, 20);
-            guna2Button8.Font = new Font("Arial Nova", 12F, FontStyle.Bold);
+            guna2Button8.Font = new Font("Microsoft Sans Serif", 12F, FontStyle.Bold);
             guna2Button8.ForeColor = Color.White;
             guna2Button8.HoverState.FillColor = Color.FromArgb(128, 150, 100, 20);
             guna2Button8.HoverState.ForeColor = Color.DarkGray;
@@ -89,6 +89,7 @@
             guna2Button8.TabIndex = 13;
             guna2Button8.Tag = "";
             guna2Button8.Text = "Manage";
+            guna2Button8.Click += guna2Button8_Click;
             // 
             // pictureBoxProduct
             // 
@@ -127,11 +128,11 @@
             // lblProductName
             // 
             lblProductName.AutoSize = true;
-            lblProductName.Font = new Font("Arial Nova", 12F, FontStyle.Bold);
+            lblProductName.Font = new Font("Microsoft Sans Serif", 12F, FontStyle.Bold);
             lblProductName.ForeColor = Color.Black;
             lblProductName.Location = new Point(51, 11);
             lblProductName.Name = "lblProductName";
-            lblProductName.Size = new Size(146, 25);
+            lblProductName.Size = new Size(148, 25);
             lblProductName.TabIndex = 0;
             lblProductName.Text = "Product Name";
             lblProductName.TextAlign = ContentAlignment.MiddleCenter;
