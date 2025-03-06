@@ -56,7 +56,7 @@ namespace inventory
             var basePath = AppContext.BaseDirectory;
 
             var builder = new ConfigurationBuilder()
-                .SetBasePath(basePath) // Ensures the correct directory is used
+                .SetBasePath(basePath) 
                 .AddJsonFile("appsettings.json", optional: false, reloadOnChange: true);
 
             return builder.Build();
