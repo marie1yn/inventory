@@ -837,11 +837,11 @@ namespace inventory
             // 
             label12.AutoSize = true;
             tileBtn.SetDecoration(label12, Guna.UI2.AnimatorNS.DecorationType.None);
-            label12.Font = new Font("Arial Nova", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label12.Font = new Font("Microsoft Sans Serif", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
             label12.ForeColor = Color.Black;
             label12.Location = new Point(25, 68);
             label12.Name = "label12";
-            label12.Size = new Size(85, 25);
+            label12.Size = new Size(90, 25);
             label12.TabIndex = 2;
             label12.Text = "Upsales";
             // 
@@ -934,11 +934,11 @@ namespace inventory
             // 
             label8.AutoSize = true;
             tileBtn.SetDecoration(label8, Guna.UI2.AnimatorNS.DecorationType.None);
-            label8.Font = new Font("Arial Nova", 19.8000011F, FontStyle.Bold);
+            label8.Font = new Font("Microsoft Sans Serif", 19.8000011F, FontStyle.Bold);
             label8.ForeColor = Color.Black;
             label8.Location = new Point(18, 156);
             label8.Name = "label8";
-            label8.Size = new Size(75, 41);
+            label8.Size = new Size(77, 39);
             label8.TabIndex = 1;
             label8.Text = "120";
             // 
@@ -989,11 +989,11 @@ namespace inventory
             // 
             label10.AutoSize = true;
             tileBtn.SetDecoration(label10, Guna.UI2.AnimatorNS.DecorationType.None);
-            label10.Font = new Font("Arial Nova", 19.8000011F, FontStyle.Bold);
+            label10.Font = new Font("Microsoft Sans Serif", 19.8000011F, FontStyle.Bold);
             label10.ForeColor = Color.Black;
             label10.Location = new Point(18, 156);
             label10.Name = "label10";
-            label10.Size = new Size(75, 41);
+            label10.Size = new Size(77, 39);
             label10.TabIndex = 1;
             label10.Text = "101";
             // 
@@ -1044,11 +1044,11 @@ namespace inventory
             // 
             label6.AutoSize = true;
             tileBtn.SetDecoration(label6, Guna.UI2.AnimatorNS.DecorationType.None);
-            label6.Font = new Font("Arial Nova", 19.8000011F, FontStyle.Bold);
+            label6.Font = new Font("Microsoft Sans Serif", 19.8000011F, FontStyle.Bold);
             label6.ForeColor = Color.Black;
             label6.Location = new Point(18, 156);
             label6.Name = "label6";
-            label6.Size = new Size(75, 41);
+            label6.Size = new Size(77, 39);
             label6.TabIndex = 1;
             label6.Text = "125";
             // 
@@ -1099,11 +1099,11 @@ namespace inventory
             // 
             label3.AutoSize = true;
             tileBtn.SetDecoration(label3, Guna.UI2.AnimatorNS.DecorationType.None);
-            label3.Font = new Font("Arial Nova", 19.8000011F, FontStyle.Bold);
+            label3.Font = new Font("Microsoft Sans Serif", 19.8000011F, FontStyle.Bold);
             label3.ForeColor = Color.Black;
             label3.Location = new Point(18, 156);
             label3.Name = "label3";
-            label3.Size = new Size(155, 41);
+            label3.Size = new Size(161, 39);
             label3.TabIndex = 1;
             label3.Text = "Php 0.00";
             // 
@@ -1311,7 +1311,7 @@ namespace inventory
             guna2Button4.DisabledState.FillColor = Color.FromArgb(169, 169, 169);
             guna2Button4.DisabledState.ForeColor = Color.FromArgb(141, 141, 141);
             guna2Button4.FillColor = Color.FromArgb(120, 20, 20);
-            guna2Button4.Font = new Font("Arial Nova", 12F, FontStyle.Bold);
+            guna2Button4.Font = new Font("Microsoft Sans Serif", 12F, FontStyle.Bold);
             guna2Button4.ForeColor = Color.White;
             guna2Button4.HoverState.FillColor = Color.FromArgb(128, 150, 100, 20);
             guna2Button4.HoverState.ForeColor = Color.DarkGray;
@@ -1340,7 +1340,7 @@ namespace inventory
             guna2Button3.DisabledState.FillColor = Color.FromArgb(169, 169, 169);
             guna2Button3.DisabledState.ForeColor = Color.FromArgb(141, 141, 141);
             guna2Button3.FillColor = Color.DimGray;
-            guna2Button3.Font = new Font("Arial Nova", 12F, FontStyle.Bold);
+            guna2Button3.Font = new Font("Microsoft Sans Serif", 12F, FontStyle.Bold);
             guna2Button3.ForeColor = Color.White;
             guna2Button3.HoverState.FillColor = Color.FromArgb(128, 150, 100, 20);
             guna2Button3.HoverState.ForeColor = Color.White;
@@ -1360,11 +1360,11 @@ namespace inventory
             // 
             label4.AutoSize = true;
             tileBtn.SetDecoration(label4, Guna.UI2.AnimatorNS.DecorationType.None);
-            label4.Font = new Font("Arial Nova", 19.8000011F, FontStyle.Bold);
+            label4.Font = new Font("Microsoft Sans Serif", 19.8000011F, FontStyle.Bold);
             label4.ForeColor = Color.Black;
             label4.Location = new Point(28, 54);
             label4.Name = "label4";
-            label4.Size = new Size(212, 41);
+            label4.Size = new Size(213, 39);
             label4.TabIndex = 1;
             label4.Text = "Top Product";
             label4.TextAlign = ContentAlignment.MiddleCenter;
@@ -1436,7 +1436,7 @@ namespace inventory
             manageBtn.DisabledState.FillColor = Color.FromArgb(169, 169, 169);
             manageBtn.DisabledState.ForeColor = Color.FromArgb(141, 141, 141);
             manageBtn.FillColor = Color.FromArgb(120, 20, 20);
-            manageBtn.Font = new Font("Arial Nova", 12F, FontStyle.Bold);
+            manageBtn.Font = new Font("Microsoft Sans Serif", 12F, FontStyle.Bold);
             manageBtn.ForeColor = Color.White;
             manageBtn.HoverState.FillColor = Color.FromArgb(128, 150, 100, 20);
             manageBtn.HoverState.ForeColor = Color.DarkGray;
@@ -1456,11 +1456,11 @@ namespace inventory
             // 
             label13.AutoSize = true;
             tileBtn.SetDecoration(label13, Guna.UI2.AnimatorNS.DecorationType.None);
-            label13.Font = new Font("Arial Nova", 12F, FontStyle.Bold);
+            label13.Font = new Font("Microsoft Sans Serif", 12F, FontStyle.Bold);
             label13.ForeColor = Color.Black;
             label13.Location = new Point(53, 21);
             label13.Name = "label13";
-            label13.Size = new Size(146, 25);
+            label13.Size = new Size(148, 25);
             label13.TabIndex = 0;
             label13.Text = "Product Name";
             label13.TextAlign = ContentAlignment.MiddleCenter;
@@ -1576,11 +1576,11 @@ namespace inventory
             // 
             label16.AutoSize = true;
             tileBtn.SetDecoration(label16, Guna.UI2.AnimatorNS.DecorationType.None);
-            label16.Font = new Font("Arial Nova", 16.2F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label16.Font = new Font("Microsoft Sans Serif", 16.2F, FontStyle.Bold, GraphicsUnit.Point, 0);
             label16.ForeColor = Color.Black;
             label16.Location = new Point(61, 57);
             label16.Name = "label16";
-            label16.Size = new Size(198, 33);
+            label16.Size = new Size(194, 32);
             label16.TabIndex = 2;
             label16.Text = "Order History";
             // 
@@ -1876,11 +1876,11 @@ namespace inventory
             // 
             label17.AutoSize = true;
             tileBtn.SetDecoration(label17, Guna.UI2.AnimatorNS.DecorationType.None);
-            label17.Font = new Font("Arial Nova", 19.8000011F, FontStyle.Bold);
+            label17.Font = new Font("Microsoft Sans Serif", 19.8000011F, FontStyle.Bold);
             label17.ForeColor = Color.Black;
             label17.Location = new Point(19, 57);
             label17.Name = "label17";
-            label17.Size = new Size(75, 41);
+            label17.Size = new Size(77, 39);
             label17.TabIndex = 1;
             label17.Text = "120";
             // 
@@ -1914,11 +1914,11 @@ namespace inventory
             // 
             label19.AutoSize = true;
             tileBtn.SetDecoration(label19, Guna.UI2.AnimatorNS.DecorationType.None);
-            label19.Font = new Font("Arial Nova", 19.8000011F, FontStyle.Bold);
+            label19.Font = new Font("Microsoft Sans Serif", 19.8000011F, FontStyle.Bold);
             label19.ForeColor = Color.Black;
             label19.Location = new Point(18, 57);
             label19.Name = "label19";
-            label19.Size = new Size(75, 41);
+            label19.Size = new Size(77, 39);
             label19.TabIndex = 1;
             label19.Text = "101";
             // 
@@ -1952,11 +1952,11 @@ namespace inventory
             // 
             label21.AutoSize = true;
             tileBtn.SetDecoration(label21, Guna.UI2.AnimatorNS.DecorationType.None);
-            label21.Font = new Font("Arial Nova", 19.8000011F, FontStyle.Bold);
+            label21.Font = new Font("Microsoft Sans Serif", 19.8000011F, FontStyle.Bold);
             label21.ForeColor = Color.Black;
             label21.Location = new Point(19, 57);
             label21.Name = "label21";
-            label21.Size = new Size(75, 41);
+            label21.Size = new Size(77, 39);
             label21.TabIndex = 1;
             label21.Text = "125";
             // 
@@ -1990,11 +1990,11 @@ namespace inventory
             // 
             label23.AutoSize = true;
             tileBtn.SetDecoration(label23, Guna.UI2.AnimatorNS.DecorationType.None);
-            label23.Font = new Font("Arial Nova", 19.8000011F, FontStyle.Bold);
+            label23.Font = new Font("Microsoft Sans Serif", 19.8000011F, FontStyle.Bold);
             label23.ForeColor = Color.Black;
             label23.Location = new Point(17, 57);
             label23.Name = "label23";
-            label23.Size = new Size(116, 41);
+            label23.Size = new Size(121, 39);
             label23.TabIndex = 1;
             label23.Text = "Php ...";
             // 
@@ -2478,6 +2478,7 @@ namespace inventory
             Name = "Form1";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "Inventory Management System";
+            WindowState = FormWindowState.Maximized;
             Load += Form1_Load;
             taskbar.ResumeLayout(false);
             sidebarPanel.ResumeLayout(false);
