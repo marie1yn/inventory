@@ -63,6 +63,12 @@ namespace inventory
         [DllImport("user32.dll")]
         private static extern void SendMessage(IntPtr hWnd, int msg, int wParam, int lParam);//
 
+        private void logout_Click(object sender, EventArgs e)
+        {
+            
+            
+        }
+
         private void SidebarButton_Click(object sender, EventArgs e)
         {
             if (sender is Guna2Button button && button.Tag is string tabName)
