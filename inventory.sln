@@ -9,7 +9,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "inventory.Domain", "..\inve
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "inventory.Infrastructure", "..\inventory.Infrastructure\inventory.Infrastructure.csproj", "{E01D9003-24C5-44F2-9C50-291F863C2764}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "inventory.Application", "..\inventory.Application\inventory.Application.csproj", "{7161A5FA-DF34-4480-9331-D5EA15BEBB72}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "inventory.Service", "..\inventory.Application\inventory.Service.csproj", "{7161A5FA-DF34-4480-9331-D5EA15BEBB72}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
