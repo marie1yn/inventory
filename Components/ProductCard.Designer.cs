@@ -94,7 +94,6 @@
             // pictureBoxProduct
             // 
             pictureBoxProduct.CustomizableEdges = customizableEdges3;
-            pictureBoxProduct.Image = Properties.Resources._51a01bde_2cc6_4016_8417_6a29e78dbe07;
             pictureBoxProduct.ImageRotate = 0F;
             pictureBoxProduct.Location = new Point(3, 40);
             pictureBoxProduct.Name = "pictureBoxProduct";

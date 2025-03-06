@@ -55,7 +55,7 @@ namespace inventory
 
         private void guna2ButtonExit_Click(object sender, EventArgs e)
         {
-            Application.Exit();
+            System.Windows.Forms.Application.Exit();
         }
 
         private void taskbar_MouseDown(object sender, MouseEventArgs e)

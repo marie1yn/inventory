@@ -455,7 +455,6 @@ namespace inventory
             logout.ForeColor = Color.White;
             logout.HoverState.FillColor = Color.FromArgb(128, 150, 100, 20);
             logout.HoverState.ForeColor = Color.DarkGray;
-            logout.Image = Properties.Resources.logout__1_;
             logout.ImageAlign = HorizontalAlignment.Left;
             logout.ImageSize = new Size(30, 30);
             logout.Location = new Point(0, 568);
@@ -483,7 +482,6 @@ namespace inventory
             rolesbtn.ForeColor = Color.White;
             rolesbtn.HoverState.FillColor = Color.FromArgb(128, 150, 100, 20);
             rolesbtn.HoverState.ForeColor = Color.DarkGray;
-            rolesbtn.Image = Properties.Resources.parcel;
             rolesbtn.ImageAlign = HorizontalAlignment.Left;
             rolesbtn.ImageSize = new Size(30, 30);
             rolesbtn.Location = new Point(0, 379);
@@ -513,7 +511,6 @@ namespace inventory
             statisticsbtn.ForeColor = Color.White;
             statisticsbtn.HoverState.FillColor = Color.FromArgb(128, 150, 100, 20);
             statisticsbtn.HoverState.ForeColor = Color.DarkGray;
-            statisticsbtn.Image = Properties.Resources.data_usage;
             statisticsbtn.ImageAlign = HorizontalAlignment.Left;
             statisticsbtn.ImageSize = new Size(30, 30);
             statisticsbtn.Location = new Point(0, 293);
@@ -543,7 +540,6 @@ namespace inventory
             ordersbtn.ForeColor = Color.White;
             ordersbtn.HoverState.FillColor = Color.FromArgb(128, 150, 100, 20);
             ordersbtn.HoverState.ForeColor = Color.DarkGray;
-            ordersbtn.Image = Properties.Resources.shopping_cart;
             ordersbtn.ImageAlign = HorizontalAlignment.Left;
             ordersbtn.ImageSize = new Size(30, 30);
             ordersbtn.Location = new Point(0, 209);
@@ -573,7 +569,6 @@ namespace inventory
             stocksbtn.ForeColor = Color.White;
             stocksbtn.HoverState.FillColor = Color.FromArgb(128, 150, 100, 20);
             stocksbtn.HoverState.ForeColor = Color.DarkGray;
-            stocksbtn.Image = Properties.Resources.money_graph_with_up_arrow;
             stocksbtn.ImageAlign = HorizontalAlignment.Left;
             stocksbtn.ImageSize = new Size(30, 30);
             stocksbtn.Location = new Point(0, 124);
@@ -603,7 +598,6 @@ namespace inventory
             dashboardbtn.ForeColor = Color.White;
             dashboardbtn.HoverState.FillColor = Color.FromArgb(128, 150, 100, 20);
             dashboardbtn.HoverState.ForeColor = Color.DarkGray;
-            dashboardbtn.Image = Properties.Resources.dashboard__1_;
             dashboardbtn.ImageAlign = HorizontalAlignment.Left;
             dashboardbtn.ImageSize = new Size(30, 30);
             dashboardbtn.Location = new Point(0, 37);
@@ -663,7 +657,6 @@ namespace inventory
             tileBtn.SetDecoration(notifBtn, Guna.UI2.AnimatorNS.DecorationType.None);
             notifBtn.Dock = DockStyle.Right;
             notifBtn.HoverState.ImageSize = new Size(50, 50);
-            notifBtn.Image = Properties.Resources.notif;
             notifBtn.ImageOffset = new Point(0, 0);
             notifBtn.ImageRotate = 0F;
             notifBtn.ImageSize = new Size(45, 45);
@@ -775,7 +768,6 @@ namespace inventory
             // 
             tileBtn.SetDecoration(guna2CirclePictureBox1, Guna.UI2.AnimatorNS.DecorationType.None);
             guna2CirclePictureBox1.FillColor = Color.FromArgb(235, 192, 192);
-            guna2CirclePictureBox1.Image = Properties.Resources.peso_sign;
             guna2CirclePictureBox1.ImageRotate = 0F;
             guna2CirclePictureBox1.Location = new Point(18, 18);
             guna2CirclePictureBox1.Name = "guna2CirclePictureBox1";
@@ -831,7 +823,6 @@ namespace inventory
             // 
             tileBtn.SetDecoration(guna2CirclePictureBox4, Guna.UI2.AnimatorNS.DecorationType.None);
             guna2CirclePictureBox4.FillColor = Color.FromArgb(235, 192, 192);
-            guna2CirclePictureBox4.Image = Properties.Resources.dish;
             guna2CirclePictureBox4.ImageRotate = 0F;
             guna2CirclePictureBox4.Location = new Point(18, 18);
             guna2CirclePictureBox4.Name = "guna2CirclePictureBox4";
@@ -887,7 +878,6 @@ namespace inventory
             // 
             tileBtn.SetDecoration(guna2CirclePictureBox2, Guna.UI2.AnimatorNS.DecorationType.None);
             guna2CirclePictureBox2.FillColor = Color.FromArgb(235, 192, 192);
-            guna2CirclePictureBox2.Image = Properties.Resources.order;
             guna2CirclePictureBox2.ImageRotate = 0F;
             guna2CirclePictureBox2.Location = new Point(18, 18);
             guna2CirclePictureBox2.Name = "guna2CirclePictureBox2";
@@ -943,7 +933,6 @@ namespace inventory
             // 
             tileBtn.SetDecoration(guna2CirclePictureBox3, Guna.UI2.AnimatorNS.DecorationType.None);
             guna2CirclePictureBox3.FillColor = Color.FromArgb(235, 192, 192);
-            guna2CirclePictureBox3.Image = Properties.Resources.users_avatar;
             guna2CirclePictureBox3.ImageRotate = 0F;
             guna2CirclePictureBox3.Location = new Point(18, 18);
             guna2CirclePictureBox3.Name = "guna2CirclePictureBox3";
@@ -1204,7 +1193,6 @@ namespace inventory
             guna2ImageButton1.Cursor = Cursors.Hand;
             tileBtn.SetDecoration(guna2ImageButton1, Guna.UI2.AnimatorNS.DecorationType.None);
             guna2ImageButton1.HoverState.ImageSize = new Size(35, 35);
-            guna2ImageButton1.Image = Properties.Resources.magnifying_glass;
             guna2ImageButton1.ImageOffset = new Point(0, 0);
             guna2ImageButton1.ImageRotate = 0F;
             guna2ImageButton1.ImageSize = new Size(30, 30);
@@ -1397,7 +1385,6 @@ namespace inventory
             // 
             guna2PictureBox1.CustomizableEdges = customizableEdges51;
             tileBtn.SetDecoration(guna2PictureBox1, Guna.UI2.AnimatorNS.DecorationType.None);
-            guna2PictureBox1.Image = Properties.Resources._51a01bde_2cc6_4016_8417_6a29e78dbe07;
             guna2PictureBox1.ImageRotate = 0F;
             guna2PictureBox1.Location = new Point(3, 57);
             guna2PictureBox1.Name = "guna2PictureBox1";
@@ -1644,7 +1631,6 @@ namespace inventory
             guna2ImageButton2.Cursor = Cursors.Hand;
             tileBtn.SetDecoration(guna2ImageButton2, Guna.UI2.AnimatorNS.DecorationType.None);
             guna2ImageButton2.HoverState.ImageSize = new Size(35, 35);
-            guna2ImageButton2.Image = Properties.Resources.magnifying_glass;
             guna2ImageButton2.ImageOffset = new Point(0, 0);
             guna2ImageButton2.ImageRotate = 0F;
             guna2ImageButton2.ImageSize = new Size(30, 30);
@@ -2211,7 +2197,6 @@ namespace inventory
             // guna2CirclePictureBox5
             // 
             tileBtn.SetDecoration(guna2CirclePictureBox5, Guna.UI2.AnimatorNS.DecorationType.None);
-            guna2CirclePictureBox5.Image = Properties.Resources.account;
             guna2CirclePictureBox5.ImageRotate = 0F;
             guna2CirclePictureBox5.Location = new Point(73, 54);
             guna2CirclePictureBox5.Name = "guna2CirclePictureBox5";
@@ -2302,7 +2287,6 @@ namespace inventory
             guna2ImageButton3.Cursor = Cursors.Hand;
             tileBtn.SetDecoration(guna2ImageButton3, Guna.UI2.AnimatorNS.DecorationType.None);
             guna2ImageButton3.HoverState.ImageSize = new Size(35, 35);
-            guna2ImageButton3.Image = Properties.Resources.magnifying_glass;
             guna2ImageButton3.ImageOffset = new Point(0, 0);
             guna2ImageButton3.ImageRotate = 0F;
             guna2ImageButton3.ImageSize = new Size(30, 30);

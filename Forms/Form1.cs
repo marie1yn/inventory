@@ -6,6 +6,7 @@ using Guna.UI2.WinForms;
 using Guna.Charts.WinForms;
 using Guna.Charts.Interfaces;
 using System.Data;
+using inventory.Utils;
 
 namespace inventory
 {
@@ -62,7 +63,7 @@ namespace inventory
             AdminLogin loginForm = new AdminLogin();
             loginForm.Show();
             this.Hide();
-            loginForm.FormClosed += (s, args) => Application.Exit();
+            loginForm.FormClosed += (s, args) => System.Windows.Forms.Application.Exit();
         }
 
         private void taskbar_MouseDown(object sender, MouseEventArgs e)

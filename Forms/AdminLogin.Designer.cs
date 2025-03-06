@@ -283,7 +283,6 @@
             // guna2ImageCheckBox1
             // 
             guna2ImageCheckBox1.CheckedState.Image = (Image)resources.GetObject("resource.Image");
-            guna2ImageCheckBox1.Image = Properties.Resources.logo;
             guna2ImageCheckBox1.ImageOffset = new Point(0, 0);
             guna2ImageCheckBox1.ImageRotate = 0F;
             guna2ImageCheckBox1.Location = new Point(78, 3);
