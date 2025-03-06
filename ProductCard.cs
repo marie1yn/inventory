@@ -39,6 +39,11 @@ namespace inventory
         {
             set { lblWarning.Text = value ? " About to expire!" : ""; }
         }
+
+        private void guna2Button8_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 
 }
