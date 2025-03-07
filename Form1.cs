@@ -62,8 +62,8 @@ namespace inventory
         {
             if (e.Button == MouseButtons.Left)
             {
-                ReleaseCapture();
-                SendMessage(Handle, 0xA1, 0x2, 0);
+                //ReleaseCapture();
+               // SendMessage(Handle, 0xA1, 0x2, 0);
             }
         }
 
@@ -240,11 +240,12 @@ namespace inventory
         private void statistics_Click(object sender, EventArgs e) => labelTab.Text = "Statistics";
         private void roles_Click(object sender, EventArgs e) => labelTab.Text = "Roles";
 
-        [DllImport("user32.dll")]
-        private static extern void ReleaseCapture();
+        //[DllImport("user32.dll")]
+      //  private static extern void ReleaseCapture();
 
-        [DllImport("user32.dll")]
-        private static extern void SendMessage(IntPtr hWnd, int msg, int wParam, int lParam);
+      // [DllImport("user32.dll")]
+      // private static extern void SendMessage(IntPtr hWnd, int msg, int wParam, int lParam);
 
     }
+
 }

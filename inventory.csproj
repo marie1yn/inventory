@@ -14,18 +14,21 @@
     <Compile Remove="DomainLayer\**" />
     <Compile Remove="InfrastructureLayer\**" />
     <Compile Remove="ServiceLayer\**" />
+    <Compile Remove="UI\**" />
     <Compile Remove="WebApplication1\**" />
     <EmbeddedResource Remove="ANGCON SD\**" />
     <EmbeddedResource Remove="DATA\**" />
     <EmbeddedResource Remove="DomainLayer\**" />
     <EmbeddedResource Remove="InfrastructureLayer\**" />
     <EmbeddedResource Remove="ServiceLayer\**" />
+    <EmbeddedResource Remove="UI\**" />
     <EmbeddedResource Remove="WebApplication1\**" />
     <None Remove="ANGCON SD\**" />
     <None Remove="DATA\**" />
     <None Remove="DomainLayer\**" />
     <None Remove="InfrastructureLayer\**" />
     <None Remove="ServiceLayer\**" />
+    <None Remove="UI\**" />
     <None Remove="WebApplication1\**" />
   </ItemGroup>
 
