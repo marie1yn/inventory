@@ -62,4 +62,9 @@
     </EmbeddedResource>
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="Presenter\" />
+    <Folder Include="Views\IViews\" />
+  </ItemGroup>
+
 </Project>
