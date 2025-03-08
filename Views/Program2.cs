@@ -1,4 +1,4 @@
-namespace inventory
+namespace inventory.Views
 {
     internal static class Program2
     {

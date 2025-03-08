@@ -6,7 +6,7 @@ using System.Windows.Forms;
 using Guna.UI2.WinForms;
 using Timer = System.Windows.Forms.Timer;
 
-namespace inventory
+namespace inventory.Views
 {
     public class SidebarManager
     {
@@ -158,7 +158,7 @@ namespace inventory
                     button.ImageAlign = HorizontalAlignment.Left;
                     button.TextAlign = isSidebarExpanded ? HorizontalAlignment.Left : HorizontalAlignment.Center;
                     button.ImageSize = new Size(30, 30);
-                    button.Text = isSidebarExpanded ? (button.Tag?.ToString() ?? "") : "";
+                    button.Text = isSidebarExpanded ? button.Tag?.ToString() ?? "" : "";
                 }
             }
         }

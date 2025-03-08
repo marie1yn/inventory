@@ -6,6 +6,7 @@ using Guna.UI2.WinForms;
 using Guna.Charts.WinForms;
 using Guna.Charts.Interfaces;
 using System.Data;
+using inventory.Views;
 
 namespace inventory
 {
